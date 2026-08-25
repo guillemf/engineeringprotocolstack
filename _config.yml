@@ -1,0 +1,62 @@
+title: "The Engineering Protocol Stack"
+tagline: "A Layered Model for Engineering Leadership"
+description: >-
+  A book by Guillem Fernandez that maps the human side of engineering
+  leadership onto the layers of a computer system — CPU, RAM, LAN and WAN —
+  so the "soft" parts of the job finally get a clear, usable structure.
+
+default_lang: es
+languages: [es, en]
+
+author:
+  name: "Guillem Fernandez"
+  bio: "Engineering Director, People Engineer, and author of The Engineering Protocol Stack."
+  email: hello@guillem.cat
+  website: https://guillem.cat
+  linkedin: https://www.linkedin.com/in/gfernandezg
+  github: https://github.com/guillemf
+  boosterskills: https://www.myboosterskills.com
+
+book:
+  buy_url: "https://leanpub.com/boosterskills"
+  cover_image: /assets/images/book-cover.jpg
+
+url: "https://www.myboosterskills.com"
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: /posts/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      lang: "es"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      lang: "es"
+  - scope:
+      path: "en"
+    values:
+      lang: "en"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules

@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.i18n[lang] %}
+{% assign posts_url = "/posts/" %}
+{% if lang == "en" %}{% assign posts_url = "/en/posts/" %}{% endif %}
+
+<article class="post">
+  <div class="wrap wrap--narrow">
+    <header class="post__header">
+      <p class="post__meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+        {% if page.layer %}<span class="tag tag--{{ page.layer | slugify }}">{{ page.layer }}</span>{% endif %}
+      </p>
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle %}<p class="page__subtitle">{{ page.subtitle }}</p>{% endif %}
+    </header>
+
+    {% if page.image %}
+    <img class="post__cover" src="{{ page.image | relative_url }}" alt="">
+    {% endif %}
+
+    <div class="page__content post__content">
+      {{ content }}
+    </div>
+
+    <div class="post__nav">
+      <a href="{{ posts_url | relative_url }}">{{ t.common.back_to_blog }}</a>
+    </div>
+  </div>
+</article>

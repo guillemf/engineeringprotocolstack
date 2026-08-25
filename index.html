@@ -1,0 +1,124 @@
+---
+layout: home
+title: Inicio
+lang: es
+alt_lang_url: /en/
+---
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div>
+      <span class="hero__eyebrow">Nuevo libro · Leanpub</span>
+      <h1>The Engineering Protocol Stack</h1>
+      <p class="hero__subtitle">
+        Un modelo por capas —CPU, RAM, LAN y WAN— para entender y entrenar la
+        parte humana del liderazgo en ingeniería con el mismo rigor que
+        aplicamos a la parte técnica.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn-primary" href="{{ site.book.buy_url }}" target="_blank" rel="noopener">Comprar en Leanpub →</a>
+        <a class="btn btn-outline" href="{{ '/book/' | relative_url }}">Ver de qué trata</a>
+      </div>
+      <p class="hero__meta">Escrito por Guillem Fernandez · Engineering Director &amp; People Engineer</p>
+    </div>
+    <div class="hero__cover">
+      <img src="{{ site.book.cover_image | relative_url }}" alt="Portada de The Engineering Protocol Stack">
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap wrap--narrow section-head" style="text-align:left; max-width:760px; margin:0 auto;">
+    <span class="eyebrow">De qué trata el libro</span>
+    <h2 style="margin-top:.6rem;">Tu cerebro, tu equipo y tu organización, vistos como un stack tecnológico</h2>
+    <p>
+      Igual que un sistema informático se organiza en capas —procesador, memoria,
+      red local, red externa—, este libro organiza el liderazgo en ingeniería en
+      cuatro capas que dependen unas de otras. Cada capa tiene sus propios
+      "bugs" típicos, y arreglar el problema en la capa equivocada casi nunca
+      funciona. El libro te da un mapa claro de las partes del trabajo que
+      nunca vinieron con documentación.
+    </p>
+  </div>
+
+  <div class="wrap" style="margin-top:2.4rem;">
+    <div class="layers-grid">
+      <div class="layer-card">
+        <span class="layer-tag">CPU</span>
+        <h3>Tu procesador</h3>
+        <p>Gestión de tareas, foco y prioridades: cómo tu "procesador" ejecuta el trabajo del día a día.</p>
+      </div>
+      <div class="layer-card">
+        <span class="layer-tag">RAM</span>
+        <h3>Tu memoria</h3>
+        <p>Memoria de trabajo, aprendizaje y carga mental: usar tu almacenamiento temporal para lo que de verdad importa.</p>
+      </div>
+      <div class="layer-card">
+        <span class="layer-tag">LAN</span>
+        <h3>Tu equipo</h3>
+        <p>Roles, carrera profesional y dinámica de equipo: de grupo de personas a equipo de alto rendimiento.</p>
+      </div>
+      <div class="layer-card">
+        <span class="layer-tag">WAN</span>
+        <h3>Tu organización</h3>
+        <p>Stakeholders, colaboración entre equipos y gestión hacia arriba: conectar tu equipo con el resto del mundo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% assign es_posts = site.posts | where: "lang", "es" %}
+{% assign recent_posts = es_posts | slice: 0, 3 %}
+{% if recent_posts.size > 0 %}
+<section class="recent-posts">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Del blog</span>
+      <h2>Últimas publicaciones</h2>
+    </div>
+    <div class="posts-list">
+      {% for post in recent_posts %}
+      <a class="post-card" href="{{ post.url | relative_url }}">
+        <p class="post__meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+          {% if post.layer %}<span class="tag">{{ post.layer }}</span>{% endif %}
+        </p>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
+      </a>
+      {% endfor %}
+    </div>
+    <p style="text-align:center; margin-top:1.6rem;">
+      <a href="{{ '/posts/' | relative_url }}">Ver todas las publicaciones →</a>
+    </p>
+  </div>
+</section>
+{% endif %}
+
+<section class="author">
+  <div class="wrap wrap--narrow">
+    <div class="author-teaser">
+      <img src="{{ '/assets/images/author.jpg' | relative_url }}" alt="Guillem Fernandez">
+      <div>
+        <span class="eyebrow" style="color:var(--amber);">Sobre el autor</span>
+        <h3 style="margin:.4rem 0 .6rem; font-size:1.4rem;">Guillem Fernandez</h3>
+        <p style="margin-bottom:1rem;">
+          Me defino como <strong>People Engineer</strong>: alguien que trata el lado humano
+          de la ingeniería con el mismo rigor que el lado técnico. He fundado dos
+          empresas, ayudado a crear dos más desde cero, y hoy dirijo el desarrollo
+          de producto en Advance 52 (G+D). También enseño en la Universitat de Barcelona.
+        </p>
+        <a href="{{ '/about/' | relative_url }}">Leer la biografía completa →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="wrap wrap--narrow" style="text-align:center;">
+    <div class="card">
+      <h2 style="margin-top:0;">¿Listo para leerlo?</h2>
+      <p>Disponible en Leanpub, con actualizaciones gratuitas de por vida cada vez que el libro se amplía.</p>
+      <a class="btn btn-primary" href="{{ site.book.buy_url }}" target="_blank" rel="noopener">Comprar The Engineering Protocol Stack →</a>
+    </div>
+  </div>
+</section>

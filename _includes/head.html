@@ -1,0 +1,19 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/jpeg" href="{{ '/assets/images/book-cover.jpg' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  {% seo %}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+  {% if page.alt_lang_url %}
+  {% assign alt_lang = "en" %}
+  {% if page.lang == "en" %}{% assign alt_lang = "es" %}{% endif %}
+  <link rel="alternate" hreflang="{{ alt_lang }}" href="{{ site.url }}{{ page.alt_lang_url | relative_url }}">
+  <link rel="alternate" hreflang="{{ page.lang | default: site.default_lang }}" href="{{ site.url }}{{ page.url | relative_url }}">
+  {% endif %}
+</head>
