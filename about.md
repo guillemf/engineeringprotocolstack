@@ -40,7 +40,7 @@ También enseño en la **Universitat de Barcelona**, porque compartir lo que he
 aprendido —y que me lo cuestionen personas que todavía están formando sus
 propias ideas— es una de las mejores formas que conozco de mantener el
 pensamiento honesto. Este libro, y el contenido gratuito detrás de él en
-[myboosterskills.com]({{ site.author.boosterskills }}), nacen del mismo
+[engineeringprotocolstack.com]({{ site.author.engineeringprotocolstack }}), nacen del mismo
 instinto: las ideas de aquí están pensadas para usarse, ponerse a prueba y
 cuestionarse, no solo para leerse.
 
@@ -67,4 +67,4 @@ cuestionarse, no solo para leerse.
 - [LinkedIn]({{ site.author.linkedin }})
 - [GitHub]({{ site.author.github }})
 - [guillem.cat]({{ site.author.website }})
-- [myboosterskills.com]({{ site.author.boosterskills }}) — contenido gratuito sobre el framework del libro
+- [engineeringprotocolstack.com]({{ site.author.engineeringprotocolstack }}) — contenido gratuito sobre el framework del libro

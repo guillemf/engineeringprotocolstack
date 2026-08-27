@@ -38,7 +38,7 @@ learned to see them coming.
 I also teach at the **University of Barcelona**, because sharing what I have
 learned — and having it challenged by people still forming their own ideas —
 is one of the best ways I know to keep the thinking honest. This book, and
-the free content behind it at [myboosterskills.com]({{ site.author.boosterskills }}),
+the free content behind it at [engineeringprotocolstack.com]({{ site.author.engineeringprotocolstack }}),
 come from that same instinct: the ideas here are meant to be used, tested,
 and pushed back on, not just read.
 
@@ -65,4 +65,4 @@ and pushed back on, not just read.
 - [LinkedIn]({{ site.author.linkedin }})
 - [GitHub]({{ site.author.github }})
 - [guillem.cat]({{ site.author.website }})
-- [myboosterskills.com]({{ site.author.boosterskills }}) — free content built on the book's framework
+- [engineeringprotocolstack.com]({{ site.author.engineeringprotocolstack }}) — free content built on the book's framework

@@ -25,5 +25,5 @@ alt_lang_url: /videos/
 </div>
 
 <p style="margin-top:2.2rem; text-align:center; color:var(--text-faint); font-size:.9rem;">
-  More videos and free content at <a href="{{ site.author.boosterskills }}" target="_blank" rel="noopener">myboosterskills.com</a>.
+  More videos and free content at <a href="{{ site.author.engineeringprotocolstack }}" target="_blank" rel="noopener">engineeringprotocolstack.com</a>.
 </p>

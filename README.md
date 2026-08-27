@@ -81,7 +81,7 @@ en/404.md            Página 404 EN
 3. **Enlace de compra**: está en `_config.yml`, clave `book.buy_url`
    (ya apunta a tu Leanpub, es el mismo para ambos idiomas).
 4. **Dominio**: en `_config.yml`, `url:` — cámbialo si el sitio no vive en
-   `myboosterskills.com`.
+   `engineeringprotocolstack.com`.
 5. Revisa los posts de ejemplo en `_posts/` — están escritos con contenido
    real del libro a modo de muestra, en ambos idiomas; edítalos, bórralos
    o añade los tuyos.

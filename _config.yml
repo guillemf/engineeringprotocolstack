@@ -12,16 +12,16 @@ author:
   name: "Guillem Fernandez"
   bio: "Engineering Director, People Engineer, and author of The Engineering Protocol Stack."
   email: hello@guillem.cat
-  website: https://guillem.cat
+  website: https://pro.guillem.cat
   linkedin: https://www.linkedin.com/in/gfernandezg
   github: https://github.com/guillemf
-  boosterskills: https://www.myboosterskills.com
+  engineeringprotocolstack: https://www.engineeringprotocolstack.com
 
 book:
-  buy_url: "https://leanpub.com/boosterskills"
+  buy_url: "https://leanpub.com/engineeringprotocolstack"
   cover_image: /assets/images/book-cover.jpg
 
-url: "https://www.myboosterskills.com"
+url: "https://www.engineeringprotocolstack.com"
 baseurl: ""
 
 markdown: kramdown
