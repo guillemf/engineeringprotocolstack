@@ -8,7 +8,7 @@ alt_lang_url: /contact/
 
 <div class="contact-grid">
   <div>
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form action="https://formspree.io/f/xbgrngpz" method="POST">
       <div class="form-field">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
