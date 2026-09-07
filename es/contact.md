@@ -1,16 +1,16 @@
 ---
-title: Contact
-subtitle: Questions about the book, a talk, or the services? Get in touch.
-permalink: /en/contact/
-lang: en
-alt_lang_url: /contact/
+title: Contacto
+subtitle: ¿Preguntas sobre el libro, una charla o los servicios? Escríbeme.
+permalink: /contact/
+lang: es
+alt_lang_url: /en/contact/
 ---
 
 <div class="contact-grid">
   <div>
     <form action="https://formspree.io/f/xbgrngpz" method="POST">
       <div class="form-field">
-        <label for="name">Name</label>
+        <label for="name">Nombre</label>
         <input type="text" id="name" name="name" required>
       </div>
       <div class="form-field">
@@ -18,33 +18,33 @@ alt_lang_url: /contact/
         <input type="email" id="email" name="_replyto" required>
       </div>
       <div class="form-field">
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" placeholder="Book, talk, services...">
+        <label for="subject">Asunto</label>
+        <input type="text" id="subject" name="subject" placeholder="Libro, charla, servicios...">
       </div>
       <div class="form-field">
-        <label for="message">Message</label>
+        <label for="message">Mensaje</label>
         <textarea id="message" name="message" rows="6" required></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Send message</button>
+      <button type="submit" class="btn btn-primary">Enviar mensaje</button>
     </form>
     <p style="font-size:.82rem; margin-top:1rem; color:var(--text-faint);">
-      This form uses <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>.
-      Replace <code>YOUR_FORM_ID</code> with your own (free) form ID before publishing the site.
+      Este formulario usa <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>.
+      Sustituye <code>YOUR_FORM_ID</code> por el ID de tu propio formulario (gratis) antes de publicar el sitio.
     </p>
   </div>
 
   <div>
     <div class="card">
-      <h3 style="margin-top:0;">Other ways to reach me</h3>
+      <h3 style="margin-top:0;">Otras formas de contactar</h3>
       <ul class="contact-list">
         <li><strong>Email</strong> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
         <li><strong>LinkedIn</strong> <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">gfernandezg</a></li>
         <li><strong>GitHub</strong> <a href="{{ site.author.github }}" target="_blank" rel="noopener">guillemf</a></li>
-        <li><strong>Website</strong> <a href="{{ site.author.website }}" target="_blank" rel="noopener">guillem.cat</a></li>
+        <li><strong>Web</strong> <a href="{{ site.author.website }}" target="_blank" rel="noopener">guillem.cat</a></li>
       </ul>
       <p style="margin-top:1.4rem;">
-        For consulting and coaching for companies or individuals, check out
-        the <a href="{{ '/en/services/' | relative_url }}">services</a> page first.
+        Para consultoría y coaching para empresas o profesionales, echa un
+        vistazo antes a la página de <a href="{{ '/services/' | relative_url }}">servicios</a>.
       </p>
     </div>
   </div>

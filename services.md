@@ -1,117 +1,117 @@
 ---
-title: Servicios
-subtitle: Coaching, mentoring y formación basados en el framework del libro
-permalink: /services/
-lang: es
-alt_lang_url: /en/services/
+title: Services
+subtitle: Coaching, mentoring, and training built on the book's framework
+permalink: /en/services/
+lang: en
+alt_lang_url: /services/
 ---
 
-Ayudo a empresas tecnológicas, departamentos de IT, líderes de ingeniería y
-profesionales individuales a mejorar la comunicación, la ejecución, el
-liderazgo y la salud de equipo mediante coaching práctico, mentoring y
-formación. Mi enfoque combina experiencia real como ingeniero, transformación
-organizativa y acompañamiento hands-on para que las mejoras se queden.
+I help technology companies, IT departments, engineering leaders, and
+individual professionals improve communication, execution, leadership, and
+team health through practical coaching, mentoring, and training. My approach
+combines real engineering experience, organizational transformation, and
+hands-on support so improvements actually stick.
 
-Puedes trabajar conmigo de dos formas: como partner para tu empresa, o como
-coach para tu crecimiento personal como ingeniero, lead o manager. En ambos
-casos el objetivo es el mismo: reducir la fricción, fortalecer el liderazgo y
-construir mejores formas de trabajar.
+You can work with me in two ways: as a partner for your company, or as a
+coach for your personal growth as an engineer, lead, or manager. In both
+cases, the goal is the same: reduce friction, strengthen leadership, and
+build better ways of working.
 
-## Para empresas
+## For companies
 
-Trabajo con empresas tecnológicas y departamentos de IT que quieren equipos
-más sanos, liderazgo más claro y ejecución más fiable. Especialmente útil
-cuando la entrega se ralentiza, la comunicación se rompe, los managers tienen
-dificultades o la cultura de equipo sufre durante el crecimiento o el cambio.
+I work with technology companies and internal IT departments that want
+healthier teams, clearer leadership, and more reliable execution. Especially
+useful when delivery is slowing down, communication is breaking, managers are
+struggling, or team culture is suffering during growth or change.
 
 <div class="services-grid">
   <div class="service-card">
-    <h3>Diagnóstico de equipo y liderazgo</h3>
-    <p>Una evaluación enfocada para identificar las principales fuentes de fricción en equipos, liderazgo, comunicación y modelo de ejecución.</p>
+    <h3>Team and leadership diagnosis</h3>
+    <p>A focused assessment to identify the main sources of friction in teams, leadership structure, communication, and execution model.</p>
     <ul>
-      <li>Visión clara de los puntos de dolor principales</li>
-      <li>Análisis de causa raíz (personas, procesos, dinámica)</li>
-      <li>Roadmap de mejora priorizado</li>
+      <li>A clear view of the biggest pain points</li>
+      <li>Root-cause analysis across people, processes, and dynamics</li>
+      <li>A prioritized improvement roadmap</li>
     </ul>
   </div>
   <div class="service-card">
-    <h3>Coaching de liderazgo en ingeniería</h3>
-    <p>Coaching y mentoring para engineering managers, tech leads, heads of engineering y líderes emergentes.</p>
+    <h3>Engineering leadership coaching</h3>
+    <p>Coaching and mentoring for engineering managers, tech leads, heads of engineering, and emerging leaders.</p>
     <ul>
-      <li>Sesiones de mentoring 1:1</li>
-      <li>Apoyo en situaciones de equipo difíciles</li>
-      <li>Feedback, alineación y hábitos de liderazgo</li>
+      <li>1:1 mentoring sessions</li>
+      <li>Support with difficult team situations</li>
+      <li>Feedback, alignment, and leadership habits</li>
     </ul>
   </div>
   <div class="service-card">
-    <h3>Workshops de equipo</h3>
-    <p>Talleres interactivos centrados en las habilidades blandas que más afectan a la entrega y la colaboración.</p>
+    <h3>Team workshops</h3>
+    <p>Interactive workshops focused on the soft skills that most affect delivery and collaboration.</p>
     <ul>
-      <li>Comunicación y alineación</li>
-      <li>Ownership y accountability</li>
-      <li>Gestión de conflictos y colaboración entre equipos</li>
+      <li>Communication and alignment</li>
+      <li>Ownership and accountability</li>
+      <li>Conflict management and cross-team collaboration</li>
     </ul>
   </div>
   <div class="service-card">
-    <h3>Diseño de procesos y formas de trabajar</h3>
-    <p>Acompañamiento práctico para definir o mejorar procesos de equipo claros y adaptados a tu contexto real.</p>
+    <h3>Ways of working & process design</h3>
+    <p>Hands-on support to define or improve team processes so they're clear and adapted to your real context.</p>
     <ul>
-      <li>Definiciones de proceso claras</li>
-      <li>Acuerdos operativos para equipos y líderes</li>
-      <li>Mejores estructuras de reunión y comunicación</li>
+      <li>Clear process definitions</li>
+      <li>Operating agreements for teams and leaders</li>
+      <li>Better meeting structures and communication flows</li>
     </ul>
   </div>
   <div class="service-card">
-    <h3>Programas de formación</h3>
-    <p>Formación a medida para departamentos de IT y organizaciones tech que quieren crecer en liderazgo y colaboración de forma estructurada.</p>
+    <h3>Training programs</h3>
+    <p>Tailored training for IT departments and tech organizations that want to grow leadership and collaboration capabilities in a structured way.</p>
     <ul>
-      <li>Workshops individuales o multi-sesión</li>
-      <li>Cohortes de liderazgo</li>
-      <li>Mentoring de seguimiento y shadowing</li>
+      <li>Single or multi-session workshops</li>
+      <li>Leadership cohorts</li>
+      <li>Follow-up mentoring and shadowing</li>
     </ul>
   </div>
   <div class="service-card">
-    <h3>LAN Audit — Evaluación de salud del equipo</h3>
-    <p>2–4 semanas: entrevistas con líderes y equipo, revisión de procesos, informe con recomendaciones.</p>
+    <h3>LAN Audit — Team Health Assessment</h3>
+    <p>2–4 weeks: interviews with leaders and team members, process review, report with recommendations.</p>
     <ul>
-      <li>Informe ejecutivo</li>
-      <li>Sesión de debriefing con dirección</li>
+      <li>Executive report</li>
+      <li>Debriefing session with leadership</li>
     </ul>
   </div>
 </div>
 
-## Para profesionales
+## For individuals
 
-También trabajo con profesionales individuales que quieren crecer como
-ingenieros, tech leads, managers o líderes técnicos. Ideal para personas
-excelentes en lo técnico que quieren fortalecer comunicación, influencia,
-liderazgo y efectividad del día a día.
+I also work with individual professionals who want to grow as engineers,
+tech leads, managers, or technical leaders. Ideal for people who are
+excellent on the technical side and want to become stronger in
+communication, influence, and day-to-day effectiveness.
 
 <div class="services-grid">
   <div class="service-card">
-    <h3>Coaching de carrera y liderazgo</h3>
-    <p>Para ingenieros que dan el salto a liderazgo, nuevos managers o líderes con experiencia que quieren una mirada externa.</p>
+    <h3>Career and leadership coaching</h3>
+    <p>For engineers moving into leadership, new managers, or experienced leaders who want an external sounding board.</p>
     <ul>
-      <li>De IC a lead o manager</li>
-      <li>Liderar a antiguos compañeros</li>
-      <li>Dar feedback y gestionar conflicto</li>
+      <li>Moving from IC to lead or manager</li>
+      <li>Leading former peers</li>
+      <li>Giving feedback and handling conflict</li>
     </ul>
   </div>
   <div class="service-card">
     <h3>1:1 Engineering Leader Program</h3>
-    <p><strong>Formato:</strong> 6 sesiones de 60 minutos en 8–10 semanas.</p>
+    <p><strong>Format:</strong> 6 sessions of 60 minutes over 8–10 weeks.</p>
     <ul>
-      <li><strong>CPU:</strong> foco, gestión del tiempo, prioridades</li>
-      <li><strong>LAN:</strong> feedback, comunicación 1:1, conflicto, performance</li>
-      <li><strong>WAN:</strong> posicionamiento interno, promociones, visibilidad</li>
+      <li><strong>CPU:</strong> focus, time management, prioritization</li>
+      <li><strong>LAN:</strong> feedback, 1:1 communication, conflict, performance</li>
+      <li><strong>WAN:</strong> internal positioning, promotions, visibility</li>
     </ul>
   </div>
 </div>
 
-## Empecemos
+## Let's find the right format
 
-Ya necesites apoyo para tu organización de ingeniería o para tu propio
-crecimiento profesional, puedo ayudarte a identificar el siguiente paso.
-Podemos empezar con una llamada introductoria gratuita de 30 minutos.
+Whether you need support for an engineering organization or for your own
+professional growth, I can help you identify the right next step. We can
+start with a free 30-minute intro call.
 
-<p><a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Escríbeme para agendar una llamada →</a></p>
+<p><a class="btn btn-primary" href="{{ '/en/contact/' | relative_url }}">Get in touch to book a call →</a></p>

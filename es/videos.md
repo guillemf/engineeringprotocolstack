@@ -1,14 +1,14 @@
 ---
-title: Videos
-subtitle: Talks, explanations, and video excerpts from the book's framework
-permalink: /en/videos/
+title: Vídeos
+subtitle: Charlas, explicaciones y extractos en vídeo del framework del libro
+permalink: /videos/
 layout: page
-lang: en
-alt_lang_url: /videos/
+lang: es
+alt_lang_url: /en/videos/
 ---
 
 <div class="video-grid">
-  {% for video in site.data.videos.en %}
+  {% for video in site.data.videos.es %}
   <div class="video-card">
     <div class="ratio">
       <iframe src="https://www.youtube-nocookie.com/embed/{{ video.youtube_id }}"
@@ -25,5 +25,5 @@ alt_lang_url: /videos/
 </div>
 
 <p style="margin-top:2.2rem; text-align:center; color:var(--text-faint); font-size:.9rem;">
-  More videos and free content at <a href="{{ site.author.engineeringprotocolstack }}" target="_blank" rel="noopener">engineeringprotocolstack.com</a>.
+  Más vídeos y contenido gratuito en <a href="{{ site.author.engineeringprotocolstack }}" target="_blank" rel="noopener">engineeringprotocolstack.com</a>.
 </p>

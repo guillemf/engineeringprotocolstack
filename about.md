@@ -1,9 +1,9 @@
 ---
-title: Sobre el autor
+title: About the Author
 subtitle: Guillem Fernandez — Engineering Director & People Engineer
-permalink: /about/
-lang: es
-alt_lang_url: /en/about/
+permalink: /en/about/
+lang: en
+alt_lang_url: /about/
 ---
 
 <p>
@@ -11,60 +11,58 @@ alt_lang_url: /en/about/
        style="width:180px; height:180px; object-fit:cover; border-radius:50%; float:right; margin:0 0 1.2rem 1.6rem; box-shadow:0 0 0 4px var(--bg), 0 0 0 5px var(--border);">
 </p>
 
-Soy **Guillem Fernandez**, y me defino como **People Engineer**: alguien que
-trata el lado humano de la ingeniería con el mismo rigor que el lado técnico,
-porque en la mayoría de organizaciones acaban siendo el mismo problema visto
-desde dos ángulos distintos.
+I am **Guillem Fernandez**, and I define myself as a **People Engineer**:
+someone who treats the human side of engineering with the same rigor as the
+technical side, because in most organizations they turn out to be the same
+problem seen from two different angles.
 
-Tengo un Grado en Ingeniería de Software por la Universitat Politècnica de
-Catalunya, y mi carrera desde entonces ha pasado por casi todos los asientos
-de la mesa: Mobile Team Lead en HostelWorld, Senior iOS Developer, Senior Lead
-Engineer en Stella&amp;Dot y PaddyPower, Managing Director de la oficina de
-Barcelona de Codurance, cofundador y CEO de CoKaiDo, Head of Engineering en
-Bumble, Head of Transformation &amp; Operations en Allianz Technology, y
-actualmente Head of Product Development en Advance 52 (G+D). Por el camino he
-fundado dos empresas, ayudado a construir dos más desde cero, y participado en
-muchas otras iniciativas de las que me siento orgulloso.
+I hold an Engineering Degree in Software Engineering from the Universitat
+Politècnica de Catalunya, and my career since has moved through nearly every
+seat at the table: Mobile Team Lead at HostelWorld, Senior iOS Developer,
+Senior Lead Engineer at Stella&amp;Dot and PaddyPower, Managing Director of
+Codurance's Barcelona office, co-founder and CEO of CoKaiDo, Head of
+Engineering at Bumble, Head of Transformation &amp; Operations at Allianz
+Technology, and currently Head of Product Development at Advance 52 (G+D).
+Along the way I have founded two companies, helped build two more from
+zero, and been part of many other initiatives I am proud of.
 
-Ese recorrido no es solo una lista de puestos: es la razón por la que existe
-este libro. He liderado programas de transformación que unificaron
-organizaciones distribuidas entre países, construido equipos de alto
-rendimiento desde cero, dirigido una consultora ayudando a otras empresas a
-adoptar buenas prácticas de ingeniería, y estado en salas de dirección donde
-la excelencia técnica de un equipo no significaba nada hasta que alguien la
-traducía a términos que el negocio pudiera usar. He cometido los errores
-contra los que advierte este libro, en todas las capas del stack, antes de
-aprender a verlos venir.
+That range is not a list of job titles — it is the reason this book exists.
+I have led transformation programs that unified distributed organizations
+across countries, built high-performance teams from scratch, run a
+consultancy helping other companies adopt real engineering practice, and sat
+in executive rooms where a team's technical excellence meant nothing until
+someone could translate it into terms the business could act on. I have made
+the mistakes this book warns against, at every layer of the stack, before I
+learned to see them coming.
 
-También enseño en la **Universitat de Barcelona**, porque compartir lo que he
-aprendido —y que me lo cuestionen personas que todavía están formando sus
-propias ideas— es una de las mejores formas que conozco de mantener el
-pensamiento honesto. Este libro, y el contenido gratuito detrás de él en
-[engineeringprotocolstack.com]({{ site.author.engineeringprotocolstack }}), nacen del mismo
-instinto: las ideas de aquí están pensadas para usarse, ponerse a prueba y
-cuestionarse, no solo para leerse.
+I also teach at the **University of Barcelona**, because sharing what I have
+learned — and having it challenged by people still forming their own ideas —
+is one of the best ways I know to keep the thinking honest. This book, and
+the free content behind it at [engineeringprotocolstack.com]({{ site.author.engineeringprotocolstack }}),
+come from that same instinct: the ideas here are meant to be used, tested,
+and pushed back on, not just read.
 
-## Experiencia profesional
+## Work experience
 
-| Puesto | Empresa | Periodo |
+| Role | Company | Period |
 |---|---|---|
-| Head of Product Development | Advance 52 · G+D | 2025 — Actualidad |
+| Head of Product Development | Advance 52 · G+D | 2025 — Present |
 | Head of Transformation & Operations | Allianz Technology | 2024 — 2025 |
 | Head of Engineering | Bumble | 2020 — 2024 |
-| CEO & Cofundador | CoKaiDo | 2019 — 2020 |
+| CEO & Co-founder | CoKaiDo | 2019 — 2020 |
 | Managing Director | Codurance (Barcelona) | 2016 — 2019 |
 | Senior Lead Engineer | PaddyPower | 2015 — 2016 |
 | Senior Lead Engineer | Stella&Dot | 2013 — 2015 |
 | Senior iOS Developer | Freelance | 2012 — 2013 |
 | Mobile Team Lead | HostelWorld | 2012 |
 
-**Formación:** Grado en Ingeniería de Software, Universitat Politècnica de Catalunya (1991 — 1996).
+**Education:** Engineering Degree in Software Engineering, Universitat Politècnica de Catalunya (1991 — 1996).
 
-**Idiomas:** Español y catalán (nativo), inglés (C2), francés (A2).
+**Languages:** Spanish and Catalan (native), English (C2), French (A2).
 
-## Sígueme
+## Follow me
 
 - [LinkedIn]({{ site.author.linkedin }})
 - [GitHub]({{ site.author.github }})
 - [guillem.cat]({{ site.author.website }})
-- [engineeringprotocolstack.com]({{ site.author.engineeringprotocolstack }}) — contenido gratuito sobre el framework del libro
+- [engineeringprotocolstack.com]({{ site.author.engineeringprotocolstack }}) — free content built on the book's framework

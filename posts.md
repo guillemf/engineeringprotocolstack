@@ -1,18 +1,18 @@
 ---
 title: Blog
-subtitle: Ideas del framework CPU · RAM · LAN · WAN, aplicadas al día a día
-permalink: /posts/
+subtitle: Ideas from the CPU · RAM · LAN · WAN framework, applied to everyday work
+permalink: /en/posts/
 layout: page
-lang: es
-alt_lang_url: /en/posts/
+lang: en
+alt_lang_url: /posts/
 ---
 
-{% assign es_posts = site.posts | where: "lang", "es" %}
+{% assign en_posts = site.posts | where: "lang", "en" %}
 <div class="posts-list">
-  {% for post in es_posts %}
+  {% for post in en_posts %}
   <a class="post-card" href="{{ post.url | relative_url }}">
     <p class="post__meta">
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
       {% if post.layer %}<span class="tag">{{ post.layer }}</span>{% endif %}
     </p>
     <h3>{{ post.title }}</h3>
@@ -21,6 +21,6 @@ alt_lang_url: /en/posts/
   {% endfor %}
 </div>
 
-{% if es_posts.size == 0 %}
-<p>Todavía no hay publicaciones. ¡Vuelve pronto!</p>
+{% if en_posts.size == 0 %}
+<p>No posts yet. Check back soon!</p>
 {% endif %}
