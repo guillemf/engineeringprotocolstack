@@ -2,9 +2,7 @@
 title: "Why Multitasking Makes You Slower (and What to Do Instead)"
 layer: CPU
 excerpt: "We can't really multitask: we just move our attention very quickly from one thing to another, and every switch has a cost."
-lang: en
-permalink: /en/posts/2026/07/14/multitasking-makes-you-slower/
-alt_lang_url: /posts/2026/07/14/multitarea-cpu/
+alt_lang_url: /es/posts/2026/07/14/multitarea-cpu/
 ---
 
 Every day we compete with too many things for our attention: messages,

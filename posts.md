@@ -1,10 +1,10 @@
 ---
 title: Blog
 subtitle: Ideas from the CPU · RAM · LAN · WAN framework, applied to everyday work
-permalink: /en/posts/
+permalink: /posts/
 layout: page
 lang: en
-alt_lang_url: /posts/
+alt_lang_url: /es/posts/
 ---
 
 {% assign en_posts = site.posts | where: "lang", "en" %}

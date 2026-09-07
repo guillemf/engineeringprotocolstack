@@ -2,9 +2,7 @@
 title: "From a Group of People to a Team: What Changes in the LAN Layer"
 layer: LAN
 excerpt: "Having several people work together isn't the same as having a team. The difference lies in roles, processes, and a shared identity."
-lang: en
-permalink: /en/posts/2026/08/11/from-group-to-team-lan/
-alt_lang_url: /posts/2026/08/11/de-grupo-a-equipo-lan/
+alt_lang_url: /es/posts/2026/08/11/de-grupo-a-equipo-lan/
 ---
 
 A group of people sharing a project isn't automatically a team. The

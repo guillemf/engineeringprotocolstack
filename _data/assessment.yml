@@ -1,0 +1,221 @@
+en:
+  eyebrow: "Free diagnostic · 5 minutes"
+  title: "Where does your engineering leadership stand today?"
+  intro: >-
+    This self-assessment mirrors the diagnostic method used throughout
+    <em>The Engineering Protocol Stack</em>: short, honest statements you
+    score from 1 to 5, grouped by the book's four layers. Answer instinctively
+    rather than aspirationally — the goal is an accurate snapshot, not a good
+    grade. Everything is scored right here in your browser: nothing is sent
+    anywhere, and no email is required to see your results.
+  scale_labels:
+    "1": "Strongly disagree"
+    "2": "Disagree"
+    "3": "Neutral"
+    "4": "Agree"
+    "5": "Strongly agree"
+  cta_button: "See my results"
+  retake_button: "Retake the assessment"
+  error_message: "A few statements are still unanswered — please score every statement to see your results."
+  overall_heading: "Your overall stack health"
+  layers_heading: "Layer by layer"
+  layers:
+    - id: cpu
+      tag: CPU
+      name: "Focus & Execution"
+      statements:
+        - "When I switch between tasks, I'm aware of the real cost and I actively protect blocks of focused work."
+        - "I have a clear way to decide what to do next, what to postpone, and what to drop — not everything feels equally urgent."
+        - "Notifications and interruptions don't quietly run my day; I have habits that protect my attention."
+      low:
+        label: "Fragile"
+        text: "Your day is likely being run by whatever shows up loudest — messages, interruptions, other people's priorities — rather than by a deliberate system. This is exactly what the book's Task Manager and Process Organization chapters address: the real cost of task-switching, how to prioritize when everything feels urgent, and how to build an organization system you actually trust."
+      mid:
+        label: "Developing"
+        text: "You have some structure, but it likely breaks down under pressure. Protecting a couple of focus blocks a day and adding a short weekly review would probably make the biggest difference right now."
+      high:
+        label: "Solid"
+        text: "Your CPU layer is a real strength: you protect focus and make deliberate choices about where your attention goes. That foundation is what makes the higher layers — your team, your organization — sustainable under pressure."
+      service_label: "1:1 Engineering Leader Program"
+      service_url: "/services/#leader-program"
+    - id: ram
+      tag: RAM
+      name: "Memory & Learning"
+      statements:
+        - "I don't rely on memory alone for things that matter; I capture them in a trusted external system I actually use."
+        - "When I learn something new, I deliberately connect it to what I already know instead of hoping it will just stick."
+        - "I review what I've captured often enough that important things don't quietly fall through the cracks."
+      low:
+        label: "Fragile"
+        text: "You're likely trying to hold too much in your head, which is expensive and unreliable — working memory was never built for long-term storage. The RAM, Your Memory chapter covers concrete techniques, including the method of loci, for using your memory for what it's actually good at: connecting ideas, not storing them."
+      mid:
+        label: "Developing"
+        text: "You have an external system, but it may not be consistent yet. A short, regular review habit — daily or weekly — would make it far more reliable."
+      high:
+        label: "Solid"
+        text: "You use your working memory for connecting ideas, not storing them, and you trust an external system for the rest — a strong foundation for learning and deciding well under pressure."
+      service_label: "Explore the book's RAM chapter"
+      service_url: "/book/#table-of-contents"
+    - id: lan
+      tag: LAN
+      name: "Team Health"
+      statements:
+        - "People on my team openly admit mistakes and ask for help without fear of looking weak."
+        - "We disagree about ideas openly in the room, instead of avoiding tension or taking it to side conversations."
+        - "Once we decide something, everyone supports it afterward — even those who argued for a different option."
+        - "Team members call out missed commitments and unclear standards directly, not only the manager."
+        - "The team cares more about shared outcomes than individual credit or protecting their own patch."
+      low:
+        label: "Fragile"
+        text: "One or more of the five classic team dysfunctions — trust, conflict, commitment, accountability, or results — is likely undermining execution more than any process change could fix. This is precisely what the book's Team Management chapter, and our LAN Audit service, are built to diagnose and address."
+      mid:
+        label: "Developing"
+        text: "Your team has real strengths, but at least one dysfunction is quietly limiting performance. A focused team health session — the format outlined in the book's Team Management chapter — usually surfaces exactly where to focus next."
+      high:
+        label: "Solid"
+        text: "Your team shows the hallmarks of high trust and shared accountability. The main risk now is complacency — keep running light health checks every quarter so this doesn't erode silently."
+      service_label: "LAN Audit — Team Health Assessment"
+      service_url: "/services/#lan-audit"
+    - id: wan
+      tag: WAN
+      name: "Stakeholders & Organization"
+      statements:
+        - "I keep an explicit, current map of who my key stakeholders are and what each of them actually expects."
+        - "When a cross-team dependency is at risk of slipping, we surface it early with options instead of hoping it resolves itself."
+        - "I manage upward with honest signals about capacity and risk, instead of absorbing all the pressure and passing it downstream."
+      low:
+        label: "Fragile"
+        text: "Stakeholder expectations and cross-team dependencies are probably surprising you more often than they should. The book's WAN chapters — stakeholder mapping, cross-team collaboration, and upward management — give you a concrete way to make all of this explicit before it breaks trust."
+      mid:
+        label: "Developing"
+        text: "You manage the obvious relationships well, but some expectations or dependencies are likely still implicit. Mapping them explicitly would remove a lot of avoidable friction."
+      high:
+        label: "Solid"
+        text: "You manage your organization's network deliberately: expectations are explicit, dependencies are visible, and you protect your team from unfiltered pressure from above."
+      service_label: "Team and Leadership Diagnosis"
+      service_url: "/services/#team-diagnosis"
+  overall:
+    low:
+      label: "Fragile Stack"
+      text: "Right now, foundational habits are missing at more than one layer — and a problem at one layer is very likely showing up as a symptom in another. This is a good moment for a structured, outside look rather than another internal fix."
+    mid:
+      label: "Developing Stack"
+      text: "You have real strengths to build on, with one or two layers holding the rest back. A focused intervention at your weakest layer usually unlocks the most improvement across the whole stack."
+    high:
+      label: "Solid Stack"
+      text: "Your foundations are strong across the board. At this level, the highest-leverage work is usually about scale: protecting what already works as your team, or your remit, grows."
+  final_cta:
+    text: "Whichever layer scored lowest is rarely the one causing the pain you feel day to day — it's usually the root cause underneath it. Let's talk about the fastest way to strengthen it."
+    button: "Book a free 30-minute intro call →"
+    url: "/contact/"
+
+es:
+  eyebrow: "Diagnóstico gratuito · 5 minutos"
+  title: "¿En qué punto está hoy tu liderazgo en ingeniería?"
+  intro: >-
+    Esta auto-evaluación reproduce el método de diagnóstico que recorre
+    <em>The Engineering Protocol Stack</em>: afirmaciones breves y honestas
+    que puntúas de 1 a 5, agrupadas en las cuatro capas del libro. Responde de
+    forma instintiva, no aspiracional — el objetivo es una foto precisa, no
+    una buena nota. Todo se calcula aquí mismo, en tu navegador: no se envía
+    nada a ningún sitio, y no necesitas dar tu email para ver el resultado.
+  scale_labels:
+    "1": "Muy en desacuerdo"
+    "2": "En desacuerdo"
+    "3": "Neutral"
+    "4": "De acuerdo"
+    "5": "Muy de acuerdo"
+  cta_button: "Ver mi resultado"
+  retake_button: "Repetir la evaluación"
+  error_message: "Todavía faltan afirmaciones sin puntuar — responde a todas para ver tu resultado."
+  overall_heading: "La salud general de tu stack"
+  layers_heading: "Capa por capa"
+  layers:
+    - id: cpu
+      tag: CPU
+      name: "Foco y ejecución"
+      statements:
+        - "Cuando cambio de tarea soy consciente del coste real que tiene, y protejo activamente bloques de trabajo enfocado."
+        - "Tengo una forma clara de decidir qué hacer a continuación, qué posponer y qué descartar — no todo me parece igual de urgente."
+        - "Las notificaciones e interrupciones no dirigen mi día en silencio; tengo hábitos que protegen mi atención."
+      low:
+        label: "Frágil"
+        text: "Es probable que tu día lo esté marcando lo que grita más fuerte —mensajes, interrupciones, prioridades de otros— en lugar de un sistema deliberado. Es exactamente lo que abordan los capítulos Task Manager y Organización de procesos del libro: el coste real de cambiar de tarea, cómo priorizar cuando todo parece urgente, y cómo construir un sistema de organización en el que de verdad confíes."
+      mid:
+        label: "En desarrollo"
+        text: "Tienes algo de estructura, pero probablemente se rompe bajo presión. Proteger un par de bloques de foco al día y añadir una revisión semanal corta sería, ahora mismo, lo que más diferencia marcaría."
+      high:
+        label: "Sólida"
+        text: "Tu capa CPU es una fortaleza real: proteges el foco y decides de forma deliberada dónde va tu atención. Esa base es lo que hace sostenibles las capas superiores —tu equipo, tu organización— bajo presión."
+      service_label: "1:1 Engineering Leader Program"
+      service_url: "/es/services/#leader-program"
+    - id: ram
+      tag: RAM
+      name: "Memoria y aprendizaje"
+      statements:
+        - "No dependo solo de la memoria para lo importante; lo capturo en un sistema externo de confianza que realmente uso."
+        - "Cuando aprendo algo nuevo, lo conecto deliberadamente con lo que ya sé, en lugar de esperar que se quede grabado por sí solo."
+        - "Reviso lo que he capturado con la frecuencia suficiente para que nada importante se me escape en silencio."
+      low:
+        label: "Frágil"
+        text: "Es probable que estés intentando retener demasiado en la cabeza, algo caro y poco fiable — la memoria de trabajo nunca estuvo pensada para almacenamiento a largo plazo. El capítulo RAM, tu memoria desarrolla técnicas concretas, incluido el método de loci, para usar tu memoria en lo que realmente hace bien: conectar ideas, no almacenarlas."
+      mid:
+        label: "En desarrollo"
+        text: "Tienes un sistema externo, pero puede que todavía no sea constante. Un hábito de revisión breve y regular —diario o semanal— lo haría mucho más fiable."
+      high:
+        label: "Sólida"
+        text: "Usas tu memoria de trabajo para conectar ideas, no para almacenarlas, y confías en un sistema externo para el resto — una base sólida para aprender y decidir bien bajo presión."
+      service_label: "Explora el capítulo de RAM del libro"
+      service_url: "/es/book/#índice"
+    - id: lan
+      tag: LAN
+      name: "Salud del equipo"
+      statements:
+        - "Las personas de mi equipo admiten sus errores abiertamente y piden ayuda sin miedo a parecer débiles."
+        - "Discutimos las ideas abiertamente en la sala, en lugar de evitar la tensión o llevarla a conversaciones paralelas."
+        - "Una vez decidimos algo, todo el mundo lo apoya después — incluso quienes defendían otra opción."
+        - "Las personas del equipo señalan compromisos incumplidos o estándares poco claros directamente, no solo el manager."
+        - "Al equipo le importan más los resultados compartidos que el crédito individual o proteger su propia parcela."
+      low:
+        label: "Frágil"
+        text: "Es probable que una o más de las cinco disfunciones clásicas de equipo —confianza, conflicto, compromiso, responsabilidad o resultados— esté lastrando la ejecución más de lo que cualquier cambio de proceso podría arreglar. Es exactamente lo que el capítulo Gestión de equipos del libro, y nuestro servicio LAN Audit, están diseñados para diagnosticar y abordar."
+      mid:
+        label: "En desarrollo"
+        text: "Tu equipo tiene fortalezas reales, pero al menos una disfunción está limitando el rendimiento en silencio. Una sesión de salud de equipo enfocada —el formato que describe el capítulo Gestión de equipos— suele revelar justo dónde enfocarse a continuación."
+      high:
+        label: "Sólida"
+        text: "Tu equipo muestra los rasgos de confianza alta y responsabilidad compartida. El riesgo principal ahora es la complacencia — sigue haciendo chequeos de salud ligeros cada trimestre para que esto no se erosione en silencio."
+      service_label: "LAN Audit — Evaluación de salud del equipo"
+      service_url: "/es/services/#lan-audit"
+    - id: wan
+      tag: WAN
+      name: "Stakeholders y organización"
+      statements:
+        - "Mantengo un mapa explícito y actualizado de quiénes son mis stakeholders clave y qué espera realmente cada uno."
+        - "Cuando una dependencia entre equipos corre riesgo de retrasarse, lo señalamos pronto con opciones, en lugar de esperar que se resuelva sola."
+        - "Gestiono hacia arriba con señales honestas sobre capacidad y riesgo, en lugar de absorber toda la presión y pasarla hacia abajo."
+      low:
+        label: "Frágil"
+        text: "Las expectativas de tus stakeholders y las dependencias entre equipos probablemente te sorprenden más a menudo de lo que deberían. Los capítulos de WAN del libro —mapa de stakeholders, colaboración entre equipos y gestión hacia arriba— te dan una forma concreta de hacer todo esto explícito antes de que rompa la confianza."
+      mid:
+        label: "En desarrollo"
+        text: "Gestionas bien las relaciones evidentes, pero algunas expectativas o dependencias probablemente siguen siendo implícitas. Hacerlas explícitas eliminaría mucha fricción evitable."
+      high:
+        label: "Sólida"
+        text: "Gestionas la red de tu organización de forma deliberada: las expectativas son explícitas, las dependencias son visibles, y proteges a tu equipo de la presión sin filtrar que viene de arriba."
+      service_label: "Diagnóstico de equipo y liderazgo"
+      service_url: "/es/services/#team-diagnosis"
+  overall:
+    low:
+      label: "Stack frágil"
+      text: "Ahora mismo faltan hábitos fundamentales en más de una capa — y es muy probable que un problema en una capa esté apareciendo como síntoma en otra. Es un buen momento para una mirada externa y estructurada, en lugar de otro parche interno."
+    mid:
+      label: "Stack en desarrollo"
+      text: "Tienes fortalezas reales sobre las que construir, con una o dos capas frenando al resto. Una intervención enfocada en tu capa más débil suele desbloquear la mayor mejora en todo el stack."
+    high:
+      label: "Stack sólido"
+      text: "Tus bases son sólidas en todos los frentes. A este nivel, el trabajo de mayor impacto suele ser de escala: proteger lo que ya funciona a medida que tu equipo, o tu ámbito de responsabilidad, crece."
+  final_cta:
+    text: "La capa con la puntuación más baja rara vez es la que causa el dolor que sientes en el día a día — normalmente es la causa raíz que hay debajo. Hablemos de la forma más rápida de fortalecerla."
+    button: "Reserva una llamada introductoria gratuita de 30 min →"
+    url: "/es/contact/"

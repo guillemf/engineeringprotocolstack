@@ -5,8 +5,8 @@ description: >-
   leadership onto the layers of a computer system — CPU, RAM, LAN and WAN —
   so the "soft" parts of the job finally get a clear, usable structure.
 
-default_lang: es
-languages: [es, en]
+default_lang: en
+languages: [en, es]
 
 author:
   name: "Guillem Fernandez"
@@ -42,17 +42,17 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      lang: "es"
+      lang: "en"
   - scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
-      lang: "es"
-  - scope:
-      path: "en"
-    values:
       lang: "en"
+  - scope:
+      path: "es"
+    values:
+      lang: "es"
 
 exclude:
   - Gemfile

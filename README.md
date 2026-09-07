@@ -1,148 +1,180 @@
-# The Engineering Protocol Stack — sitio del libro (ES/EN)
+# The Engineering Protocol Stack — book site (EN/ES)
 
-Sitio Jekyll bilingüe (español/inglés) para promocionar el libro
-*The Engineering Protocol Stack* de Guillem Fernandez: página de venta,
-blog, vídeos, servicios, contacto y biografía del autor. Diseño oscuro con
-acentos cian/ámbar, a juego con la portada del libro.
+Bilingual (English/Spanish) Jekyll site promoting *The Engineering Protocol
+Stack* by Guillem Fernandez: a sales page, blog, videos, services, a free
+self-assessment tool, contact, and the author's bio. Dark design with
+cyan/amber accents, matching the book cover.
 
-El español vive en la raíz (`/`, `/book/`, `/posts/`...) y el inglés bajo
-`/en/` (`/en/`, `/en/book/`, `/en/posts/`...). Cada página tiene un botón
-de idioma (ES/EN) en la cabecera que lleva a su traducción exacta.
+English lives at the root (`/`, `/book/`, `/posts/`...) and Spanish lives
+under `/es/` (`/es/`, `/es/book/`, `/es/posts/`...). Every page has a
+language button (EN/ES) in the header that links to its exact translation.
 
-## Requisitos
+## Requirements
 
 - Ruby 3.x
 - Bundler (`gem install bundler`)
 
-## Poner el sitio en marcha en local
+## Running the site locally
 
 ```bash
 bundle install
 bundle exec jekyll serve
 ```
 
-Abre `http://localhost:4000` para la versión en español y
-`http://localhost:4000/en/` para la versión en inglés. Con `jekyll serve`
-los cambios se recargan automáticamente.
+Open `http://localhost:4000` for the English version and
+`http://localhost:4000/es/` for the Spanish version. With `jekyll serve`
+changes reload automatically.
 
-## Cómo funciona el bilingüismo
+## How the bilingual setup works
 
-No usa ningún plugin de internacionalización (no todos están soportados en
-GitHub Pages) — es Jekyll estándar con una convención simple:
+No internationalization plugin is used (not all of them are supported on
+GitHub Pages) — this is standard Jekyll with a simple convention:
 
-- **`_data/i18n.yml`** — textos fijos de la interfaz (menú, pie de página,
-  botones) en `es:` y `en:`. Los layouts los leen con
-  `site.data.i18n[page.lang]`.
-- **`page.lang`** — cada página/post declara `lang: es` o `lang: en` en su
-  frontmatter (las páginas en español lo heredan por defecto desde
-  `_config.yml`, así que solo hace falta declararlo explícito en las
-  páginas en inglés).
-- **`page.alt_lang_url`** — cada página apunta a la URL exacta de su
-  traducción. El botón de idioma del menú usa este campo.
-- **Contenido**: cada página existe **dos veces**, una por idioma, como
-  archivos Markdown/HTML independientes (no hay traducción automática ni
-  en tiempo de build). Así el contenido de cada idioma es 100% editable
-  por separado.
-- **Posts**: viven todos juntos en `_posts/` (Jekyll solo reconoce esa
-  carpeta en la raíz), diferenciados por `lang:` en el frontmatter. Los
-  posts en inglés fuerzan su URL con `permalink: /en/posts/AAAA/MM/DD/slug/`
-  para caer bajo `/en/`.
+- **`_data/i18n.yml`** — fixed interface copy (nav, footer, buttons) under
+  `en:` and `es:`. Layouts read it with `site.data.i18n[page.lang]`.
+- **`page.lang`** — every page/post declares `lang: en` or `lang: es` in
+  its front matter (English pages inherit it by default from
+  `_config.yml`, so only Spanish pages need to declare it explicitly).
+- **`page.alt_lang_url`** — every page points to the exact URL of its
+  translation. The language button in the nav uses this field.
+- **Content**: every page exists **twice**, once per language, as
+  independent Markdown/HTML files (there is no automatic or build-time
+  translation). Each language's content is 100% independently editable.
+- **Posts**: all live together in `_posts/` (Jekyll only recognizes that
+  folder at the root), distinguished by `lang:` in the front matter.
+  Spanish posts force their URL with `permalink: /es/posts/YYYY/MM/DD/slug/`
+  to fall under `/es/`.
 
-## Estructura
+## Structure
 
 ```
-_config.yml         Configuración del sitio (idioma por defecto, autor, enlace de compra...)
-_data/i18n.yml       Textos de interfaz en es/en (menú, pie, botones)
-_data/videos.yml     Vídeos mostrados en /videos/ y /en/videos/, con claves es/en
-_layouts/            Plantillas: default, home, page, post
-_includes/           head (incluye hreflang), header (nav + selector de idioma), footer
-_posts/              Entradas del blog ES y EN mezcladas, diferenciadas por `lang:`
-assets/css/          Hoja de estilos (main.scss)
-assets/images/        Portada del libro y foto de autor
+_config.yml         Site configuration (default language, author, buy link...)
+_data/i18n.yml       Interface copy in en/es (nav, footer, buttons)
+_data/videos.yml     Videos shown on /videos/ and /es/videos/, with en/es keys
+_data/assessment.yml Self-assessment questions, scoring bands, and recommendations (en/es)
+_layouts/            Templates: default, home, page, post
+_includes/           head (hreflang), header (nav + language switch), footer
+_includes/components/assessment-quiz.html   Self-assessment quiz component
+_posts/              EN and ES blog entries mixed together, distinguished by `lang:`
+assets/css/          Stylesheets (main.scss, assessment.scss)
+assets/js/           Client-side scripts (assessment.js — no backend, no tracking)
+assets/images/        Book cover and author photo
 
-index.html           Portada ES (/)
-book.md, about.md, services.md, contact.md, posts.md, videos.md   Páginas ES
-404.md               Página 404 ES
+index.html           EN home (/)
+book.md, about.md, services.md, contact.md, posts.md, videos.md   EN pages
+assessment.md        EN self-assessment page (/assessment/)
+404.md               EN 404 page
 
-en/index.html        Portada EN (/en/)
-en/book.md, en/about.md, en/services.md, en/contact.md, en/posts.md, en/videos.md   Páginas EN
-en/404.md            Página 404 EN
+es/index.html        ES home (/es/)
+es/book.md, es/about.md, es/services.md, es/contact.md, es/posts.md, es/videos.md   ES pages
+es/assessment.md      ES self-assessment page (/es/assessment/)
+es/404.md            ES 404 page
 ```
 
-## Qué tienes que personalizar antes de publicar
+## What to customize before publishing
 
-1. **Formulario de contacto** (`contact.md` y `en/contact.md`): reemplaza
-   `YOUR_FORM_ID` por el ID de tu cuenta gratuita en
-   [formspree.io](https://formspree.io) (u otro proveedor de formularios
-   estáticos) en ambos archivos.
-2. **Vídeos** (`_data/videos.yml`): sustituye `TU_ID_DE_VIDEO_AQUI` /
-   `YOUR_YOUTUBE_ID_HERE` por los IDs reales de YouTube (la parte final de
-   la URL del vídeo) en las dos listas (`es:` y `en:`).
-3. **Enlace de compra**: está en `_config.yml`, clave `book.buy_url`
-   (ya apunta a tu Leanpub, es el mismo para ambos idiomas).
-4. **Dominio**: en `_config.yml`, `url:` — cámbialo si el sitio no vive en
-   `engineeringprotocolstack.com`.
-5. Revisa los posts de ejemplo en `_posts/` — están escritos con contenido
-   real del libro a modo de muestra, en ambos idiomas; edítalos, bórralos
-   o añade los tuyos.
+1. **Contact form** (`contact.md` and `es/contact.md`): both already point
+   to a Formspree endpoint (`formspree.io/f/xbgrngpz`) — replace it with
+   your own free Formspree (or other static form provider) form ID in
+   both files if you fork this site.
+2. **Videos** (`_data/videos.yml`): replace `YOUR_YOUTUBE_ID_HERE` /
+   `TU_ID_DE_VIDEO_AQUI` with real YouTube IDs (the last part of the
+   video URL) in both lists (`en:` and `es:`).
+3. **Buy link**: lives in `_config.yml`, key `book.buy_url` (already
+   points to Leanpub, same for both languages).
+4. **Domain**: in `_config.yml`, `url:` — change it if the site does not
+   live at `engineeringprotocolstack.com`.
+5. Review the sample posts in `_posts/` — they are written with real
+   content from the book as a sample, in both languages; edit them,
+   delete them, or add your own.
 
-## Publicar en GitHub Pages
+## The self-assessment tool
 
-1. Crea un repositorio y sube esta carpeta.
-2. En **Settings → Pages**, elige la rama `main` y la carpeta raíz.
-3. Si usas un dominio propio, añade un archivo `CNAME` con el dominio y
-   configura el DNS.
+`/assessment/` (and `/es/assessment/`) is a free, interactive diagnostic
+for potential clients. It asks a short set of statements grouped by the
+book's four layers — CPU, RAM, LAN, and WAN — scores each layer from 1 to
+5 entirely in the browser (no data is sent anywhere, no email required),
+and shows a tailored recommendation per layer that links back to the
+matching service on `/services/`.
 
-GitHub Pages soporta `jekyll-feed`, `jekyll-sitemap` y `jekyll-seo-tag`
-de forma nativa, así que no necesitas configuración adicional para esos
-plugins. El sitemap y el feed incluirán automáticamente las páginas de
-ambos idiomas.
+- **Content** lives in `_data/assessment.yml` (statements, scoring bands,
+  recommendations, and service links, in `en:`/`es:` keys) — edit the
+  copy there, not in the page files.
+- **Markup** is rendered by `_includes/components/assessment-quiz.html`,
+  included from `assessment.md` / `es/assessment.md`.
+- **Scoring logic** lives in `assets/js/assessment.js` — plain
+  JavaScript, no framework, no analytics.
+- **Styling** lives in `assets/css/assessment.scss`, loaded as a second
+  stylesheet after `main.css` so the original stylesheet is never
+  touched.
+- Each service card on `/services/` (and `/es/services/`) carries a
+  stable `id` (e.g. `#lan-audit`, `#leader-program`) so the assessment's
+  recommendations can deep-link to the exact service that matches a weak
+  layer.
 
-## Añadir una entrada al blog
+## Publishing to GitHub Pages
 
-**En español**, crea un archivo en `_posts/` con el nombre
-`AAAA-MM-DD-titulo-slug.md`:
+1. Create a repository and push this folder.
+2. Under **Settings → Pages**, choose the `main` branch and the root
+   folder.
+3. If you use a custom domain, add a `CNAME` file with the domain and
+   configure your DNS.
 
-```markdown
----
-title: "Título del post"
-layer: CPU   # CPU, RAM, LAN o WAN (opcional, se muestra como etiqueta)
-excerpt: "Resumen corto que aparece en el listado."
-alt_lang_url: /en/posts/AAAA/MM/DD/slug-en-ingles/   # opcional, si tiene traducción
----
+GitHub Pages natively supports `jekyll-feed`, `jekyll-sitemap`, and
+`jekyll-seo-tag`, so no extra configuration is needed for those plugins.
+The sitemap and feed will automatically include pages from both
+languages.
 
-Contenido del post en Markdown.
-```
+## Adding a blog post
 
-**En inglés**, crea otro archivo en `_posts/` (misma carpeta) forzando su
-URL bajo `/en/`:
+**In English**, create a file in `_posts/` named
+`YYYY-MM-DD-title-slug.md`:
 
 ```markdown
 ---
 title: "Post title"
-layer: CPU
+layer: CPU   # CPU, RAM, LAN, or WAN (optional, shown as a tag)
 excerpt: "Short summary shown in the listing."
-lang: en
-permalink: /en/posts/AAAA/MM/DD/slug-in-english/
-alt_lang_url: /posts/AAAA/MM/DD/slug-en-espanol/
+alt_lang_url: /es/posts/YYYY/MM/DD/slug-en-espanol/   # optional, if translated
 ---
 
 Post content in Markdown.
 ```
 
-Un post sin traducción es perfectamente válido: simplemente no lleves
-`alt_lang_url`, y el botón de idioma de esa página caerá de vuelta a la
-home del otro idioma.
+**In Spanish**, create another file in `_posts/` (same folder), forcing
+its URL under `/es/`:
 
-## Qué ampliaría primero
+```markdown
+---
+title: "Título del post"
+layer: CPU
+excerpt: "Resumen corto que aparece en el listado."
+lang: es
+permalink: /es/posts/YYYY/MM/DD/slug-en-espanol/
+alt_lang_url: /posts/YYYY/MM/DD/slug-in-english/
+---
 
-- **Newsletter**: capturar emails en la home o al final de cada post
-  (Buttondown/ConvertKit tienen buenas integraciones estáticas), con
-  formularios separados por idioma.
-- **Extracto descargable**: un PDF de muestra (ya tienes el preview) enlazado
-  desde `/book/` y `/en/book/` a cambio del email, para generar leads antes
-  de la compra.
-- **Página de testimonios/reseñas** una vez el libro tenga lectores, también
-  en ambos idiomas.
-- **Analítica** (Plausible o Fathom, respetuosas con la privacidad) para ver
-  qué páginas e idiomas convierten mejor hacia el botón de compra.
+Contenido del post en Markdown.
+```
+
+A post without a translation is perfectly valid: just omit
+`alt_lang_url`, and that page's language button will fall back to the
+other language's home page.
+
+## What I'd build next
+
+- **Newsletter**: capture emails on the home page or at the end of each
+  post (Buttondown/ConvertKit have good static integrations), with
+  separate forms per language.
+- **Downloadable excerpt**: a sample PDF (you already have the preview)
+  linked from `/book/` and `/es/book/` in exchange for an email, to
+  generate leads before the purchase.
+- **Lead capture on the assessment**: today the self-assessment is fully
+  open (no email required) to keep friction low. Once there is enough
+  traffic, consider an optional "email me my results" button on top of
+  the instant on-page result.
+- **Testimonials/reviews page** once the book has readers, also in both
+  languages.
+- **Analytics** (Plausible or Fathom, privacy-friendly) to see which
+  pages, languages, and assessment outcomes convert best toward the buy
+  button and the contact form.

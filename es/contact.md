@@ -1,9 +1,9 @@
 ---
 title: Contacto
 subtitle: ¿Preguntas sobre el libro, una charla o los servicios? Escríbeme.
-permalink: /contact/
+permalink: /es/contact/
 lang: es
-alt_lang_url: /en/contact/
+alt_lang_url: /contact/
 ---
 
 <div class="contact-grid">
@@ -44,7 +44,7 @@ alt_lang_url: /en/contact/
       </ul>
       <p style="margin-top:1.4rem;">
         Para consultoría y coaching para empresas o profesionales, echa un
-        vistazo antes a la página de <a href="{{ '/services/' | relative_url }}">servicios</a>.
+        vistazo antes a la página de <a href="{{ '/es/services/' | relative_url }}">servicios</a>.
       </p>
     </div>
   </div>

@@ -1,9 +1,9 @@
 ---
 title: El libro
 subtitle: "The Engineering Protocol Stack — A Layered Model for Engineering Leadership"
-permalink: /book/
+permalink: /es/book/
 lang: es
-alt_lang_url: /en/book/
+alt_lang_url: /book/
 ---
 
 <p style="text-align:center; margin: -1rem 0 2.4rem;">
@@ -72,7 +72,7 @@ funciona.
 Escrito por **Guillem Fernandez**, Engineering Director y People Engineer con
 más de veinticinco años de carrera pasando por casi todos los asientos de la
 mesa: de desarrollador a Head of Engineering, fundador de dos empresas y
-profesor en la Universitat de Barcelona. [Leer la biografía completa →]({{ '/about/' | relative_url }})
+profesor en la Universitat de Barcelona. [Leer la biografía completa →]({{ '/es/about/' | relative_url }})
 
 <p style="text-align:center; margin-top:2.6rem;">
   <a class="btn btn-primary" href="{{ site.book.buy_url }}" target="_blank" rel="noopener">Comprar The Engineering Protocol Stack en Leanpub →</a>

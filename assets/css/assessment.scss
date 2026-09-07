@@ -1,0 +1,271 @@
+---
+---
+/* ==========================================================================
+   The Engineering Protocol Stack — self-assessment tool
+   Loaded as a second stylesheet, after main.css. Reuses the design tokens
+   defined in main.scss's :root (colors, radius, fonts) without editing that
+   file, and adds a small set of semantic "band" colors used only here to
+   communicate diagnostic severity (low / mid / high).
+   ========================================================================== */
+
+:root {
+  --band-low: #e0708a;
+  --band-low-soft: rgba(224, 112, 138, 0.14);
+  --band-mid: var(--amber);
+  --band-mid-soft: var(--amber-soft);
+  --band-high: var(--teal);
+  --band-high-soft: rgba(53, 216, 196, 0.14);
+}
+
+.assessment-intro {
+  max-width: var(--max-narrow);
+  margin: 0 auto 2.6rem;
+}
+
+.assessment-intro .eyebrow {
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: .78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.assessment {
+  max-width: var(--max-narrow);
+  margin: 0 auto;
+}
+
+.assessment-layer {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 24px 24px 6px;
+  margin: 0 0 22px;
+}
+
+.assessment-layer__legend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin-bottom: 6px;
+  font-family: var(--font-display);
+}
+
+.assessment-layer__name {
+  font-weight: 800;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+.assessment-statement {
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+}
+
+.assessment-layer fieldset .assessment-statement:first-of-type,
+.assessment-statement:first-child {
+  border-top: none;
+}
+
+.assessment-statement__text {
+  color: var(--text);
+  margin: 0 0 12px;
+  font-size: .96rem;
+}
+
+.assessment-scale {
+  display: flex;
+  gap: 8px;
+}
+
+.assessment-scale__option {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: .9rem;
+  cursor: pointer;
+  transition: border-color .15s ease, color .15s ease, background .15s ease;
+}
+
+.assessment-scale__option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.assessment-scale__option:hover {
+  border-color: var(--cyan);
+  color: var(--text);
+}
+
+.assessment-scale__option:has(input:checked) {
+  background: linear-gradient(120deg, var(--cyan), var(--teal));
+  border-color: transparent;
+  color: #06131a;
+}
+
+.assessment-scale-legend {
+  display: flex;
+  justify-content: space-between;
+  font-size: .78rem;
+  color: var(--text-faint);
+  margin: -4px 0 1.6rem;
+}
+
+.assessment-error {
+  color: var(--band-low);
+  font-size: .9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.assessment-retake {
+  margin-top: 1.6rem;
+}
+
+/* ---------- Results ---------- */
+.assessment-results__heading {
+  margin-top: 2.4rem;
+}
+
+.assessment-overall {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px 24px;
+  text-align: center;
+  background: var(--surface);
+}
+
+.assessment-overall__score {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: .85rem;
+  letter-spacing: .06em;
+  color: var(--text-faint);
+  margin-bottom: .6rem;
+}
+
+.assessment-overall h3 {
+  margin: 0 0 .5rem;
+}
+
+.assessment-overall p {
+  margin: 0 auto;
+  max-width: 52ch;
+}
+
+.assessment-layers-results {
+  display: grid;
+  gap: 16px;
+  margin-top: 1.4rem;
+}
+
+.assessment-layer-result {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  background: var(--surface);
+}
+
+.assessment-layer-result__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.assessment-layer-result__name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--text);
+}
+
+.assessment-layer-result__score {
+  margin-left: auto;
+  font-size: .82rem;
+  color: var(--text-faint);
+  font-weight: 600;
+}
+
+.assessment-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.assessment-bar__fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--band-mid);
+}
+
+.assessment-layer-result p {
+  margin: 0 0 10px;
+  font-size: .92rem;
+}
+
+.assessment-layer-result__link {
+  font-weight: 600;
+}
+
+.assessment-band--low .assessment-bar__fill { background: var(--band-low); }
+.assessment-band--mid .assessment-bar__fill { background: var(--band-mid); }
+.assessment-band--high .assessment-bar__fill { background: var(--band-high); }
+
+.assessment-band--low.assessment-overall,
+.assessment-band--low.assessment-layer-result { border-color: rgba(224,112,138,0.4); }
+.assessment-band--mid.assessment-overall,
+.assessment-band--mid.assessment-layer-result { border-color: rgba(224,168,92,0.4); }
+.assessment-band--high.assessment-overall,
+.assessment-band--high.assessment-layer-result { border-color: rgba(53,216,196,0.4); }
+
+.assessment-final-cta {
+  text-align: center;
+  margin-top: 1.8rem;
+}
+
+.assessment-final-cta p {
+  max-width: 56ch;
+  margin: 0 auto 1.2rem;
+}
+
+/* ---------- Home teaser ---------- */
+.assessment-teaser {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 32px;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+
+.assessment-teaser__stats {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+  .assessment-teaser { grid-template-columns: 1fr; text-align: center; }
+  .assessment-teaser__stats { flex-wrap: wrap; }
+}
+
+@media (max-width: 600px) {
+  .assessment-scale__option { height: 44px; }
+  .assessment-layer-result__score { margin-left: 0; width: 100%; }
+}

@@ -2,7 +2,9 @@
 title: "Por qué la multitarea te hace más lento (y qué hacer en su lugar)"
 layer: CPU
 excerpt: "No podemos multitarea de verdad: solo movemos la atención muy rápido de una cosa a otra, y cada cambio tiene un coste."
-alt_lang_url: /en/posts/2026/07/14/multitasking-makes-you-slower/
+lang: es
+permalink: /es/posts/2026/07/14/multitarea-cpu/
+alt_lang_url: /posts/2026/07/14/multitasking-makes-you-slower/
 ---
 
 Cada día competimos con demasiadas cosas por nuestra atención: mensajes,

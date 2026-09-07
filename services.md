@@ -1,9 +1,9 @@
 ---
 title: Services
 subtitle: Coaching, mentoring, and training built on the book's framework
-permalink: /en/services/
+permalink: /services/
 lang: en
-alt_lang_url: /services/
+alt_lang_url: /es/services/
 ---
 
 I help technology companies, IT departments, engineering leaders, and
@@ -17,6 +17,11 @@ coach for your personal growth as an engineer, lead, or manager. In both
 cases, the goal is the same: reduce friction, strengthen leadership, and
 build better ways of working.
 
+Not sure yet where to start? Take the free
+[self-assessment]({{ '/assessment/' | relative_url }}) first — it scores
+your CPU, RAM, LAN, and WAN layers in about five minutes and points you to
+the service below that matches your weakest layer.
+
 ## For companies
 
 I work with technology companies and internal IT departments that want
@@ -25,7 +30,7 @@ useful when delivery is slowing down, communication is breaking, managers are
 struggling, or team culture is suffering during growth or change.
 
 <div class="services-grid">
-  <div class="service-card">
+  <div class="service-card" id="team-diagnosis">
     <h3>Team and leadership diagnosis</h3>
     <p>A focused assessment to identify the main sources of friction in teams, leadership structure, communication, and execution model.</p>
     <ul>
@@ -34,7 +39,7 @@ struggling, or team culture is suffering during growth or change.
       <li>A prioritized improvement roadmap</li>
     </ul>
   </div>
-  <div class="service-card">
+  <div class="service-card" id="leadership-coaching">
     <h3>Engineering leadership coaching</h3>
     <p>Coaching and mentoring for engineering managers, tech leads, heads of engineering, and emerging leaders.</p>
     <ul>
@@ -43,7 +48,7 @@ struggling, or team culture is suffering during growth or change.
       <li>Feedback, alignment, and leadership habits</li>
     </ul>
   </div>
-  <div class="service-card">
+  <div class="service-card" id="team-workshops">
     <h3>Team workshops</h3>
     <p>Interactive workshops focused on the soft skills that most affect delivery and collaboration.</p>
     <ul>
@@ -52,7 +57,7 @@ struggling, or team culture is suffering during growth or change.
       <li>Conflict management and cross-team collaboration</li>
     </ul>
   </div>
-  <div class="service-card">
+  <div class="service-card" id="ways-of-working">
     <h3>Ways of working & process design</h3>
     <p>Hands-on support to define or improve team processes so they're clear and adapted to your real context.</p>
     <ul>
@@ -61,7 +66,7 @@ struggling, or team culture is suffering during growth or change.
       <li>Better meeting structures and communication flows</li>
     </ul>
   </div>
-  <div class="service-card">
+  <div class="service-card" id="training-programs">
     <h3>Training programs</h3>
     <p>Tailored training for IT departments and tech organizations that want to grow leadership and collaboration capabilities in a structured way.</p>
     <ul>
@@ -70,7 +75,7 @@ struggling, or team culture is suffering during growth or change.
       <li>Follow-up mentoring and shadowing</li>
     </ul>
   </div>
-  <div class="service-card">
+  <div class="service-card" id="lan-audit">
     <h3>LAN Audit — Team Health Assessment</h3>
     <p>2–4 weeks: interviews with leaders and team members, process review, report with recommendations.</p>
     <ul>
@@ -88,7 +93,7 @@ excellent on the technical side and want to become stronger in
 communication, influence, and day-to-day effectiveness.
 
 <div class="services-grid">
-  <div class="service-card">
+  <div class="service-card" id="career-coaching">
     <h3>Career and leadership coaching</h3>
     <p>For engineers moving into leadership, new managers, or experienced leaders who want an external sounding board.</p>
     <ul>
@@ -97,7 +102,7 @@ communication, influence, and day-to-day effectiveness.
       <li>Giving feedback and handling conflict</li>
     </ul>
   </div>
-  <div class="service-card">
+  <div class="service-card" id="leader-program">
     <h3>1:1 Engineering Leader Program</h3>
     <p><strong>Format:</strong> 6 sessions of 60 minutes over 8–10 weeks.</p>
     <ul>
@@ -114,4 +119,4 @@ Whether you need support for an engineering organization or for your own
 professional growth, I can help you identify the right next step. We can
 start with a free 30-minute intro call.
 
-<p><a class="btn btn-primary" href="{{ '/en/contact/' | relative_url }}">Get in touch to book a call →</a></p>
+<p><a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Get in touch to book a call →</a></p>

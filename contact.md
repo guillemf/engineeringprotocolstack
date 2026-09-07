@@ -1,9 +1,9 @@
 ---
 title: Contact
 subtitle: Questions about the book, a talk, or the services? Get in touch.
-permalink: /en/contact/
+permalink: /contact/
 lang: en
-alt_lang_url: /contact/
+alt_lang_url: /es/contact/
 ---
 
 <div class="contact-grid">
@@ -44,7 +44,7 @@ alt_lang_url: /contact/
       </ul>
       <p style="margin-top:1.4rem;">
         For consulting and coaching for companies or individuals, check out
-        the <a href="{{ '/en/services/' | relative_url }}">services</a> page first.
+        the <a href="{{ '/services/' | relative_url }}">services</a> page first.
       </p>
     </div>
   </div>

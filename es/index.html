@@ -1,8 +1,9 @@
 ---
 layout: home
 title: Inicio
+permalink: /es/
 lang: es
-alt_lang_url: /en/
+alt_lang_url: /
 ---
 <section class="hero">
   <div class="wrap hero__inner">
@@ -16,7 +17,7 @@ alt_lang_url: /en/
       </p>
       <div class="hero__actions">
         <a class="btn btn-primary" href="{{ site.book.buy_url }}" target="_blank" rel="noopener">Comprar en Leanpub →</a>
-        <a class="btn btn-outline" href="{{ '/book/' | relative_url }}">Ver de qué trata</a>
+        <a class="btn btn-outline" href="{{ '/es/book/' | relative_url }}">Ver de qué trata</a>
       </div>
       <p class="hero__meta">Escrito por Guillem Fernandez · Engineering Director &amp; People Engineer</p>
     </div>
@@ -66,6 +67,22 @@ alt_lang_url: /en/
   </div>
 </section>
 
+<section class="assessment-cta">
+  <div class="wrap wrap--narrow">
+    <div class="assessment-teaser">
+      <div>
+        <span class="eyebrow" style="color:var(--cyan);">Diagnóstico gratuito · 5 minutos</span>
+        <h3 style="margin:.5rem 0 .8rem; font-size:1.4rem;">¿No sabes qué capa está frenando a tu equipo?</h3>
+        <p style="margin-bottom:1.2rem;">Haz la auto-evaluación gratuita y obtén una lectura instantánea, capa por capa, de tu CPU, RAM, LAN y WAN — calculada en tu navegador, sin necesidad de dar tu email.</p>
+        <a class="btn btn-primary" href="{{ '/es/assessment/' | relative_url }}">Hacer la auto-evaluación →</a>
+      </div>
+      <div class="assessment-teaser__stats">
+        <span class="tag">CPU</span><span class="tag">RAM</span><span class="tag">LAN</span><span class="tag">WAN</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% assign es_posts = site.posts | where: "lang", "es" %}
 {% assign recent_posts = es_posts | slice: 0, 3 %}
 {% if recent_posts.size > 0 %}
@@ -88,7 +105,7 @@ alt_lang_url: /en/
       {% endfor %}
     </div>
     <p style="text-align:center; margin-top:1.6rem;">
-      <a href="{{ '/posts/' | relative_url }}">Ver todas las publicaciones →</a>
+      <a href="{{ '/es/posts/' | relative_url }}">Ver todas las publicaciones →</a>
     </p>
   </div>
 </section>
@@ -107,7 +124,7 @@ alt_lang_url: /en/
           empresas, ayudado a crear dos más desde cero, y hoy dirijo el desarrollo
           de producto en Advance 52 (G+D). También enseño en la Universitat de Barcelona.
         </p>
-        <a href="{{ '/about/' | relative_url }}">Leer la biografía completa →</a>
+        <a href="{{ '/es/about/' | relative_url }}">Leer la biografía completa →</a>
       </div>
     </div>
   </div>

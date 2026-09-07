@@ -2,7 +2,9 @@
 title: "Tu memoria de trabajo es RAM, no un disco duro"
 layer: RAM
 excerpt: "Somos muy buenos conectando ideas y generando cosas nuevas, pero bastante malos guardando datos sueltos. Usar la memoria para lo que sirve cambia cómo trabajas."
-alt_lang_url: /en/posts/2026/07/28/working-memory-is-ram/
+lang: es
+permalink: /es/posts/2026/07/28/memoria-de-trabajo-ram/
+alt_lang_url: /posts/2026/07/28/working-memory-is-ram/
 ---
 
 También contamos con algo parecido a la "RAM": nuestra memoria a corto plazo

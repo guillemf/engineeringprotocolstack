@@ -2,7 +2,9 @@
 title: "De grupo de personas a equipo: qué cambia en la capa LAN"
 layer: LAN
 excerpt: "Tener a varias personas trabajando juntas no es lo mismo que tener un equipo. La diferencia está en roles, procesos y una identidad compartida."
-alt_lang_url: /en/posts/2026/08/11/from-group-to-team-lan/
+lang: es
+permalink: /es/posts/2026/08/11/de-grupo-a-equipo-lan/
+alt_lang_url: /posts/2026/08/11/from-group-to-team-lan/
 ---
 
 Un grupo de personas que comparte proyecto no es automáticamente un equipo.

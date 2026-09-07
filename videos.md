@@ -1,10 +1,10 @@
 ---
 title: Videos
 subtitle: Talks, explanations, and video excerpts from the book's framework
-permalink: /en/videos/
+permalink: /videos/
 layout: page
 lang: en
-alt_lang_url: /videos/
+alt_lang_url: /es/videos/
 ---
 
 <div class="video-grid">

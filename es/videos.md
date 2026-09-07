@@ -1,10 +1,10 @@
 ---
 title: Vídeos
 subtitle: Charlas, explicaciones y extractos en vídeo del framework del libro
-permalink: /videos/
+permalink: /es/videos/
 layout: page
 lang: es
-alt_lang_url: /en/videos/
+alt_lang_url: /videos/
 ---
 
 <div class="video-grid">

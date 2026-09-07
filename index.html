@@ -1,9 +1,9 @@
 ---
 layout: home
 title: Home
-permalink: /en/
+permalink: /
 lang: en
-alt_lang_url: /
+alt_lang_url: /es/
 ---
 <section class="hero">
   <div class="wrap hero__inner">
@@ -17,7 +17,7 @@ alt_lang_url: /
       </p>
       <div class="hero__actions">
         <a class="btn btn-primary" href="{{ site.book.buy_url }}" target="_blank" rel="noopener">Buy on Leanpub →</a>
-        <a class="btn btn-outline" href="{{ '/en/book/' | relative_url }}">See what it's about</a>
+        <a class="btn btn-outline" href="{{ '/book/' | relative_url }}">See what it's about</a>
       </div>
       <p class="hero__meta">Written by Guillem Fernandez · Engineering Director &amp; People Engineer</p>
     </div>
@@ -67,6 +67,22 @@ alt_lang_url: /
   </div>
 </section>
 
+<section class="assessment-cta">
+  <div class="wrap wrap--narrow">
+    <div class="assessment-teaser">
+      <div>
+        <span class="eyebrow" style="color:var(--cyan);">Free diagnostic · 5 minutes</span>
+        <h3 style="margin:.5rem 0 .8rem; font-size:1.4rem;">Not sure which layer is holding your team back?</h3>
+        <p style="margin-bottom:1.2rem;">Take the free self-assessment and get an instant, layer-by-layer read on your CPU, RAM, LAN, and WAN — scored right in your browser, no email required.</p>
+        <a class="btn btn-primary" href="{{ '/assessment/' | relative_url }}">Take the self-assessment →</a>
+      </div>
+      <div class="assessment-teaser__stats">
+        <span class="tag">CPU</span><span class="tag">RAM</span><span class="tag">LAN</span><span class="tag">WAN</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% assign en_posts = site.posts | where: "lang", "en" %}
 {% assign recent_posts = en_posts | slice: 0, 3 %}
 {% if recent_posts.size > 0 %}
@@ -89,7 +105,7 @@ alt_lang_url: /
       {% endfor %}
     </div>
     <p style="text-align:center; margin-top:1.6rem;">
-      <a href="{{ '/en/posts/' | relative_url }}">See all posts →</a>
+      <a href="{{ '/posts/' | relative_url }}">See all posts →</a>
     </p>
   </div>
 </section>
@@ -109,7 +125,7 @@ alt_lang_url: /
           scratch, and currently lead product development at Advance 52
           (G+D). I also teach at the University of Barcelona.
         </p>
-        <a href="{{ '/en/about/' | relative_url }}">Read the full bio →</a>
+        <a href="{{ '/about/' | relative_url }}">Read the full bio →</a>
       </div>
     </div>
   </div>

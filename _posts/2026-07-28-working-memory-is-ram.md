@@ -2,9 +2,7 @@
 title: "Your Working Memory Is RAM, Not a Hard Drive"
 layer: RAM
 excerpt: "We're great at connecting ideas and generating new ones, but pretty bad at storing loose data. Using memory for what it's for changes how you work."
-lang: en
-permalink: /en/posts/2026/07/28/working-memory-is-ram/
-alt_lang_url: /posts/2026/07/28/memoria-de-trabajo-ram/
+alt_lang_url: /es/posts/2026/07/28/memoria-de-trabajo-ram/
 ---
 
 We also have something similar to "RAM": our short-term or working memory.

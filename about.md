@@ -1,9 +1,9 @@
 ---
 title: About the Author
 subtitle: Guillem Fernandez — Engineering Director & People Engineer
-permalink: /en/about/
+permalink: /about/
 lang: en
-alt_lang_url: /about/
+alt_lang_url: /es/about/
 ---
 
 <p>

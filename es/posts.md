@@ -1,10 +1,10 @@
 ---
 title: Blog
 subtitle: Ideas del framework CPU · RAM · LAN · WAN, aplicadas al día a día
-permalink: /posts/
+permalink: /es/posts/
 layout: page
 lang: es
-alt_lang_url: /en/posts/
+alt_lang_url: /posts/
 ---
 
 {% assign es_posts = site.posts | where: "lang", "es" %}

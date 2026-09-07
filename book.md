@@ -1,9 +1,9 @@
 ---
 title: The Book
 subtitle: "The Engineering Protocol Stack — A Layered Model for Engineering Leadership"
-permalink: /en/book/
+permalink: /book/
 lang: en
-alt_lang_url: /book/
+alt_lang_url: /es/book/
 ---
 
 <p style="text-align:center; margin: -1rem 0 2.4rem;">
@@ -70,7 +70,7 @@ other, and why fixing a problem at the wrong layer rarely works.
 Written by **Guillem Fernandez**, Engineering Director and People Engineer
 with more than twenty-five years of experience across nearly every seat at
 the table: from developer to Head of Engineering, founder of two companies,
-and lecturer at the University of Barcelona. [Read the full bio →]({{ '/en/about/' | relative_url }})
+and lecturer at the University of Barcelona. [Read the full bio →]({{ '/about/' | relative_url }})
 
 <p style="text-align:center; margin-top:2.6rem;">
   <a class="btn btn-primary" href="{{ site.book.buy_url }}" target="_blank" rel="noopener">Buy The Engineering Protocol Stack on Leanpub →</a>
