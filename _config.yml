@@ -21,6 +21,13 @@ book:
   buy_url: "https://leanpub.com/engineeringprotocolstack"
   cover_image: /assets/images/book-cover.jpg
 
+# Base URL of the questions_svc microservice (see /questions_svc) that
+# powers the dynamic self-assessment quiz on /assessment/. Point this at
+# wherever that service is actually reachable — a local instance during
+# development, or its real deployed URL in production.
+assessment_service:
+  base_url: "http://16.171.32.190:80"
+
 url: "https://www.engineeringprotocolstack.com"
 baseurl: ""
 
@@ -60,3 +67,4 @@ exclude:
   - README.md
   - vendor
   - node_modules
+  - questions_svc

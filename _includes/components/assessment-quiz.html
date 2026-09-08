@@ -1,35 +1,16 @@
 {% assign lang = page.lang | default: site.default_lang %}
 {% assign a = site.data.assessment[lang] %}
 
-<div class="assessment">
-  <form id="assessment-form" class="assessment-form" novalidate>
-    {% for layer in a.layers %}
-    <fieldset class="assessment-layer">
-      <legend class="assessment-layer__legend">
-        <span class="tag">{{ layer.tag }}</span>
-        <span class="assessment-layer__name">{{ layer.name }}</span>
-      </legend>
+<div class="assessment" id="assessment-root">
+  <p id="assessment-loading" class="assessment-status">{{ a.loading_message }}</p>
 
-      {% for statement in layer.statements %}
-      <div class="assessment-statement">
-        <p class="assessment-statement__text">{{ statement }}</p>
-        <div class="assessment-scale" role="radiogroup">
-          {% for i in (1..5) %}
-          <label class="assessment-scale__option">
-            <input type="radio" name="q_{{ layer.id }}_{{ forloop.parentloop.index0 }}" value="{{ i }}" required>
-            <span>{{ i }}</span>
-          </label>
-          {% endfor %}
-        </div>
-      </div>
-      {% endfor %}
-    </fieldset>
-    {% endfor %}
+  <div id="assessment-network-error" class="assessment-status assessment-status--error" hidden>
+    <p>{{ a.network_error_message }}</p>
+    <button type="button" id="assessment-retry" class="btn btn-outline">{{ a.retry_button }}</button>
+  </div>
 
-    <div class="assessment-scale-legend">
-      <span>1 · {{ a.scale_labels["1"] }}</span>
-      <span>5 · {{ a.scale_labels["5"] }}</span>
-    </div>
+  <form id="assessment-form" class="assessment-form" novalidate hidden>
+    <div id="assessment-questions"></div>
 
     <p id="assessment-error" class="assessment-error" hidden>{{ a.error_message }}</p>
 
@@ -43,15 +24,16 @@
 
 <script id="assessment-data" type="application/json">
 {
+  "lang": {{ lang | jsonify }},
   "overallHeading": {{ a.overall_heading | jsonify }},
   "layersHeading": {{ a.layers_heading | jsonify }},
+  "errorMessage": {{ a.error_message | jsonify }},
   "layers": [
     {% for layer in a.layers %}
     {
       "id": {{ layer.id | jsonify }},
       "tag": {{ layer.tag | jsonify }},
       "name": {{ layer.name | jsonify }},
-      "count": {{ layer.statements.size }},
       "low": {{ layer.low | jsonify }},
       "mid": {{ layer.mid | jsonify }},
       "high": {{ layer.high | jsonify }},
@@ -64,5 +46,8 @@
   "final_cta": {{ a.final_cta | jsonify }}
 }
 </script>
-<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
+<script>
+  window.SITE_BASEURL = {{ site.baseurl | jsonify }};
+  window.EPS_ASSESSMENT_SERVICE_BASE_URL = {{ site.assessment_service.base_url | jsonify }};
+</script>
 <script src="{{ '/assets/js/assessment.js' | relative_url }}" defer></script>

@@ -1,6 +1,6 @@
 ---
 title: Autoevaluación
-subtitle: Un diagnóstico gratuito de 5 minutos de tu stack de liderazgo en ingeniería
+subtitle: Una comprobación de conocimiento gratuita de 2 minutos sobre tu stack de liderazgo en ingeniería
 permalink: /es/assessment/
 lang: es
 alt_lang_url: /assessment/

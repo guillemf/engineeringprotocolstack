@@ -1,6 +1,6 @@
 ---
 title: Self-Assessment
-subtitle: A free, 5-minute diagnostic of your engineering leadership stack
+subtitle: A free, 2-minute knowledge check on your engineering leadership stack
 permalink: /assessment/
 lang: en
 alt_lang_url: /es/assessment/
