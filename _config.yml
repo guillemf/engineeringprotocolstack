@@ -21,12 +21,19 @@ book:
   buy_url: "https://leanpub.com/engineeringprotocolstack"
   cover_image: /assets/images/book-cover.jpg
 
-# Base URL of the questions_svc microservice (see /questions_svc) that
-# powers the dynamic self-assessment quiz on /assessment/. Point this at
-# wherever that service is actually reachable — a local instance during
-# development, or its real deployed URL in production.
+# Base URL of the questions_svc microservice that powers the dynamic
+# self-assessment quiz on /assessment/. Must be HTTPS in production — the
+# site itself is served over HTTPS, and browsers block an HTTPS page from
+# fetching plain-http resources ("mixed content"), which is why a bare IP
+# like http://16.171.32.190 does not work here even with CORS enabled.
+# See deploy/questions_svc/README.md for how api.engineeringprotocolstack.com
+# is set up (Caddy reverse proxy with automatic Let's Encrypt TLS) — update
+# this value once that DNS record + Caddy are live.
+#
+# For local development (`jekyll serve` + `cargo run` on the same
+# machine), temporarily point this back at "http://localhost:8080".
 assessment_service:
-  base_url: "http://16.171.32.190:80"
+  base_url: "https://api.engineeringprotocolstack.com"
 
 url: "https://www.engineeringprotocolstack.com"
 baseurl: ""
@@ -68,3 +75,4 @@ exclude:
   - vendor
   - node_modules
   - questions_svc
+  - deploy

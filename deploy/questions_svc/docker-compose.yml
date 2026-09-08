@@ -1,0 +1,47 @@
+# Runs questions_svc behind Caddy so it's reachable over HTTPS at
+# https://api.engineeringprotocolstack.com — required because the Jekyll
+# site is served over HTTPS and browsers block HTTPS pages from fetching
+# plain-HTTP resources ("mixed content").
+#
+# Usage:
+#   1. Place this file (and Caddyfile) next to your questions_svc project,
+#      so the relative path below resolves — or edit `build:` to point at
+#      wherever questions_svc actually lives on this server, e.g.:
+#        build: /opt/questions_svc
+#      You can also skip building locally and use a pre-built image instead
+#      (build it once with `docker build -t questions_svc:latest questions_svc/`
+#      and replace `build: ./questions_svc` below with `image: questions_svc:latest`).
+#   2. Point a DNS "A" record for api.engineeringprotocolstack.com at this
+#      server's IP.
+#   3. docker compose up -d
+#
+# questions_svc itself is NOT exposed on the host — only Caddy publishes
+# 80/443. All traffic reaches questions_svc through the internal Docker
+# network, over plain HTTP, which is fine since it never leaves the host.
+
+services:
+  questions_svc:
+    build: ./questions_svc
+    restart: unless-stopped
+    environment:
+      - PORT=8080
+      - RUST_LOG=info
+    expose:
+      - "8080"
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - questions_svc
+
+volumes:
+  caddy_data:
+  caddy_config:

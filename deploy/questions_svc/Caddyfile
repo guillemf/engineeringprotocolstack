@@ -1,0 +1,15 @@
+# Reverse proxy for questions_svc, with automatic HTTPS (Let's Encrypt) via Caddy.
+#
+# Prerequisites before `docker compose up -d`:
+#   1. A DNS "A" record for api.engineeringprotocolstack.com pointing at this
+#      server's public IP (currently 16.171.32.190).
+#   2. Ports 80 and 443 open/forwarded to this server (80 is required for the
+#      ACME HTTP challenge Caddy uses to issue the certificate; it also
+#      auto-redirects http:// -> https://).
+#
+# Once DNS resolves, Caddy requests and renews the certificate automatically
+# — no manual certbot/openssl steps needed.
+
+api.engineeringprotocolstack.com {
+	reverse_proxy questions_svc:8080
+}
