@@ -119,4 +119,4 @@ Whether you need support for an engineering organization or for your own
 professional growth, I can help you identify the right next step. We can
 start with a free 30-minute intro call.
 
-<p><a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Get in touch to book a call →</a></p>
+<p><a class="btn btn-primary" href="{{ '/consultation/' | relative_url }}">Book a free intro call →</a></p>

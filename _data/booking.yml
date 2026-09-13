@@ -1,0 +1,63 @@
+# Copy for the "book a consultation" widget at /consultation/ (and
+# /es/consulta/).
+#
+# Availability itself is NOT stored here — it is fetched at runtime from
+# the calendar_svc microservice, reached through router_svc (see
+# `platform_api.base_url` in _config.yml). This file only holds the page
+# copy, form labels, and status messages used by
+# _includes/components/booking-widget.html and assets/js/booking.js.
+
+en:
+  eyebrow: "Free 30-minute intro call"
+  title: "See if we're a fit — no pitch, just a conversation"
+  intro: >-
+    Pick an open slot below and tell me a bit about what you're looking
+    for. I'll review it and confirm by email — no automated booking
+    confirmation, just a real reply from me within a couple of business
+    days.
+  loading_message: "Loading available times..."
+  network_error_message: "We couldn't reach the booking service right now. Make sure it's running and reachable, then try again."
+  retry_button: "Try again"
+  empty_message: "There's nothing open on the calendar right now — check back soon, or reach out directly."
+  empty_contact_label: "Get in touch instead →"
+  empty_contact_url: "/contact/"
+  selected_label: "Selected time"
+  name_label: "Name"
+  email_label: "Email"
+  company_label: "Company (optional)"
+  message_label: "What would you like to talk about? (optional)"
+  back_button: "← Choose a different time"
+  submit_button: "Request this time"
+  submitting_button: "Sending..."
+  form_error_message: "Please fill in your name and a valid email."
+  conflict_message: "That time was just taken by someone else — pick another below."
+  generic_error_message: "Something went wrong sending your request. Please try again."
+  success_title: "Request sent"
+  success_message: "Thanks — I'll review your request and confirm by email within a couple of business days."
+
+es:
+  eyebrow: "Llamada introductoria gratuita de 30 minutos"
+  title: "Vamos a ver si encajamos — sin venta, solo una conversación"
+  intro: >-
+    Elige un hueco libre abajo y cuéntame brevemente qué estás buscando. Lo
+    revisaré y te confirmaré por email — no hay confirmación automática,
+    te responderé yo en persona en un par de días laborables.
+  loading_message: "Cargando horarios disponibles..."
+  network_error_message: "No hemos podido conectar con el servicio de reservas. Comprueba que esté en marcha y accesible, y vuelve a intentarlo."
+  retry_button: "Reintentar"
+  empty_message: "No hay huecos libres en el calendario ahora mismo — vuelve pronto, o escríbeme directamente."
+  empty_contact_label: "Contactar directamente →"
+  empty_contact_url: "/es/contact/"
+  selected_label: "Hora seleccionada"
+  name_label: "Nombre"
+  email_label: "Email"
+  company_label: "Empresa (opcional)"
+  message_label: "¿De qué te gustaría hablar? (opcional)"
+  back_button: "← Elegir otra hora"
+  submit_button: "Solicitar esta hora"
+  submitting_button: "Enviando..."
+  form_error_message: "Por favor, indica tu nombre y un email válido."
+  conflict_message: "Ese horario lo ha reservado otra persona justo ahora — elige otro abajo."
+  generic_error_message: "Algo ha fallado al enviar tu solicitud. Inténtalo de nuevo."
+  success_title: "Solicitud enviada"
+  success_message: "Gracias — revisaré tu solicitud y te confirmaré por email en un par de días laborables."

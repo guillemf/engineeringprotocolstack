@@ -83,7 +83,7 @@ en:
   final_cta:
     text: "Whichever layer scored lowest is worth a second look before it costs you in a real situation — let's talk about the fastest way to close that gap."
     button: "Book a free 30-minute intro call →"
-    url: "/contact/"
+    url: "/consultation/"
 
 es:
   eyebrow: "Comprobación de conocimiento gratuita · 2 minutos"
@@ -159,4 +159,4 @@ es:
   final_cta:
     text: "La capa con la puntuación más baja merece un segundo vistazo antes de que te cueste caro en una situación real — hablemos de la forma más rápida de cerrar ese hueco."
     button: "Reserva una llamada introductoria gratuita de 30 min →"
-    url: "/es/contact/"
+    url: "/es/consulta/"

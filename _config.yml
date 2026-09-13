@@ -40,6 +40,15 @@ book:
 assessment_service:
   base_url: "https://api.engineeringprotocolstack.com"
 
+# Same platform API gateway as assessment_service.base_url above, used by
+# the "book a consultation" widget (/consultation/, /es/consulta/) to talk
+# to calendar_svc via router_svc's /calendar/... routes. Kept as its own
+# setting (rather than reusing assessment_service.base_url) so future
+# per-feature base URLs stay independently overridable, even though today
+# they resolve to the same gateway.
+platform_api:
+  base_url: "https://api.engineeringprotocolstack.com"
+
 url: "https://www.engineeringprotocolstack.com"
 baseurl: ""
 

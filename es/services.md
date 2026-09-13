@@ -119,4 +119,4 @@ Ya necesites apoyo para tu organización de ingeniería o para tu propio
 crecimiento profesional, puedo ayudarte a identificar el siguiente paso.
 Podemos empezar con una llamada introductoria gratuita de 30 minutos.
 
-<p><a class="btn btn-primary" href="{{ '/es/contact/' | relative_url }}">Escríbeme para agendar una llamada →</a></p>
+<p><a class="btn btn-primary" href="{{ '/es/consulta/' | relative_url }}">Reservar una llamada introductoria gratuita →</a></p>

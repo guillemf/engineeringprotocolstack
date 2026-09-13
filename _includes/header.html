@@ -31,6 +31,11 @@
         <a class="nav-lang" href="{% if lang == 'en' %}{{ '/es/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" title="{{ t.common.lang_switch_name }}">{{ t.common.lang_switch_label }}</a>
       {% endif %}
 
+      {% if lang == "es" %}
+      <a class="nav-cta nav-cta--consult" href="{{ '/es/consulta/' | relative_url }}">{{ t.nav.consultation }}</a>
+      {% else %}
+      <a class="nav-cta nav-cta--consult" href="{{ '/consultation/' | relative_url }}">{{ t.nav.consultation }}</a>
+      {% endif %}
       <a class="nav-cta" href="{{ site.book.buy_url }}" target="_blank" rel="noopener">{{ t.nav.buy }}</a>
     </nav>
   </div>

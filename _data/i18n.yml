@@ -9,6 +9,7 @@ es:
     about: "Autor"
     contact: "Contacto"
     buy: "Comprar el libro"
+    consultation: "Reservar una llamada"
   footer:
     rights: "Todos los derechos reservados."
     explore: "Explorar"
@@ -35,6 +36,7 @@ en:
     about: "Author"
     contact: "Contact"
     buy: "Buy the book"
+    consultation: "Book a Call"
   footer:
     rights: "All rights reserved."
     explore: "Explore"

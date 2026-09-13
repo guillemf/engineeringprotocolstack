@@ -1,0 +1,68 @@
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign b = site.data.booking[lang] %}
+
+<div class="booking" id="booking-root">
+  <p id="booking-loading" class="booking-status">{{ b.loading_message }}</p>
+
+  <div id="booking-network-error" class="booking-status booking-status--error" hidden>
+    <p>{{ b.network_error_message }}</p>
+    <button type="button" id="booking-retry" class="btn btn-outline">{{ b.retry_button }}</button>
+  </div>
+
+  <div id="booking-empty" class="booking-status" hidden>
+    <p>{{ b.empty_message }}</p>
+    <a class="btn btn-outline" href="{{ b.empty_contact_url | relative_url }}">{{ b.empty_contact_label }}</a>
+  </div>
+
+  <div id="booking-slots" class="booking-slots" hidden></div>
+
+  <form id="booking-form" class="booking-form" novalidate hidden>
+    <p class="booking-form__selected" id="booking-selected-time"></p>
+
+    <div class="form-field">
+      <label for="booking-name">{{ b.name_label }}</label>
+      <input type="text" id="booking-name" name="name" required>
+    </div>
+    <div class="form-field">
+      <label for="booking-email">{{ b.email_label }}</label>
+      <input type="email" id="booking-email" name="email" required>
+    </div>
+    <div class="form-field">
+      <label for="booking-company">{{ b.company_label }}</label>
+      <input type="text" id="booking-company" name="company">
+    </div>
+    <div class="form-field">
+      <label for="booking-message">{{ b.message_label }}</label>
+      <textarea id="booking-message" name="message" rows="4"></textarea>
+    </div>
+
+    <p id="booking-form-error" class="booking-error" hidden></p>
+
+    <div class="booking-form__actions">
+      <button type="button" id="booking-back" class="btn btn-outline">{{ b.back_button }}</button>
+      <button type="submit" class="btn btn-primary" id="booking-submit">{{ b.submit_button }}</button>
+    </div>
+  </form>
+
+  <div id="booking-success" class="booking-status booking-status--success" hidden>
+    <h3 style="margin-top:0;">{{ b.success_title }}</h3>
+    <p>{{ b.success_message }}</p>
+  </div>
+</div>
+
+<script id="booking-data" type="application/json">
+{
+  "lang": {{ lang | jsonify }},
+  "selectedLabel": {{ b.selected_label | jsonify }},
+  "submitButton": {{ b.submit_button | jsonify }},
+  "submittingButton": {{ b.submitting_button | jsonify }},
+  "formErrorMessage": {{ b.form_error_message | jsonify }},
+  "conflictMessage": {{ b.conflict_message | jsonify }},
+  "genericErrorMessage": {{ b.generic_error_message | jsonify }}
+}
+</script>
+<script>
+  window.SITE_BASEURL = {{ site.baseurl | jsonify }};
+  window.EPS_PLATFORM_API_BASE_URL = {{ site.platform_api.base_url | jsonify }};
+</script>
+<script src="{{ '/assets/js/booking.js' | relative_url }}" defer></script>

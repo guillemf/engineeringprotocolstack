@@ -83,6 +83,24 @@ alt_lang_url: /es/
   </div>
 </section>
 
+<section class="booking-cta">
+  <div class="wrap wrap--narrow">
+    <div class="booking-teaser">
+      <div>
+        <span class="eyebrow" style="color:var(--teal);">Free 30-minute intro call</span>
+        <h3 style="margin:.5rem 0 .8rem; font-size:1.4rem;">Ready to talk about your team or your own growth?</h3>
+        <p style="margin-bottom:1.2rem;">No pitch — just a conversation to see if, and how, I can help. Pick an open time and I'll confirm by email within a couple of business days.</p>
+        <a class="btn btn-primary" href="{{ '/consultation/' | relative_url }}">Book a call →</a>
+      </div>
+      <div class="booking-teaser__stats">
+        <span class="booking-teaser__stat">30 min</span>
+        <span class="booking-teaser__stat">Free</span>
+        <span class="booking-teaser__stat">No obligation</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% assign en_posts = site.posts | where: "lang", "en" %}
 {% assign recent_posts = en_posts | slice: 0, 3 %}
 {% if recent_posts.size > 0 %}
