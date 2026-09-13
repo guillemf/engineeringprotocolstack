@@ -21,17 +21,22 @@ book:
   buy_url: "https://leanpub.com/engineeringprotocolstack"
   cover_image: /assets/images/book-cover.jpg
 
-# Base URL of the questions_svc microservice that powers the dynamic
-# self-assessment quiz on /assessment/. Must be HTTPS in production — the
-# site itself is served over HTTPS, and browsers block an HTTPS page from
-# fetching plain-http resources ("mixed content"), which is why a bare IP
-# like http://16.171.32.190 does not work here even with CORS enabled.
-# See deploy/questions_svc/README.md for how api.engineeringprotocolstack.com
-# is set up (Caddy reverse proxy with automatic Let's Encrypt TLS) — update
-# this value once that DNS record + Caddy are live.
+# Base URL of the platform API that powers the dynamic self-assessment
+# quiz on /assessment/. Must be HTTPS in production — the site itself is
+# served over HTTPS, and browsers block an HTTPS page from fetching
+# plain-http resources ("mixed content"), which is why a bare IP does not
+# work here even with CORS enabled.
+#
+# This URL is not questions_svc directly — it is router_svc, the API
+# gateway that sits behind api.engineeringprotocolstack.com (Caddy
+# reverse proxy with automatic Let's Encrypt TLS) and forwards
+# `/questions?...` on to questions_svc unchanged. See the sibling
+# `router_svc` and `questions_svc` repositories (outside this Jekyll
+# repo, under "Engineering Protocol Stack") for how that's deployed.
 #
 # For local development (`jekyll serve` + `cargo run` on the same
-# machine), temporarily point this back at "http://localhost:8080".
+# machine), temporarily point this back at "http://localhost:8080" and
+# run questions_svc directly — no gateway needed for local testing.
 assessment_service:
   base_url: "https://api.engineeringprotocolstack.com"
 
