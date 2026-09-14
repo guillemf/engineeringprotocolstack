@@ -2,7 +2,9 @@
 layout: post
 title: "Why Your Team's Problems Look Like Network Problems"
 date: 2026-09-15
-description: "Engineering leadership works like a computer network: manage yourself at the CPU layer, your team at the LAN layer, and external relationships at the WAN layer."
+layer: LAN
+excerpt: "Engineering leadership works like a computer network: manage yourself at the CPU layer, your team at the LAN layer, and external relationships at the WAN layer."
+alt_lang_url: /es/posts/2026/09/15/network-problemas/
 categories:
 	- Engineering Leadership
 tags:
