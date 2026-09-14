@@ -1,5 +1,5 @@
 ---
-title: Reservar una llamada
+title: Reserva una llamada conmigo
 subtitle: Una llamada introductoria gratuita de 30 minutos para ver cómo puedo ayudar a tu equipo o a tu propio crecimiento
 permalink: /es/consulta/
 lang: es
