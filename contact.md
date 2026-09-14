@@ -8,7 +8,7 @@ alt_lang_url: /es/contact/
 
 <div class="contact-grid">
   <div>
-    <form action="https://formspree.io/f/xbgrngpz" method="POST">
+    <form action="https://formspree.io/f/mwlkgqde" method="POST">
       <div class="form-field">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
@@ -27,10 +27,6 @@ alt_lang_url: /es/contact/
       </div>
       <button type="submit" class="btn btn-primary">Send message</button>
     </form>
-    <p style="font-size:.82rem; margin-top:1rem; color:var(--text-faint);">
-      This form uses <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>.
-      Replace <code>YOUR_FORM_ID</code> with your own (free) form ID before publishing the site.
-    </p>
   </div>
 
   <div>
