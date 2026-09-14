@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Why Your Team's Problems Look Like Network Problems"
+title: "Por qué los problemas de tu equipo parecen problemas de network"
 date: 2026-09-15
 layer: LAN
-excerpt: "Engineering leadership works like a computer network: manage yourself at the CPU layer, your team at the LAN layer, and external relationships at the WAN layer."
-alt_lang_url: /es/posts/2026/09/15/network-problemas/
+excerpt: "El liderazgo en ingeniería funciona como una red informática: gestiónate a ti mismo en la capa de CPU, a tu equipo en la capa LAN y las relaciones externas en la capa WAN."
+lang: es
+permalink: /es/posts/2026/08/11/de-grupo-a-equipo-lan/
+alt_lang_url: /posts/2026/09/15/network-problemas/
 categories:
 	- Engineering Leadership
 tags:
@@ -14,24 +16,24 @@ tags:
 	- collaboration
 ---
 
-Twenty years in engineering organizations, and I keep seeing the same gap. Teams spend years mastering version control, testing, and delivery pipelines, and almost no time on the skills that decide whether any of that work actually reaches the business: how a leader manages their own attention, how a team communicates under pressure, how that team stays aligned with everyone outside it.
+Tras veinte años en organizaciones de ingeniería, sigo observando la misma brecha. Los equipos dedican años a dominar el control de versiones, las pruebas y los flujos de entrega, pero apenas dedican tiempo a las habilidades que determinan si todo ese trabajo llega realmente al negocio: cómo un líder gestiona su propia atención, cómo se comunica un equipo bajo presión y cómo ese equipo se mantiene alineado con el entorno externo.
 
-We call these "soft skills," and the name is part of the problem. It suggests something vague, personality-dependent, nice to have if you happen to be a people person. In practice, running a stand-up, giving feedback, or protecting focus time is just as systematic as running a deployment pipeline. It only looks soft because most of us were never taught to see the structure underneath it.
+A estas capacidades las llamamos «habilidades blandas» (*soft skills*), y el propio nombre forma parte del problema. Sugiere algo vago, dependiente de la personalidad y deseable solo si uno tiene facilidad de trato con la gente. En la práctica, dirigir una reunión diaria de sincronización (*stand-up*), ofrecer retroalimentación o proteger el tiempo de concentración profunda es un proceso tan sistemático como gestionar un flujo de despliegue. Solo parecen «blandas» porque a la mayoría de nosotros nunca nos enseñaron a ver la estructura subyacente.
 
-That structure is what the book is built on, using a metaphor every engineer already knows: computer networking. A computer doesn't work as one undifferentiated blob of logic. It works because clearly defined layers, each with its own protocols, cooperate without needing to understand each other's internals. A CPU doesn't need to know how a network packet gets routed. It only needs its own layer to work, and to trust that the layers around it do the same.
+Esa estructura es la base del libro, que utiliza una metáfora que cualquier ingeniero conoce bien: las redes informáticas. Un ordenador no funciona como una masa indiferenciada de lógica; funciona gracias a capas claramente definidas —cada una con sus propios protocolos— que cooperan sin necesidad de comprender los detalles internos de las demás. Una CPU no necesita saber cómo se enruta un paquete de red; solo necesita que su propia capa funcione y confiar en que las capas circundantes hagan lo mismo.
 
-Engineering leadership works the same way.
+El liderazgo en ingeniería funciona exactamente igual.
 
-- **CPU** — the layer where you manage yourself: attention, task list, memory, habits.
-- **LAN** — the layer where you manage your team: roles, growth, feedback, day-to-day collaboration.
-- **WAN** — the layer where your team connects to everything outside it: stakeholders, other teams, customers, the organization's shifting priorities.
+- **CPU** — la capa donde te gestionas a ti mismo: atención, lista de tareas, memoria, hábitos.
+- **LAN** — la capa donde gestionas a tu equipo: roles, crecimiento, retroalimentación, colaboración diaria.
+- **WAN** — la capa donde tu equipo conecta con el exterior: partes interesadas (*stakeholders*), otros equipos, clientes y las prioridades cambiantes de la organización.
 
-Confuse the layers and the fix won't hold. Try to solve a team communication problem with a personal productivity trick, or a stakeholder-alignment problem with a team-building exercise, and you'll get the same result you'd get trying to fix a routing problem by reinstalling the operating system: nothing, plus wasted effort.
+Si confundes las capas, la solución no funcionará. Intentar resolver un problema de comunicación en el equipo con un truco de productividad personal, o un problema de alineación con las partes interesadas mediante una dinámica de integración de equipos, dará el mismo resultado que intentar arreglar un problema de enrutamiento reinstalando el sistema operativo: nada, salvo un esfuerzo inútil.
 
-This series follows the layers in that order, CPU, then LAN, then WAN, because that's also the order in which they tend to fail. A leader who can't manage their own execution will struggle to lead a team, no matter how many team-building exercises they run. A team that can't communicate internally will struggle to represent itself to anyone outside it. Fix the foundation first, or the rest keeps sliding.
+Esta serie aborda las capas en ese orden —CPU, luego LAN y finalmente WAN— porque es también el orden en el que suelen fallar. Un líder incapaz de gestionar su propia ejecución tendrá dificultades para liderar un equipo, por muchas dinámicas de integración que organice. Un equipo que no logra comunicarse internamente tendrá dificultades para proyectarse hacia el exterior. Hay que arreglar primero los cimientos; de lo contrario, todo lo demás seguirá desmoronándose.
 
-Over the next posts we'll go layer by layer, with the same practical, no-fluff approach: what breaks, why, and the protocol that fixes it.
+En las próximas publicaciones analizaremos el sistema capa por capa, manteniendo el mismo enfoque práctico y directo: qué falla, por qué sucede y cuál es el protocolo para solucionarlo.
 
-If you want the full framework now instead of waiting for the series, [The Engineering Protocol Stack is available on Leanpub](https://leanpub.com/engineeringprotocolstack).
+Si prefieres acceder al marco de trabajo completo ahora mismo en lugar de esperar a que se publique la serie, [The Engineering Protocol Stack está disponible en Leanpub](https://leanpub.com/engineeringprotocolstack).
 
-And if your team is already past the individual stage, and the friction you're feeling lives at the LAN or WAN layer, [book a free 30-minute call](https://www.engineeringprotocolstack.com/consultation/) and we'll find out which layer is actually broken.
+Y si tu equipo ya ha superado la etapa individual y la fricción que experimentas se sitúa en la capa LAN o WAN, [reserva una llamada gratuita de 30 minutos](https://www.engineeringprotocolstack.com/consultation/) y determinaremos qué capa es la que realmente está fallando.
