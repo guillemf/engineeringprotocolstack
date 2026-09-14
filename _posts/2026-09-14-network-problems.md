@@ -2,7 +2,7 @@
 title: "Why Your Team's Problems Look Like Network Problems"
 layer: LAN
 excerpt: "Engineering leadership works like a computer network: manage yourself at the CPU layer, your team at the LAN layer, and external relationships at the WAN layer."
-alt_lang_url: /es/posts/2026/09/15/network-problemas/
+alt_lang_url: /es/posts/2026/09/14/network-problemas/
 ---
 
 Twenty years in engineering organizations, and I keep seeing the same gap. Teams spend years mastering version control, testing, and delivery pipelines, and almost no time on the skills that decide whether any of that work actually reaches the business: how a leader manages their own attention, how a team communicates under pressure, how that team stays aligned with everyone outside it.

@@ -3,8 +3,8 @@ title: "Por qué los problemas de tu equipo parecen problemas de network"
 layer: LAN
 excerpt: "El liderazgo en ingeniería funciona como una red informática: gestiónate a ti mismo en la capa de CPU, a tu equipo en la capa LAN y las relaciones externas en la capa WAN."
 lang: es
-permalink: /es/posts/2026/09/15/network-problemas/
-alt_lang_url: /posts/2026/09/15/network-problems/
+permalink: /es/posts/2026/09/14/network-problemas/
+alt_lang_url: /posts/2026/09/14/network-problems/
 ---
 
 Tras veinte años en organizaciones de ingeniería, sigo observando la misma brecha. Los equipos dedican años a dominar el control de versiones, las pruebas y los flujos de entrega, pero apenas dedican tiempo a las habilidades que determinan si todo ese trabajo llega realmente al negocio: cómo un líder gestiona su propia atención, cómo se comunica un equipo bajo presión y cómo ese equipo se mantiene alineado con el entorno externo.
