@@ -15,7 +15,7 @@ author:
   website: https://pro.guillem.cat
   linkedin: https://www.linkedin.com/in/gfernandezg
   github: https://github.com/guillemf
-  engineeringprotocolstack: https://www.engineeringprotocolstack.com
+  engineeringprotocolstack: https://engineeringprotocolstack.com
 
 book:
   buy_url: "https://leanpub.com/engineeringprotocolstack"
@@ -49,7 +49,7 @@ assessment_service:
 platform_api:
   base_url: "https://api.engineeringprotocolstack.com"
 
-url: "https://www.engineeringprotocolstack.com"
+url: "https://engineeringprotocolstack.com"
 baseurl: ""
 
 markdown: kramdown

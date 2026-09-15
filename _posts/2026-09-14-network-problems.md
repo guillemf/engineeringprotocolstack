@@ -25,4 +25,4 @@ Over the next posts we'll go layer by layer, with the same practical, no-fluff a
 
 If you want the full framework now instead of waiting for the series, [The Engineering Protocol Stack is available on Leanpub](https://leanpub.com/engineeringprotocolstack).
 
-And if your team is already past the individual stage, and the friction you're feeling lives at the LAN or WAN layer, [book a free 30-minute call](https://www.engineeringprotocolstack.com/consultation/) and we'll find out which layer is actually broken.
+And if your team is already past the individual stage, and the friction you're feeling lives at the LAN or WAN layer, [book a free 30-minute call](https://engineeringprotocolstack.com/consultation/) and we'll find out which layer is actually broken.

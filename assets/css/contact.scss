@@ -1,0 +1,52 @@
+---
+---
+/* ==========================================================================
+   The Engineering Protocol Stack — contact form
+   Loaded as a fourth stylesheet, after main.css, assessment.css, and
+   booking.css. Reuses the .contact-grid/.form-field/.contact-list classes
+   and design tokens already defined in main.scss's :root without editing
+   that file — this file only adds what's new: hiding the honeypot field,
+   and the submit status feedback (mirrors booking.scss's
+   .booking-status pattern).
+   ========================================================================== */
+
+.contact-form .btn {
+  margin-top: 6px;
+}
+
+/* Hides the honeypot field from sighted and keyboard users alike, while
+   keeping it present (and fillable) in the DOM for bots that scrape and
+   fill in every field they can find, regardless of visibility. */
+.contact-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contact-status {
+  margin: 1.4rem 0 0;
+  padding: 20px 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text-muted);
+}
+
+.contact-status--error {
+  margin-bottom: 1.1rem;
+  padding: 14px 18px;
+  color: #e0708a;
+  border-color: rgba(224, 112, 138, 0.4);
+  font-size: .9rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.contact-status--success h3 {
+  margin-top: 0;
+  color: var(--teal);
+}

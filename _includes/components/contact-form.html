@@ -1,0 +1,62 @@
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign c = site.data.contact[lang] %}
+
+<div id="contact-form-root">
+  <form id="contact-form" class="contact-form" novalidate>
+    <div class="form-field">
+      <label for="contact-name">{{ c.name_label }}</label>
+      <input type="text" id="contact-name" name="name" required>
+    </div>
+    <div class="form-field">
+      <label for="contact-email">{{ c.email_label }}</label>
+      <input type="email" id="contact-email" name="email" required>
+    </div>
+    <div class="form-field">
+      <label for="contact-subject">{{ c.subject_label }}</label>
+      <input type="text" id="contact-subject" name="subject" placeholder="{{ c.subject_placeholder }}">
+    </div>
+    <div class="form-field">
+      <label for="contact-message">{{ c.message_label }}</label>
+      <textarea id="contact-message" name="message" rows="6" required></textarea>
+    </div>
+
+    <!-- Honeypot: invisible to sighted and keyboard users. A real visitor
+         never sees or fills this in; a filled-in value marks the
+         submission as spam server-side (see contact_svc's README). -->
+    <div class="contact-honeypot" aria-hidden="true">
+      <label for="contact-company-website">Company Website</label>
+      <input
+        type="text"
+        id="contact-company-website"
+        name="company_website"
+        tabindex="-1"
+        autocomplete="off"
+        aria-hidden="true">
+    </div>
+
+    <p id="contact-form-error" class="contact-status contact-status--error" hidden></p>
+
+    <button type="submit" class="btn btn-primary" id="contact-submit">{{ c.submit_button }}</button>
+  </form>
+
+  <div id="contact-success" class="contact-status contact-status--success" hidden>
+    <h3>{{ c.success_title }}</h3>
+    <p>{{ c.success_message }}</p>
+  </div>
+</div>
+
+<script id="contact-data" type="application/json">
+{
+  "lang": {{ lang | jsonify }},
+  "submitButton": {{ c.submit_button | jsonify }},
+  "submittingButton": {{ c.submitting_button | jsonify }},
+  "validationErrorMessage": {{ c.validation_error_message | jsonify }},
+  "rateLimitMessage": {{ c.rate_limit_message | jsonify }},
+  "genericErrorMessage": {{ c.generic_error_message | jsonify }}
+}
+</script>
+<script>
+  window.SITE_BASEURL = {{ site.baseurl | jsonify }};
+  window.EPS_PLATFORM_API_BASE_URL = {{ site.platform_api.base_url | jsonify }};
+</script>
+<script src="{{ '/assets/js/contact.js' | relative_url }}" defer></script>

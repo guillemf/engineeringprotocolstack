@@ -27,4 +27,4 @@ En las próximas publicaciones analizaremos el sistema capa por capa, manteniend
 
 Si prefieres acceder al marco de trabajo completo ahora mismo en lugar de esperar a que se publique la serie, [The Engineering Protocol Stack está disponible en Leanpub](https://leanpub.com/engineeringprotocolstack).
 
-Y si tu equipo ya ha superado la etapa individual y la fricción que experimentas se sitúa en la capa LAN o WAN, [reserva una llamada gratuita de 30 minutos](https://www.engineeringprotocolstack.com/consultation/) y determinaremos qué capa es la que realmente está fallando.
+Y si tu equipo ya ha superado la etapa individual y la fricción que experimentas se sitúa en la capa LAN o WAN, [reserva una llamada gratuita de 30 minutos](https://engineeringprotocolstack.com/consultation/) y determinaremos qué capa es la que realmente está fallando.

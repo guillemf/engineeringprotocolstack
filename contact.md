@@ -8,25 +8,7 @@ alt_lang_url: /es/contact/
 
 <div class="contact-grid">
   <div>
-    <form action="https://formspree.io/f/mwlkgqde" method="POST">
-      <div class="form-field">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div class="form-field">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="_replyto" required>
-      </div>
-      <div class="form-field">
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" placeholder="Book, talk, services...">
-      </div>
-      <div class="form-field">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Send message</button>
-    </form>
+    {% include components/contact-form.html %}
   </div>
 
   <div>

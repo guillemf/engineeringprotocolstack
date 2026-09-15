@@ -1,0 +1,35 @@
+# Copy for the contact form at /contact/ (and /es/contact/).
+#
+# Submissions are sent to the contact_svc microservice, reached through
+# router_svc (see `platform_api.base_url` in _config.yml) — the same
+# gateway the booking widget uses. This file only holds form field
+# labels and status messages used by
+# _includes/components/contact-form.html and assets/js/contact.js.
+
+en:
+  name_label: "Name"
+  email_label: "Email"
+  subject_label: "Subject"
+  subject_placeholder: "Book, talk, services..."
+  message_label: "Message"
+  submit_button: "Send message"
+  submitting_button: "Sending..."
+  validation_error_message: "Please fill in your name, a valid email, and a message."
+  rate_limit_message: "You're sending messages a bit too fast — please wait a moment and try again."
+  generic_error_message: "Something went wrong sending your message. Please try again, or email me directly."
+  success_title: "Message sent"
+  success_message: "Thanks for reaching out — I'll get back to you within a couple of business days."
+
+es:
+  name_label: "Nombre"
+  email_label: "Email"
+  subject_label: "Asunto"
+  subject_placeholder: "Libro, charla, servicios..."
+  message_label: "Mensaje"
+  submit_button: "Enviar mensaje"
+  submitting_button: "Enviando..."
+  validation_error_message: "Por favor, indica tu nombre, un email válido y un mensaje."
+  rate_limit_message: "Estás enviando mensajes demasiado rápido — espera un momento e inténtalo de nuevo."
+  generic_error_message: "Algo ha fallado al enviar tu mensaje. Inténtalo de nuevo, o escríbeme directamente por email."
+  success_title: "Mensaje enviado"
+  success_message: "Gracias por escribir — te responderé en un par de días laborables."
