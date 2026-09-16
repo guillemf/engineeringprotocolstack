@@ -19,4 +19,10 @@
   <link rel="alternate" hreflang="{{ alt_lang }}" href="{{ site.url }}{{ page.alt_lang_url | relative_url }}">
   <link rel="alternate" hreflang="{{ page.lang | default: site.default_lang }}" href="{{ site.url }}{{ page.url | relative_url }}">
   {% endif %}
+
+  <!-- Umami Cloud: cookie-less, privacy-friendly analytics. No personal
+       data collected, no cookie-consent banner required (GDPR/CCPA
+       compliant by design) — matches this site's existing no-tracking
+       posture for the assessment quiz and contact form. -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="ac22ad16-6e20-43d1-aae3-26cbe7c04990"></script>
 </head>

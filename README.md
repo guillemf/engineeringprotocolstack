@@ -175,6 +175,7 @@ other language's home page.
   the instant on-page result.
 - **Testimonials/reviews page** once the book has readers, also in both
   languages.
-- **Analytics** (Plausible or Fathom, privacy-friendly) to see which
-  pages, languages, and assessment outcomes convert best toward the buy
-  button and the contact form.
+- ~~**Analytics** (Plausible or Fathom, privacy-friendly)~~ — done.
+  Umami Cloud is wired up in `_includes/head.html` (cookie-less, no
+  consent banner needed). Dashboard at
+  [cloud.umami.is](https://cloud.umami.is).
