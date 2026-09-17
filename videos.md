@@ -27,6 +27,6 @@ alt_lang_url: /es/videos/
   {% endfor %}
 </div>
 
-<p style="margin-top:2.2rem; text-align:center; color:var(--text-faint); font-size:.9rem;">
+<p class="videos-footnote">
   More videos and free content at <a href="{{ site.author.engineeringprotocolstack }}" target="_blank" rel="noopener">engineeringprotocolstack.com</a>.
 </p>

@@ -10,11 +10,11 @@ lang: es
 alt_lang_url: /book/
 ---
 
-<p style="text-align:center; margin: -1rem 0 2.4rem;">
-  <img src="{{ site.book.cover_image | relative_url }}" alt="Portada del libro" width="700" height="989" style="max-width:260px; height:auto; margin:0 auto; border-radius:10px; box-shadow:0 30px 60px -20px rgba(0,0,0,.7);">
+<p class="book-cover">
+  <img src="{{ site.book.cover_image | relative_url }}" alt="Portada del libro" width="700" height="989">
 </p>
 
-<p style="text-align:center;">
+<p class="book-cta">
   <a class="btn btn-primary" href="{{ site.book.buy_url }}" target="_blank" rel="noopener">Comprarlo en Leanpub →</a>
 </p>
 
@@ -78,6 +78,6 @@ más de veinticinco años de carrera pasando por casi todos los asientos de la
 mesa: de desarrollador a Head of Engineering, fundador de dos empresas y
 profesor en la Universitat de Barcelona. [Leer la biografía completa →]({{ '/es/about/' | relative_url }})
 
-<p style="text-align:center; margin-top:2.6rem;">
+<p class="book-cta book-cta--final">
   <a class="btn btn-primary" href="{{ site.book.buy_url }}" target="_blank" rel="noopener">Comprar The Engineering Protocol Stack en Leanpub →</a>
 </p>

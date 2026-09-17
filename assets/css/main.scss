@@ -35,7 +35,9 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
 
 body {
   margin: 0;
@@ -140,6 +142,16 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
 }
 .nav-cta:hover { opacity: .88; text-decoration: none; }
+
+/* Distinguishes the "book a call" nav pill from the "buy the book" one
+   (which uses --cyan/--teal) without introducing a new color — reuses
+   --amber/--teal, already part of the palette. Lives here (not in
+   booking.scss) because the header — and this pill — render on every
+   page, while booking.css only loads where the booking widget/teaser
+   actually appears. */
+.nav-cta--consult {
+  background: linear-gradient(120deg, var(--amber), var(--teal));
+}
 
 .nav-lang {
   display: inline-flex;
@@ -253,6 +265,20 @@ section { padding: 56px 0; }
   text-transform: uppercase;
 }
 
+/* The book-summary intro on the homepage reads better left-aligned than
+   the default centered .section-head, and its heading sits close under
+   the eyebrow rather than at the usual generous top margin. Scoped to
+   .intro so the markup only needs the existing classes, no modifier. */
+.intro .section-head {
+  text-align: left;
+}
+.intro .section-head h2 {
+  margin-top: .6rem;
+}
+.intro .wrap + .wrap {
+  margin-top: 2.4rem;
+}
+
 .layers-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -266,6 +292,11 @@ section { padding: 56px 0; }
   transition: transform .15s ease, border-color .15s ease;
 }
 .layer-card:hover { transform: translateY(-4px); border-color: var(--cyan); }
+
+@media (prefers-reduced-motion: reduce) {
+  .layer-card { transition: border-color .15s ease; }
+  .layer-card:hover { transform: none; }
+}
 .layer-card .layer-tag {
   font-family: var(--font-display);
   font-weight: 800;
@@ -282,6 +313,11 @@ section { padding: 56px 0; }
   border-radius: var(--radius);
   padding: 24px;
 }
+.card > h2:first-child, .card > h3:first-child { margin-top: 0; }
+
+/* Centers the final CTA card on the homepage (and any other page using
+   this section class) without a page-specific override. */
+.cta-final .wrap { text-align: center; }
 
 /* ---------- Author teaser (home) ---------- */
 .author-teaser {
@@ -301,12 +337,29 @@ section { padding: 56px 0; }
   object-fit: cover;
   box-shadow: 0 0 0 4px var(--bg), 0 0 0 5px var(--border);
 }
+.author-teaser .eyebrow { color: var(--amber); }
+.author-teaser h3 { margin: .4rem 0 .6rem; font-size: 1.4rem; }
+.author-teaser p { margin-bottom: 1rem; }
+
+/* Floated circular author photo used on the /about/ page — distinct
+   from .author-teaser img above (different size/context: a floated
+   portrait inside body text, not a grid-aligned teaser). */
+.author-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  float: right;
+  margin: 0 0 1.2rem 1.6rem;
+  box-shadow: 0 0 0 4px var(--bg), 0 0 0 5px var(--border);
+}
 
 /* ---------- Posts list ---------- */
 .posts-list {
   display: grid;
   gap: 18px;
 }
+.posts-list + p { text-align: center; margin-top: 1.6rem; }
 .post-card {
   display: block;
   background: var(--surface);
@@ -378,6 +431,12 @@ section { padding: 56px 0; }
 .video-card__body { padding: 16px 18px; }
 .video-card h3 { margin: 0 0 4px; font-size: 1rem; }
 .video-card p { margin: 0; font-size: .88rem; }
+.videos-footnote {
+  margin-top: 2.2rem;
+  text-align: center;
+  color: var(--text-faint);
+  font-size: .9rem;
+}
 
 /* ---------- Services ---------- */
 .services-grid {
@@ -401,6 +460,11 @@ section { padding: 56px 0; }
 .page__content h2:first-child { margin-top: 0; }
 .page__content ul, .page__content ol { color: var(--text-muted); padding-left: 1.3rem; }
 .page__content li { margin-bottom: .4rem; }
+
+/* /book/ page: cover image wrapper and the two "Buy it" CTA wrappers. */
+.book-cover { text-align: center; margin: -1rem 0 2.4rem; }
+.book-cta { text-align: center; }
+.book-cta--final { margin-top: 2.6rem; }
 .page__content blockquote {
   border-left: 3px solid var(--cyan);
   margin: 1.6rem 0;
@@ -455,6 +519,7 @@ section { padding: 56px 0; }
   color: var(--text-muted);
 }
 .contact-list strong { color: var(--text); min-width: 90px; display: inline-block; }
+.contact-list + p { margin-top: 1.4rem; }
 
 /* ---------- Footer ---------- */
 .site-footer {

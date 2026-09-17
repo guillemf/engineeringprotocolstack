@@ -10,11 +10,11 @@ lang: en
 alt_lang_url: /es/book/
 ---
 
-<p style="text-align:center; margin: -1rem 0 2.4rem;">
-  <img src="{{ site.book.cover_image | relative_url }}" alt="Book cover" width="700" height="989" style="max-width:260px; height:auto; margin:0 auto; border-radius:10px; box-shadow:0 30px 60px -20px rgba(0,0,0,.7);">
+<p class="book-cover">
+  <img src="{{ site.book.cover_image | relative_url }}" alt="Book cover" width="700" height="989">
 </p>
 
-<p style="text-align:center;">
+<p class="book-cta">
   <a class="btn btn-primary" href="{{ site.book.buy_url }}" target="_blank" rel="noopener">Buy it on Leanpub →</a>
 </p>
 
@@ -76,6 +76,6 @@ with more than twenty-five years of experience across nearly every seat at
 the table: from developer to Head of Engineering, founder of two companies,
 and lecturer at the University of Barcelona. [Read the full bio →]({{ '/about/' | relative_url }})
 
-<p style="text-align:center; margin-top:2.6rem;">
+<p class="book-cta book-cta--final">
   <a class="btn btn-primary" href="{{ site.book.buy_url }}" target="_blank" rel="noopener">Buy The Engineering Protocol Stack on Leanpub →</a>
 </p>

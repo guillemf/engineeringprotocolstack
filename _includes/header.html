@@ -11,11 +11,11 @@
     </a>
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="nav-burger" aria-label="Menu">
+    <label for="nav-toggle" class="nav-burger" aria-label="Menu" aria-expanded="false" aria-controls="site-nav-menu">
       <span></span><span></span><span></span>
     </label>
 
-    <nav class="site-nav">
+    <nav class="site-nav" id="site-nav-menu">
       <a href="{{ home_url | relative_url }}" {% if page.url == home_url %}aria-current="page"{% endif %}>{{ t.nav.home }}</a>
       <a href="{{ home_url | append: 'book/' | replace: '//', '/' | relative_url }}">{{ t.nav.book }}</a>
       <a href="{{ home_url | append: 'posts/' | replace: '//', '/' | relative_url }}">{{ t.nav.blog }}</a>
@@ -40,3 +40,5 @@
     </nav>
   </div>
 </header>
+
+<script src="{{ '/assets/js/nav.js' | relative_url }}" defer></script>

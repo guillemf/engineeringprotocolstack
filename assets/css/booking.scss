@@ -7,13 +7,6 @@
    file.
    ========================================================================== */
 
-/* Distinguishes the "book a call" nav pill from the "buy the book" one
-   (which uses --cyan/--teal) without introducing a new color — reuses
-   --amber/--teal, already part of the palette. */
-.nav-cta--consult {
-  background: linear-gradient(120deg, var(--amber), var(--teal));
-}
-
 .booking-intro {
   max-width: var(--max-narrow);
   margin: 0 auto 2.6rem;
@@ -26,6 +19,7 @@
   letter-spacing: .08em;
   text-transform: uppercase;
 }
+.booking-intro h2 { margin-top: .6rem; }
 
 .booking {
   max-width: var(--max-narrow);
@@ -55,6 +49,7 @@
 
 .booking-status--success h3 {
   color: var(--teal);
+  margin-top: 0;
 }
 
 .booking-day {
@@ -162,6 +157,9 @@
   border-radius: var(--radius);
   padding: 32px;
 }
+.booking-teaser .eyebrow { color: var(--teal); }
+.booking-teaser h3 { margin: .5rem 0 .8rem; font-size: 1.4rem; }
+.booking-teaser p { margin-bottom: 1.2rem; }
 
 .booking-teaser__stats {
   display: flex;

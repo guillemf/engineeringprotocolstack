@@ -5,6 +5,7 @@ description: >-
   Haz una autoevaluación gratuita de 2 minutos sobre tus capas CPU, RAM,
   LAN y WAN de liderazgo en ingeniería — puntuada al instante en tu
   navegador, sin necesidad de email.
+needs_assessment: true
 permalink: /es/assessment/
 lang: es
 alt_lang_url: /assessment/
@@ -12,7 +13,7 @@ alt_lang_url: /assessment/
 
 <div class="assessment-intro">
   <span class="eyebrow">{{ site.data.assessment.es.eyebrow }}</span>
-  <h2 style="margin-top:.6rem;">{{ site.data.assessment.es.title }}</h2>
+  <h2>{{ site.data.assessment.es.title }}</h2>
   <p>{{ site.data.assessment.es.intro }}</p>
 </div>
 

@@ -21,6 +21,7 @@
   max-width: var(--max-narrow);
   margin: 0 auto 2.6rem;
 }
+.assessment-intro h2 { margin-top: .6rem; }
 
 .assessment-intro .eyebrow {
   color: var(--cyan);
@@ -328,6 +329,9 @@
   border-radius: var(--radius);
   padding: 32px;
 }
+.assessment-teaser .eyebrow { color: var(--cyan); }
+.assessment-teaser h3 { margin: .5rem 0 .8rem; font-size: 1.4rem; }
+.assessment-teaser p { margin-bottom: 1.2rem; }
 
 .assessment-teaser__stats {
   display: flex;
