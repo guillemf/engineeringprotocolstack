@@ -1,7 +1,7 @@
 es:
   - title: "The Engineering Protocol Stack — presentación del libro"
     youtube_id: "TU_ID_DE_VIDEO_AQUI"
-    description: "Introducción al framework CPU · RAM · LAN · WAN y a la idea central del libro."
+    description: "Introducción al framework CPU · LAN · WAN y a la idea central del libro."
   - title: "CPU: cómo gestionar tu foco como un ingeniero"
     youtube_id: "TU_ID_DE_VIDEO_AQUI"
     description: "La primera capa del stack: tareas, prioridades y el coste de cambiar de contexto."
@@ -14,7 +14,7 @@ es:
 en:
   - title: "The Engineering Protocol Stack — book overview"
     youtube_id: "YOUR_YOUTUBE_ID_HERE"
-    description: "An introduction to the CPU · RAM · LAN · WAN framework and the core idea behind the book."
+    description: "An introduction to the CPU · LAN · WAN framework and the core idea behind the book."
   - title: "CPU: how to manage your focus like an engineer"
     youtube_id: "YOUR_YOUTUBE_ID_HERE"
     description: "The first layer of the stack: tasks, priorities, and the real cost of switching context."

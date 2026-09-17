@@ -1,6 +1,6 @@
 ---
 title: "Tu memoria de trabajo es RAM, no un disco duro"
-layer: RAM
+layer: CPU
 excerpt: "Somos muy buenos conectando ideas y generando cosas nuevas, pero bastante malos guardando datos sueltos. Usar la memoria para lo que sirve cambia cómo trabajas."
 lang: es
 permalink: /es/posts/2026/07/28/memoria-de-trabajo-ram/

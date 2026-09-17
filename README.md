@@ -92,7 +92,8 @@ es/404.md            ES 404 page
 
 `/assessment/` (and `/es/assessment/`) is a free, interactive diagnostic
 for potential clients. It asks a short set of statements grouped by the
-book's four layers — CPU, RAM, LAN, and WAN — scores each layer from 1 to
+book's three layers — CPU, LAN, and WAN (RAM material is folded into the
+CPU questions, not scored as its own layer) — scores each layer from 1 to
 5 entirely in the browser (no data is sent anywhere, no email required),
 and shows a tailored recommendation per layer that links back to the
 matching service on `/services/`.
@@ -133,7 +134,7 @@ languages.
 ```markdown
 ---
 title: "Post title"
-layer: CPU   # CPU, RAM, LAN, or WAN (optional, shown as a tag)
+layer: CPU   # CPU, LAN, or WAN (optional, shown as a tag; RAM-related posts use CPU)
 excerpt: "Short summary shown in the listing."
 alt_lang_url: /es/posts/YYYY/MM/DD/slug-en-espanol/   # optional, if translated
 ---

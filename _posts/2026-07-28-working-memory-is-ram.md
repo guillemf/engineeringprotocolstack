@@ -1,6 +1,6 @@
 ---
 title: "Your Working Memory Is RAM, Not a Hard Drive"
-layer: RAM
+layer: CPU
 excerpt: "We're great at connecting ideas and generating new ones, but pretty bad at storing loose data. Using memory for what it's for changes how you work."
 alt_lang_url: /es/posts/2026/07/28/memoria-de-trabajo-ram/
 ---

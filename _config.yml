@@ -2,7 +2,7 @@ title: "The Engineering Protocol Stack"
 tagline: "A Layered Model for Engineering Leadership"
 description: >-
   A book by Guillem Fernandez that maps the human side of engineering
-  leadership onto the layers of a computer system — CPU, RAM, LAN and WAN —
+  leadership onto the layers of a computer system — CPU, LAN and WAN —
   so the "soft" parts of the job finally get a clear, usable structure.
 
 # Site-wide default social-share image for jekyll-seo-tag (og:image /

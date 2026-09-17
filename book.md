@@ -2,8 +2,8 @@
 title: The Book
 subtitle: "The Engineering Protocol Stack — A Layered Model for Engineering Leadership"
 description: >-
-  What's inside The Engineering Protocol Stack: the four-layer model — CPU,
-  RAM, LAN and WAN — and how each layer's typical "bugs" show up in
+  What's inside The Engineering Protocol Stack: the three-layer model — CPU,
+  LAN and WAN — and how each layer's typical "bugs" show up in
   engineering leadership.
 permalink: /book/
 lang: en
@@ -24,11 +24,10 @@ We don't have a processor in our head, but thinking of our brain and our
 teams as a layered system helps make visible a part of the job that's rarely
 taught explicitly: managing attention, memory, teams, and organizations.
 
-**The Engineering Protocol Stack** organizes engineering leadership into four
+**The Engineering Protocol Stack** organizes engineering leadership into three
 layers, from the inside out:
 
-- **CPU** — how you manage your own focus, tasks, and priorities.
-- **RAM** — how you use your working memory and learn new things without overload.
+- **CPU** — how you manage your own focus, tasks, priorities, and working memory, and how you learn new things without overload.
 - **LAN** — how you go from a group of people to an actual team.
 - **WAN** — how your team connects to stakeholders, other teams, and the rest of the organization.
 

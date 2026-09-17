@@ -3,7 +3,7 @@ title: Vídeos
 subtitle: Charlas, explicaciones y extractos en vídeo del framework del libro
 description: >-
   Charlas, explicaciones y extractos en vídeo sobre el framework
-  CPU/RAM/LAN/WAN de The Engineering Protocol Stack.
+  CPU/LAN/WAN de The Engineering Protocol Stack.
 permalink: /es/videos/
 layout: page
 lang: es

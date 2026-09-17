@@ -2,7 +2,7 @@
 title: Self-Assessment
 subtitle: A free, 2-minute knowledge check on your engineering leadership stack
 description: >-
-  Take a free, 2-minute self-assessment quiz on your CPU, RAM, LAN, and WAN
+  Take a free, 2-minute self-assessment quiz on your CPU, LAN, and WAN
   engineering-leadership layers — scored instantly in your browser, no
   email required.
 needs_assessment: true

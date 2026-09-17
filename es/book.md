@@ -2,8 +2,8 @@
 title: El libro
 subtitle: "The Engineering Protocol Stack — A Layered Model for Engineering Leadership"
 description: >-
-  Qué encontrarás en The Engineering Protocol Stack: el modelo de cuatro
-  capas — CPU, RAM, LAN y WAN — y cómo se manifiestan los "bugs" típicos de
+  Qué encontrarás en The Engineering Protocol Stack: el modelo de tres
+  capas — CPU, LAN y WAN — y cómo se manifiestan los "bugs" típicos de
   cada capa en el liderazgo de ingeniería.
 permalink: /es/book/
 lang: es
@@ -26,10 +26,9 @@ trabajo que rara vez se enseña de forma explícita: la gestión de la atención
 la memoria, los equipos y las organizaciones.
 
 **The Engineering Protocol Stack** organiza el liderazgo en ingeniería en
-cuatro capas, de dentro hacia afuera:
+tres capas, de dentro hacia afuera:
 
-- **CPU** — cómo gestionas tu propio foco, tus tareas y tus prioridades.
-- **RAM** — cómo usas tu memoria de trabajo y aprendes cosas nuevas sin saturarte.
+- **CPU** — cómo gestionas tu propio foco, tus tareas, tus prioridades y tu memoria de trabajo, y cómo aprendes cosas nuevas sin saturarte.
 - **LAN** — cómo pasas de un grupo de personas a un equipo de verdad.
 - **WAN** — cómo tu equipo se conecta con stakeholders, otros equipos y el resto de la organización.
 

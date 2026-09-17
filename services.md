@@ -3,7 +3,7 @@ title: Services
 subtitle: Coaching, mentoring, and training built on the book's framework
 description: >-
   Coaching, mentoring, and training for engineering leaders and teams, built
-  on the CPU/RAM/LAN/WAN framework — from 1:1 leadership coaching to team
+  on the CPU/LAN/WAN framework — from 1:1 leadership coaching to team
   health diagnostics.
 permalink: /services/
 lang: en
@@ -23,7 +23,7 @@ build better ways of working.
 
 Not sure yet where to start? Take the free
 [self-assessment]({{ '/assessment/' | relative_url }}) first — it scores
-your CPU, RAM, LAN, and WAN layers in about five minutes and points you to
+your CPU, LAN, and WAN layers in about five minutes and points you to
 the service below that matches your weakest layer.
 
 ## For companies
