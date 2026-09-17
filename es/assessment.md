@@ -1,6 +1,10 @@
 ---
 title: Autoevaluación
 subtitle: Una comprobación de conocimiento gratuita de 2 minutos sobre tu stack de liderazgo en ingeniería
+description: >-
+  Haz una autoevaluación gratuita de 2 minutos sobre tus capas CPU, RAM,
+  LAN y WAN de liderazgo en ingeniería — puntuada al instante en tu
+  navegador, sin necesidad de email.
 permalink: /es/assessment/
 lang: es
 alt_lang_url: /assessment/

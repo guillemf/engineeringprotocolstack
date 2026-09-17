@@ -1,13 +1,17 @@
 ---
 title: El libro
 subtitle: "The Engineering Protocol Stack — A Layered Model for Engineering Leadership"
+description: >-
+  Qué encontrarás en The Engineering Protocol Stack: el modelo de cuatro
+  capas — CPU, RAM, LAN y WAN — y cómo se manifiestan los "bugs" típicos de
+  cada capa en el liderazgo de ingeniería.
 permalink: /es/book/
 lang: es
 alt_lang_url: /book/
 ---
 
 <p style="text-align:center; margin: -1rem 0 2.4rem;">
-  <img src="{{ site.book.cover_image | relative_url }}" alt="Portada del libro" style="max-width:260px; margin:0 auto; border-radius:10px; box-shadow:0 30px 60px -20px rgba(0,0,0,.7);">
+  <img src="{{ site.book.cover_image | relative_url }}" alt="Portada del libro" width="700" height="989" style="max-width:260px; height:auto; margin:0 auto; border-radius:10px; box-shadow:0 30px 60px -20px rgba(0,0,0,.7);">
 </p>
 
 <p style="text-align:center;">

@@ -1,6 +1,9 @@
 ---
 title: Contacto
 subtitle: ¿Preguntas sobre el libro, una charla o los servicios? Escríbeme.
+description: >-
+  Escríbeme sobre el libro, una charla, o servicios de coaching y formación
+  para tu equipo de ingeniería.
 permalink: /es/contact/
 lang: es
 alt_lang_url: /contact/

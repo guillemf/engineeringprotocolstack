@@ -1,6 +1,10 @@
 ---
 title: Services
 subtitle: Coaching, mentoring, and training built on the book's framework
+description: >-
+  Coaching, mentoring, and training for engineering leaders and teams, built
+  on the CPU/RAM/LAN/WAN framework — from 1:1 leadership coaching to team
+  health diagnostics.
 permalink: /services/
 lang: en
 alt_lang_url: /es/services/

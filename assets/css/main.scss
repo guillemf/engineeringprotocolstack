@@ -15,7 +15,10 @@
 
   --text:          #f2f4fb;
   --text-muted:    #a7add0;
-  --text-faint:    #6c7399;
+  /* Lightened from #6c7399 — the original failed WCAG AA (3.8–4.2:1) for
+     normal-size text against --bg/--surface. #8388b0 keeps the same hue
+     but clears 4.5:1 against both. */
+  --text-faint:    #8388b0;
 
   --cyan:          #4fd1ff;
   --cyan-soft:     rgba(79, 209, 255, 0.12);
@@ -229,6 +232,7 @@ img { max-width: 100%; display: block; }
 .hero__cover img {
   width: 100%;
   max-width: 320px;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 30px 70px -20px rgba(0,0,0,0.7), 0 0 0 1px var(--border);
   transform: rotate(1.5deg);
@@ -465,6 +469,7 @@ section { padding: 56px 0; }
 }
 .footer-mark {
   width: 44px;
+  height: auto;
   border-radius: 6px;
   margin-bottom: 12px;
 }

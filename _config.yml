@@ -5,6 +5,11 @@ description: >-
   leadership onto the layers of a computer system — CPU, RAM, LAN and WAN —
   so the "soft" parts of the job finally get a clear, usable structure.
 
+# Site-wide default social-share image for jekyll-seo-tag (og:image /
+# twitter:image). Individual pages can override this by setting their own
+# `image:` in front matter — see about.md, which uses the author photo.
+image: /assets/images/book-cover.jpg
+
 default_lang: en
 languages: [en, es]
 

@@ -1,6 +1,10 @@
 ---
 title: Reserva una llamada conmigo
 subtitle: Una llamada introductoria gratuita de 30 minutos para ver cómo puedo ayudar a tu equipo o a tu propio crecimiento
+description: >-
+  Reserva una llamada introductoria gratuita de 30 minutos con Guillem
+  Fernandez para hablar sobre el crecimiento de tu equipo o el tuyo propio —
+  sin venta, solo una conversación.
 permalink: /es/consulta/
 lang: es
 alt_lang_url: /consultation/

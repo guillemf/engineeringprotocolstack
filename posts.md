@@ -1,6 +1,9 @@
 ---
 title: Blog
 subtitle: Ideas from the CPU · RAM · LAN · WAN framework, applied to everyday work
+description: >-
+  Articles applying the CPU, RAM, LAN, and WAN layers of The Engineering
+  Protocol Stack to everyday engineering-leadership situations.
 permalink: /posts/
 layout: page
 lang: en

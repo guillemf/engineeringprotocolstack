@@ -1,6 +1,9 @@
 ---
 title: Blog
 subtitle: Ideas del framework CPU · RAM · LAN · WAN, aplicadas al día a día
+description: >-
+  Artículos que aplican las capas CPU, RAM, LAN y WAN de The Engineering
+  Protocol Stack al día a día del liderazgo en ingeniería.
 permalink: /es/posts/
 layout: page
 lang: es

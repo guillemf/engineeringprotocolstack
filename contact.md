@@ -1,6 +1,9 @@
 ---
 title: Contact
 subtitle: Questions about the book, a talk, or the services? Get in touch.
+description: >-
+  Get in touch about the book, a speaking engagement, or coaching and
+  training services for your engineering team.
 permalink: /contact/
 lang: en
 alt_lang_url: /es/contact/

@@ -1,6 +1,10 @@
 ---
 title: Servicios
 subtitle: Coaching, mentoring y formación basados en el framework del libro
+description: >-
+  Coaching, mentoring y formación para líderes y equipos de ingeniería,
+  basados en el framework CPU/RAM/LAN/WAN — desde coaching de liderazgo 1:1
+  hasta diagnósticos de salud de equipo.
 permalink: /es/services/
 lang: es
 alt_lang_url: /services/

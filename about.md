@@ -1,6 +1,11 @@
 ---
 title: About the Author
 subtitle: Guillem Fernandez — Engineering Director & People Engineer
+description: >-
+  Guillem Fernandez is an Engineering Director and People Engineer — former
+  Head of Engineering at Bumble and Head of Transformation & Operations at
+  Allianz Technology — and author of The Engineering Protocol Stack.
+image: /assets/images/author.jpg
 permalink: /about/
 lang: en
 alt_lang_url: /es/about/
@@ -8,6 +13,7 @@ alt_lang_url: /es/about/
 
 <p>
   <img src="{{ '/assets/images/author.jpg' | relative_url }}" alt="Guillem Fernandez"
+       width="365" height="500"
        style="width:180px; height:180px; object-fit:cover; border-radius:50%; float:right; margin:0 0 1.2rem 1.6rem; box-shadow:0 0 0 4px var(--bg), 0 0 0 5px var(--border);">
 </p>
 

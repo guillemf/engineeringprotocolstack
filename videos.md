@@ -1,6 +1,9 @@
 ---
 title: Videos
 subtitle: Talks, explanations, and video excerpts from the book's framework
+description: >-
+  Talks, explanations, and video excerpts covering the CPU/RAM/LAN/WAN
+  framework from The Engineering Protocol Stack.
 permalink: /videos/
 layout: page
 lang: en
