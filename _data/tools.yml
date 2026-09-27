@@ -75,11 +75,31 @@ en:
           and never to us.
     screenshots_title: A look at it
     # Each entry needs `image` (a path under /assets/images/) and `caption`.
-    # Empty until the screenshots are taken, which the page handles by omitting
-    # the section rather than linking images that do not exist. Every screenshot
-    # must use invented names: the app's subject matter is private notes about
-    # identifiable people.
-    screenshots: []
+    # The template renders the caption as the image's alt text as well, so each
+    # one has to describe its screenshot on its own rather than only make sense
+    # beside it. Every name shown is invented and every address is under
+    # example.com: the app's subject matter is private notes about identifiable
+    # people, so these were taken against a seeded demo dataset.
+    screenshots:
+      - image: /assets/images/trustline-session.png
+        caption: >-
+          A one-to-one in Trustline, with the agenda written before the meeting,
+          the report's own emailed reply kept apart from the manager's notes, and
+          every action item carrying an owner.
+      - image: /assets/images/trustline-career-path.png
+        caption: >-
+          The career path canvas, showing an individual contributor track and a
+          leadership track with the promotion routes between positions drawn as
+          arrows.
+      - image: /assets/images/trustline-team-roster.png
+        caption: >-
+          A team roster, listing which suggested roles are filled, which are
+          still unfilled, and which of them rest on a single person.
+      - image: /assets/images/trustline-health-trend.png
+        caption: >-
+          A team health trend, scoring ten themes from one to five at every check
+          so that a slow decline in flow of work or learning shows up while it is
+          still fixable.
     privacy_title: Why it has no account
     privacy: >-
       The subject matter is private notes about identifiable people, which is
@@ -186,7 +206,29 @@ es:
           configuras tú. Las credenciales van al llavero de tu sistema
           operativo, nunca a un archivo y nunca a nosotros.
     screenshots_title: Un vistazo
-    screenshots: []
+    # Las mismas capturas que en el locale `en`, con el pie traducido. El pie
+    # se usa también como texto alternativo de la imagen, así que cada uno
+    # describe su captura por sí solo.
+    screenshots:
+      - image: /assets/images/trustline-session.png
+        caption: >-
+          Un one-to-one en Trustline, con la agenda escrita antes de la reunión,
+          la respuesta por correo de la persona separada de las notas del
+          manager, y cada tarea con un responsable.
+      - image: /assets/images/trustline-career-path.png
+        caption: >-
+          El canvas de plan de carrera, con un itinerario de contribución
+          individual y otro de liderazgo, y las rutas de promoción entre
+          posiciones dibujadas como flechas.
+      - image: /assets/images/trustline-team-roster.png
+        caption: >-
+          La plantilla de un equipo, con los roles sugeridos que están cubiertos,
+          los que siguen sin cubrir y los que dependen de una sola persona.
+      - image: /assets/images/trustline-health-trend.png
+        caption: >-
+          La tendencia de salud de un equipo, que puntúa diez temas de uno a
+          cinco en cada revisión para que un deterioro lento del flujo de trabajo
+          o del aprendizaje se vea mientras todavía tiene arreglo.
     privacy_title: Por qué no tiene cuenta
     privacy: >-
       El contenido son notas privadas sobre personas identificables, que es el
