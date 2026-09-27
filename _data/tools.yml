@@ -1,0 +1,227 @@
+# Copy for the Tools section: the /tools/ index and the /tools/trustline/
+# product page, in both languages.
+#
+# Prose only. The release coordinates the download buttons need — version,
+# repository, and the exact filename the bundler produces for each platform —
+# live under `trustline:` in _config.yml, keyed by the same `id` used in the
+# `downloads` map below. Keeping them apart means a version bump touches one
+# line of configuration and no copy at all.
+
+en:
+  index:
+    intro: >-
+      Software built from the same framework as the book — an application you
+      install and a diagnostic that runs in your browser. Each one takes a layer
+      of the stack off the page and makes it something you can actually work
+      with, rather than a principle you agree with and then forget.
+    items:
+      - name: Trustline
+        tagline: One-to-ones, trust, and career paths for engineering managers
+        url: /tools/trustline/
+        layer: LAN
+        cta: See Trustline
+        points:
+          - Free to download for macOS, Windows, and Linux
+          - Your notes stay on your own machine
+          - Built on the team-management chapter of the book
+      # Lives at /assessment/, not under /tools/, because the home page and both
+      # services pages have linked to that URL since before this section existed
+      # and the site has no redirect plugin to preserve it.
+      - name: Self-Assessment
+        tagline: A free, two-minute knowledge check on the stack itself
+        url: /assessment/
+        layer: CPU · LAN · WAN
+        cta: Take the assessment
+        points:
+          - Ten questions drawn at random from the book
+          - Scored in your browser, with no email required
+          - A result for every layer, not one number
+  trustline:
+    intro: >-
+      Trustline keeps the record an engineering manager needs and nobody else
+      should read. It follows the team-management chapter of The Engineering
+      Protocol Stack: the sessions you hold, the trust you have actually earned,
+      and the career path each person on your team is on.
+    features_title: What it does
+    features:
+      - title: One-to-one sessions
+        text: >-
+          A structured record of every one-to-one — what was discussed, what was
+          agreed, and what is still open — so the next session starts where the
+          last one ended instead of from memory.
+      - title: Trust, tracked honestly
+        text: >-
+          Trust is the currency a manager actually spends. Trustline asks you to
+          state where it stands with each report and keeps the history, which
+          makes a slow decline visible while it is still fixable.
+      - title: Career path canvas
+        text: >-
+          Place every report on a visual career path, group them by team or
+          level, and see the whole shape of your organisation's growth on one
+          canvas instead of in a spreadsheet nobody opens.
+      - title: Reports you can hand over
+        text: >-
+          Export the career path as a PDF to take into a calibration meeting, a
+          promotion committee, or a conversation with your own manager.
+      - title: Teams and documents
+        text: >-
+          Group reports into teams and keep the documents that belong to each —
+          charters, on-call rotations, working agreements — beside the people
+          they apply to.
+      - title: Email from your own accounts
+        text: >-
+          Reach your team through the mail accounts you configure yourself.
+          Credentials go to your operating system's keychain, never to a file
+          and never to us.
+    screenshots_title: A look at it
+    # Each entry needs `image` (a path under /assets/images/) and `caption`.
+    # Empty until the screenshots are taken, which the page handles by omitting
+    # the section rather than linking images that do not exist. Every screenshot
+    # must use invented names: the app's subject matter is private notes about
+    # identifiable people.
+    screenshots: []
+    privacy_title: Why it has no account
+    privacy: >-
+      The subject matter is private notes about identifiable people, which is
+      the strongest possible argument against storing it on someone else's
+      computer. Trustline has no account, no sign-up, and no backend of its own.
+      Your notes are ordinary files in your own user directory, and the only
+      servers the app contacts are the mail accounts you enter yourself. Nothing
+      is synced, nothing is analysed, and there is no telemetry.
+    download_title: Download
+    download_intro: >-
+      Free, with no account and no email address required. Paid additions may
+      come later; what is here stays free.
+    version_label: Version
+    all_releases: All releases and release notes
+    downloads:
+      macos:
+        label: Download for macOS
+        requirement: Universal · Intel and Apple silicon
+      windows:
+        label: Download for Windows
+        requirement: Windows 10 or later · 64-bit
+      linux_appimage:
+        label: Download for Linux
+        requirement: AppImage · x86_64 · Ubuntu 22.04 or newer and equivalents
+      linux_deb:
+        label: Debian package
+        requirement: .deb · Debian 12+, Ubuntu 22.04+, and derivatives
+    unsigned_title: The first launch needs one extra step
+    unsigned: >-
+      These builds are not yet signed with a paid developer certificate, so
+      macOS and Windows will both warn that the publisher cannot be verified.
+      This is what the warning means in practice: the operating system can see
+      that the file carries no certificate it recognises, not that it found
+      anything wrong with it. On macOS, right-click the app and choose Open,
+      then confirm once. On Windows, choose "More info" and then "Run anyway".
+      Certificates are being obtained and the warnings will disappear in a later
+      release.
+
+es:
+  index:
+    intro: >-
+      Software construido con el mismo framework que el libro: una aplicación que
+      instalas y un diagnóstico que funciona en tu navegador. Cada uno saca una
+      capa del stack del papel y la convierte en algo con lo que puedes trabajar
+      de verdad, en lugar de un principio con el que estás de acuerdo y que luego
+      olvidas.
+    items:
+      - name: Trustline
+        tagline: One-to-ones, confianza y planes de carrera para managers de ingeniería
+        url: /es/tools/trustline/
+        layer: LAN
+        cta: Ver Trustline
+        points:
+          - Descarga gratuita para macOS, Windows y Linux
+          - Tus notas se quedan en tu propio ordenador
+          - Basado en el capítulo de gestión de equipos del libro
+      - name: Autoevaluación
+        tagline: Una comprobación de conocimiento gratuita de dos minutos sobre el propio stack
+        url: /es/assessment/
+        layer: CPU · LAN · WAN
+        cta: Hacer la autoevaluación
+        points:
+          - Diez preguntas tomadas al azar del propio libro
+          - Puntuada en tu navegador, sin necesidad de email
+          - Un resultado por cada capa, no un solo número
+  trustline:
+    intro: >-
+      Trustline guarda el registro que un manager de ingeniería necesita y que
+      nadie más debería leer. Sigue el capítulo de gestión de equipos de The
+      Engineering Protocol Stack: las sesiones que mantienes, la confianza que
+      realmente te has ganado y el plan de carrera en el que está cada persona
+      de tu equipo.
+    features_title: Qué hace
+    features:
+      - title: Sesiones one-to-one
+        text: >-
+          Un registro estructurado de cada one-to-one — qué se habló, qué se
+          acordó y qué sigue abierto — para que la siguiente sesión empiece
+          donde acabó la anterior y no desde la memoria.
+      - title: Confianza, medida con honestidad
+        text: >-
+          La confianza es la moneda que un manager gasta de verdad. Trustline te
+          pide que indiques cómo está con cada persona y guarda el histórico, lo
+          que hace visible un deterioro lento mientras todavía tiene arreglo.
+      - title: Canvas de plan de carrera
+        text: >-
+          Sitúa a cada persona en un plan de carrera visual, agrúpalas por
+          equipo o nivel y observa la forma completa del crecimiento de tu
+          organización en un solo canvas, en lugar de en una hoja de cálculo que
+          nadie abre.
+      - title: Informes que puedes entregar
+        text: >-
+          Exporta el plan de carrera en PDF para llevarlo a una reunión de
+          calibración, a un comité de promociones o a una conversación con tu
+          propio manager.
+      - title: Equipos y documentos
+        text: >-
+          Agrupa a las personas en equipos y guarda los documentos que
+          pertenecen a cada uno — cartas de equipo, rotaciones de guardia,
+          acuerdos de trabajo — junto a las personas a las que se aplican.
+      - title: Email desde tus propias cuentas
+        text: >-
+          Contacta con tu equipo a través de las cuentas de correo que
+          configuras tú. Las credenciales van al llavero de tu sistema
+          operativo, nunca a un archivo y nunca a nosotros.
+    screenshots_title: Un vistazo
+    screenshots: []
+    privacy_title: Por qué no tiene cuenta
+    privacy: >-
+      El contenido son notas privadas sobre personas identificables, que es el
+      argumento más fuerte posible contra guardarlo en el ordenador de otro.
+      Trustline no tiene cuenta, ni registro, ni backend propio. Tus notas son
+      archivos normales en tu propio directorio de usuario, y los únicos
+      servidores con los que la aplicación habla son las cuentas de correo que
+      introduces tú. Nada se sincroniza, nada se analiza y no hay telemetría.
+    download_title: Descargar
+    download_intro: >-
+      Gratis, sin cuenta y sin necesidad de dar una dirección de correo. Puede
+      que más adelante haya funciones de pago; lo que hay aquí seguirá siendo
+      gratuito.
+    version_label: Versión
+    all_releases: Todas las versiones y notas de publicación
+    downloads:
+      macos:
+        label: Descargar para macOS
+        requirement: Universal · Intel y Apple silicon
+      windows:
+        label: Descargar para Windows
+        requirement: Windows 10 o posterior · 64 bits
+      linux_appimage:
+        label: Descargar para Linux
+        requirement: AppImage · x86_64 · Ubuntu 22.04 o posterior y equivalentes
+      linux_deb:
+        label: Paquete Debian
+        requirement: .deb · Debian 12+, Ubuntu 22.04+ y derivadas
+    unsigned_title: El primer arranque necesita un paso extra
+    unsigned: >-
+      Estas versiones todavía no están firmadas con un certificado de
+      desarrollador de pago, así que macOS y Windows avisarán de que no pueden
+      verificar al editor. Esto es lo que significa el aviso en la práctica: el
+      sistema operativo ve que el archivo no lleva un certificado que reconozca,
+      no que haya encontrado nada malo en él. En macOS, haz clic derecho sobre
+      la aplicación y elige Abrir, y confirma una vez. En Windows, elige "Más
+      información" y después "Ejecutar de todas formas". Los certificados están
+      en trámite y los avisos desaparecerán en una versión posterior.

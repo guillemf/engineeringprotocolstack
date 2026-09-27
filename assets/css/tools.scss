@@ -1,0 +1,87 @@
+---
+---
+/* ==========================================================================
+   The Engineering Protocol Stack — Tools section
+   Loaded as a second stylesheet after main.css, on pages that set
+   `needs_tools: true`. Reuses the design tokens from main.scss's :root and the
+   existing .service-card, .card and .btn* classes without editing that file;
+   what is here is only the layout those components sit in, plus the screenshot
+   figures, which have no equivalent elsewhere on the site.
+   ========================================================================== */
+
+/* ---------- Tools index ---------- */
+
+/* Unlike .services-grid, which is a fixed two columns, this has to look
+   deliberate with a single card in it — there is one tool today. auto-fit lets
+   one card fill the column and two share it, with no modifier class to remember
+   when the second tool ships. */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Same eyebrow treatment the home page gives its CPU/LAN/WAN cards, repeated
+   here so a tool visibly belongs to a layer of the framework. Scoped to
+   .layer-card in main.scss, hence the restatement rather than a shared rule. */
+.tool-card .layer-tag {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: .78rem;
+  letter-spacing: .08em;
+  color: var(--cyan);
+}
+.tool-card h3 { margin: .5rem 0 .4rem; }
+.tool-card__tagline { color: var(--text); font-weight: 500; }
+.tool-card .btn { margin-top: .6rem; }
+
+/* ---------- Download buttons ---------- */
+
+.downloads {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin: 1.6rem 0 1.2rem;
+}
+.download__btn {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.download__requirement {
+  margin: .6rem 0 0;
+  font-size: .85rem;
+  color: var(--text-faint);
+  text-align: center;
+}
+.downloads__footnote {
+  font-size: .9rem;
+  color: var(--text-faint);
+  margin-bottom: 2rem;
+}
+
+/* ---------- Screenshots ---------- */
+
+.shots {
+  display: grid;
+  gap: 28px;
+  margin: 1.6rem 0 0;
+}
+.shot { margin: 0; }
+.shot img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.shot figcaption {
+  margin-top: .7rem;
+  font-size: .88rem;
+  color: var(--text-faint);
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .tools-grid, .downloads { grid-template-columns: 1fr; }
+}

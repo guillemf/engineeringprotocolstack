@@ -26,6 +26,34 @@ book:
   buy_url: "https://leanpub.com/engineeringprotocolstack"
   cover_image: /assets/images/book-cover.jpg
 
+# Where the Trustline installers linked from /tools/trustline/ actually live.
+#
+# A separate, public, releases-only repository: the application source is
+# private, and GitHub will not serve release assets from a private repository to
+# anonymous visitors. This repository holds no code — only the built installers.
+#
+# `version` has to match the version in the app's Cargo.toml, because the Tauri
+# bundler puts it in every filename and `releases/latest/download/<file>` is an
+# exact-filename URL. The release workflow refuses to build a tag that disagrees
+# with the manifest, so the two cannot silently drift; a new release means
+# bumping this one line.
+#
+# The `file` values are what the bundler produces for each platform, and the
+# `id` keys match the `downloads` map in _data/tools.yml, which supplies the
+# label and system requirement shown next to each button.
+trustline:
+  version: "0.1.0"
+  releases_repo: "guillemf/trustline-releases"
+  downloads:
+    - id: macos
+      file: "Trustline_0.1.0_universal.dmg"
+    - id: windows
+      file: "Trustline_0.1.0_x64-setup.exe"
+    - id: linux_appimage
+      file: "Trustline_0.1.0_amd64.AppImage"
+    - id: linux_deb
+      file: "Trustline_0.1.0_amd64.deb"
+
 # Base URL of the platform API that powers the dynamic self-assessment
 # quiz on /assessment/. Must be HTTPS in production — the site itself is
 # served over HTTPS, and browsers block an HTTPS page from fetching

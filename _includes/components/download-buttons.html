@@ -1,0 +1,35 @@
+{% comment %}
+  One download button per platform, joining the release coordinates in
+  _config.yml (`site.trustline.downloads`) to the localised label and system
+  requirement in _data/tools.yml. The `id` on each side is what pairs them, so
+  adding a platform means adding it to both files and nothing else.
+
+  Reuses .btn / .btn-primary / .btn-outline from main.scss rather than defining
+  new button styles; only the layout around them is new, in tools.scss.
+{% endcomment %}
+
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.tools[lang].trustline %}
+{% assign releases_url = "https://github.com/" | append: site.trustline.releases_repo | append: "/releases" %}
+
+<div class="downloads">
+  {% for platform in site.trustline.downloads %}
+  {% assign copy = t.downloads[platform.id] %}
+  <div class="download">
+    {% comment %}
+      `releases/latest/download/<file>` always resolves to the newest published
+      release, so these links survive a new version without being edited — as
+      long as the filename still matches, which is why the version lives in
+      _config.yml and not in this markup.
+    {% endcomment %}
+    <a class="btn {% if forloop.first %}btn-primary{% else %}btn-outline{% endif %} download__btn"
+       href="{{ releases_url }}/latest/download/{{ platform.file }}">{{ copy.label }}</a>
+    <p class="download__requirement">{{ copy.requirement }}</p>
+  </div>
+  {% endfor %}
+</div>
+
+<p class="downloads__footnote">
+  {{ t.version_label }} {{ site.trustline.version }} ·
+  <a href="{{ releases_url }}" target="_blank" rel="noopener">{{ t.all_releases }}</a>
+</p>

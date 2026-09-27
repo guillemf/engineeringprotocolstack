@@ -21,7 +21,13 @@
       <a href="{{ home_url | append: 'posts/' | replace: '//', '/' | relative_url }}">{{ t.nav.blog }}</a>
       <a href="{{ home_url | append: 'videos/' | replace: '//', '/' | relative_url }}">{{ t.nav.videos }}</a>
       <a href="{{ home_url | append: 'services/' | replace: '//', '/' | relative_url }}">{{ t.nav.services }}</a>
-      <a href="{{ home_url | append: 'assessment/' | replace: '//', '/' | relative_url }}">{{ t.nav.assessment }}</a>
+      {% comment %}
+        The self-assessment is reached through Tools, which lists it alongside
+        Trustline, rather than from a nav entry of its own — a ninth link beside
+        the two CTAs wraps this row at laptop widths. Its own URL is unchanged,
+        so the home-page and services links to it still work.
+      {% endcomment %}
+      <a href="{{ home_url | append: 'tools/' | replace: '//', '/' | relative_url }}">{{ t.nav.tools }}</a>
       <a href="{{ home_url | append: 'about/' | replace: '//', '/' | relative_url }}">{{ t.nav.about }}</a>
       <a href="{{ home_url | append: 'contact/' | replace: '//', '/' | relative_url }}">{{ t.nav.contact }}</a>
 
