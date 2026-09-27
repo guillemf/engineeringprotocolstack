@@ -588,7 +588,9 @@ section { padding: 56px 0; }
   .site-nav a { width: 100%; padding: 14px 24px; border-top: 1px solid var(--border); }
   .nav-cta { border-radius: 0; text-align: center; }
   .nav-lang { border-radius: 0; width: 100%; height: auto; }
-  .nav-toggle:checked ~ .site-nav { max-height: 500px; }
+  /* Viewport-based rather than a fixed height: the nav outgrew the previous
+     500px cap and `overflow: hidden` silently clipped the trailing links. */
+  .nav-toggle:checked ~ .site-nav { max-height: 100vh; overflow-y: auto; }
 }
 
 @media (max-width: 600px) {
