@@ -28,5 +28,5 @@ alt_lang_url: /videos/
 </div>
 
 <p class="videos-footnote">
-  Más vídeos y contenido gratuito en <a href="{{ site.author.engineeringprotocolstack }}" target="_blank" rel="noopener">engineeringprotocolstack.com</a>.
+  Todos los vídeos se publican en el <a href="{{ site.author.youtube }}" target="_blank" rel="noopener">canal de YouTube</a>. Suscríbete para no perderte el contenido nuevo sobre las capas CPU, LAN y WAN.
 </p>

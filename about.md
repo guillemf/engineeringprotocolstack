@@ -68,6 +68,7 @@ and pushed back on, not just read.
 ## Follow me
 
 - [LinkedIn]({{ site.author.linkedin }})
+- [YouTube]({{ site.author.youtube }}) — the framework explained on video, layer by layer
 - [GitHub]({{ site.author.github }})
 - [guillem.cat]({{ site.author.website }})
 - [engineeringprotocolstack.com]({{ site.author.engineeringprotocolstack }}) — free content built on the book's framework

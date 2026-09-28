@@ -21,6 +21,7 @@ alt_lang_url: /contact/
       <ul class="contact-list">
         <li><strong>Email</strong> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
         <li><strong>LinkedIn</strong> <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">gfernandezg</a></li>
+        <li><strong>YouTube</strong> <a href="{{ site.author.youtube }}" target="_blank" rel="noopener">@guillemefege</a></li>
         <li><strong>GitHub</strong> <a href="{{ site.author.github }}" target="_blank" rel="noopener">guillemf</a></li>
         <li><strong>Web</strong> <a href="{{ site.author.website }}" target="_blank" rel="noopener">guillem.cat</a></li>
       </ul>

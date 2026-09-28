@@ -70,6 +70,7 @@ cuestionarse, no solo para leerse.
 ## Sígueme
 
 - [LinkedIn]({{ site.author.linkedin }})
+- [YouTube]({{ site.author.youtube }}) — el framework explicado en vídeo, capa por capa
 - [GitHub]({{ site.author.github }})
 - [guillem.cat]({{ site.author.website }})
 - [engineeringprotocolstack.com]({{ site.author.engineeringprotocolstack }}) — contenido gratuito sobre el framework del libro
