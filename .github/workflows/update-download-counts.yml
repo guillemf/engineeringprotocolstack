@@ -1,0 +1,78 @@
+# Refreshes _data/trustline_downloads.yml from the GitHub Releases API and
+# commits it when the numbers have moved.
+#
+# Why a committed data file rather than a fetch in the visitor's browser: this
+# site is built by the default GitHub Pages builder, which runs Jekyll in safe
+# mode with no custom plugins and no network access, so the counts cannot be
+# fetched at build time. The alternative is client-side JavaScript, which would
+# add a request to api.github.com for every visitor to the download page and
+# leave the number missing whenever that request is rate-limited. A daily commit
+# costs nothing and puts the number in the HTML.
+
+name: Update Trustline download counts
+
+on:
+  schedule:
+    # 06:17 UTC daily. Deliberately off the hour: scheduled jobs booked on the
+    # hour sit in the most contended queue on shared runners and are the ones
+    # most often delayed.
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write # to commit the refreshed data file
+  pages: write # to request a Pages rebuild — see the last step
+
+# Two overlapping runs would race on the same file and push.
+concurrency:
+  group: trustline-download-counts
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5.1.0
+
+      - name: Read the download counts
+        env:
+          # Raises the API allowance from 60 requests/hour for an anonymous
+          # caller on a shared runner IP to 5,000/hour.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/update_download_counts.py
+
+      - name: Commit if the counts changed
+        id: commit
+        run: |
+          # The `updated` timestamp changes on every run, so diffing the whole
+          # file would produce a commit a day even when nobody has downloaded
+          # anything. Only the lines carrying counts decide.
+          if git diff -- _data/trustline_downloads.yml \
+             | grep -qE '^[+-](total|releases):|^[+-]  (tag|total):'; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add _data/trustline_downloads.yml
+            git commit -m "chore(site): refresh Trustline download counts"
+            git push
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Counts unchanged — discarding the timestamp-only diff."
+            git checkout -- _data/trustline_downloads.yml
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Ask GitHub Pages to rebuild
+        # A push made with GITHUB_TOKEN does not trigger further workflow runs,
+        # and the branch-based Pages deploy is itself a workflow. Without this
+        # request the commit lands but the published site keeps serving the old
+        # number until some unrelated push happens to rebuild it.
+        #
+        # continue-on-error because the commit has already succeeded by this
+        # point. The worst case is a stale page until the next deploy, which is
+        # not worth failing the job over — but the step log will say so rather
+        # than the failure being silent.
+        if: steps.commit.outputs.pushed == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"

@@ -116,6 +116,17 @@ en:
       come later; what is here stays free.
     version_label: Version
     all_releases: All releases and release notes
+    # %count% is replaced with the total from _data/trustline_downloads.yml.
+    # Rendered only once that total clears `trustline.downloads_min_display` in
+    # _config.yml, so this string has to read as a plain fact rather than a
+    # boast. The singular form exists because "1 downloads" is the kind of detail
+    # that undermines everything around it.
+    #
+    # The placeholder uses no braces on purpose: Liquid ends a `{{ ... }}` tag at
+    # the first `}` it sees, so a `%{count}` style placeholder cannot be passed
+    # through the `replace` filter at all.
+    downloads_count: "%count% downloads"
+    downloads_count_one: "1 download"
     downloads:
       macos:
         label: Download for macOS
@@ -249,6 +260,10 @@ es:
       gratuito.
     version_label: Versión
     all_releases: Todas las versiones y notas de publicación
+    # See the note on the English keys: %count% is replaced with the total from
+    # _data/trustline_downloads.yml.
+    downloads_count: "%count% descargas"
+    downloads_count_one: "1 descarga"
     downloads:
       macos:
         label: Descargar para macOS

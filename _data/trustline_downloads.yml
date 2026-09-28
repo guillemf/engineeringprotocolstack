@@ -1,0 +1,32 @@
+# Trustline release download counts.
+#
+# GENERATED FILE — do not edit by hand. Overwritten by
+# .github/scripts/update_download_counts.py, which reads the GitHub Releases
+# API for the repository named in `trustline.releases_repo` in _config.yml.
+#
+# It is committed rather than fetched in the browser on purpose: the counts do
+# not need to be live, and a build-time value keeps the number in the HTML
+# instead of adding a request to api.github.com on every visit to the download
+# page.
+#
+# Whether the number is rendered at all is decided by
+# `trustline.downloads_min_display` in _config.yml, not by this file.
+
+# When the counts below were read, UTC.
+updated: "2026-09-28T16:19:47Z"
+
+# Every asset of every published, non-draft, non-prerelease release added
+# together. This is the number the page shows: it answers "how many times has
+# Trustline been downloaded", which is the only question a visitor is asking.
+total: 10
+
+# How many published releases those downloads are spread across.
+releases: 2
+
+# The newest published release on its own. Not currently rendered — it is here
+# because it resets to near zero on every version bump, which makes it the
+# wrong number for social proof and the right one for judging whether a release
+# is being picked up.
+latest:
+  tag: "v0.2.0"
+  total: 5

@@ -12,6 +12,23 @@
 {% assign t = site.data.tools[lang].trustline %}
 {% assign releases_url = "https://github.com/" | append: site.trustline.releases_repo | append: "/releases" %}
 
+{% comment %}
+  Download total, refreshed daily into _data/trustline_downloads.yml by
+  .github/workflows/update-download-counts.yml.
+
+  Suppressed until it clears `trustline.downloads_min_display`, because a small
+  number is worse than no number: it tells a visitor evaluating a tool for their
+  team that nobody else has adopted it. `default` leaves an explicit 0 alone —
+  Liquid substitutes only for nil, false and empty — so setting the threshold to
+  0 shows the count unconditionally.
+{% endcomment %}
+{% assign downloads = site.data.trustline_downloads %}
+{% assign downloads_min = site.trustline.downloads_min_display | default: 250 %}
+{% assign show_downloads = false %}
+{% if downloads.total and downloads.total >= downloads_min %}
+  {% assign show_downloads = true %}
+{% endif %}
+
 <div class="downloads">
   {% for platform in site.trustline.downloads %}
   {% assign copy = t.downloads[platform.id] %}
@@ -31,5 +48,25 @@
 
 <p class="downloads__footnote">
   {{ t.version_label }} {{ site.trustline.version }} ·
+  {%- if show_downloads %}
+  {%- comment %}
+    `| append: ""` casts the integer to a string first, because Liquid's
+    `replace` does not coerce a numeric argument and the placeholder would
+    otherwise survive into the page.
+
+    The placeholder is `%count%` rather than `%{count}` because Liquid ends a
+    variable tag at the first `}` it encounters, which truncates the filter
+    argument and fails the build.
+
+    The singular is a separate key rather than a conditional plural suffix, so
+    Spanish is not forced to follow English pluralisation.
+  {%- endcomment %}
+  {%- assign count = downloads.total | append: "" %}
+  {%- if downloads.total == 1 %}
+  <span class="downloads__count">{{ t.downloads_count_one }}</span> ·
+  {%- else %}
+  <span class="downloads__count">{{ t.downloads_count | replace: "%count%", count }}</span> ·
+  {%- endif %}
+  {%- endif %}
   <a href="{{ releases_url }}" target="_blank" rel="noopener">{{ t.all_releases }}</a>
 </p>

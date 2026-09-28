@@ -45,6 +45,13 @@ book:
 trustline:
   version: "0.2.0"
   releases_repo: "guillemf/trustline-releases"
+  # The download counter on /tools/trustline/ is rendered only once the total in
+  # _data/trustline_downloads.yml reaches this number. A visible count is social
+  # proof, and social proof in the low hundreds argues the opposite of what it is
+  # there to argue — so the counter stays hidden until it helps rather than
+  # advertising how new the product is. Set to 0 to show the number whatever it
+  # is; the counts themselves are refreshed daily either way.
+  downloads_min_display: 250
   downloads:
     - id: macos
       file: "Trustline_0.2.0_universal.dmg"
