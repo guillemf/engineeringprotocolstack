@@ -106,8 +106,10 @@ en:
       the strongest possible argument against storing it on someone else's
       computer. Trustline has no account, no sign-up, and no backend of its own.
       Your notes are ordinary files in your own user directory, and the only
-      servers the app contacts are the mail accounts you enter yourself. Nothing
-      is synced, nothing is analysed, and there is no telemetry.
+      servers the app contacts are the mail accounts you enter yourself and,
+      once a day, GitHub — to ask whether a newer version has been published.
+      That request sends nothing about you or your notes, and you can turn it
+      off. Nothing is synced, nothing is analysed, and there is no telemetry.
     download_title: Download
     download_intro: >-
       Free, with no account and no email address required. Paid additions may
@@ -236,7 +238,10 @@ es:
       Trustline no tiene cuenta, ni registro, ni backend propio. Tus notas son
       archivos normales en tu propio directorio de usuario, y los únicos
       servidores con los que la aplicación habla son las cuentas de correo que
-      introduces tú. Nada se sincroniza, nada se analiza y no hay telemetría.
+      introduces tú y, una vez al día, GitHub, para preguntar si se ha publicado
+      una versión más nueva. Esa petición no envía nada sobre ti ni sobre tus
+      notas, y puedes desactivarla. Nada se sincroniza, nada se analiza y no hay
+      telemetría.
     download_title: Descargar
     download_intro: >-
       Gratis, sin cuenta y sin necesidad de dar una dirección de correo. Puede
