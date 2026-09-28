@@ -10,8 +10,11 @@ lang: es
 alt_lang_url: /videos/
 ---
 
+{% assign videos = site.data.videos[page.lang].items %}
+
+{% if videos and videos.size > 0 %}
 <div class="video-grid">
-  {% for video in site.data.videos.es %}
+  {% for video in videos %}
   <div class="video-card">
     <div class="ratio">
       <iframe src="https://www.youtube-nocookie.com/embed/{{ video.youtube_id }}"
@@ -30,3 +33,6 @@ alt_lang_url: /videos/
 <p class="videos-footnote">
   Todos los vídeos se publican en el <a href="{{ site.author.youtube }}" target="_blank" rel="noopener">canal de YouTube</a>. Suscríbete para no perderte el contenido nuevo sobre las capas CPU, LAN y WAN.
 </p>
+{% else %}
+{% include components/channel-cta.html %}
+{% endif %}

@@ -1,0 +1,21 @@
+{% comment %}
+  Shown on /videos/ and /es/videos/ while there is no video to embed, so the
+  page offers a route to the channel instead of an empty grid.
+
+  Copy comes from _data/videos.yml (`cta`, per language), so this file holds no
+  English or Spanish text. The channel URL comes from `site.author.youtube` in
+  _config.yml, the single place it is defined.
+
+  Reuses .card / .btn / .btn-primary from main.scss; it adds no styles of its
+  own, because assets/ is not modified.
+{% endcomment %}
+
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign cta = site.data.videos[lang].cta %}
+
+<div class="card">
+  <h2>{{ cta.title }}</h2>
+  <p>{{ cta.text }}</p>
+  <a class="btn btn-primary" href="{{ site.author.youtube }}"
+     target="_blank" rel="noopener">{{ cta.button }}</a>
+</div>

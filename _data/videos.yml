@@ -1,26 +1,54 @@
+# Drives /videos/ and /es/videos/.
+#
+# `items` is the embed grid. Add one entry per published video, with the real
+# 11-character YouTube id. While `items` is empty the page renders the `cta`
+# card instead, so the page can never show a dead player.
+#
+# `planned` is the intended running order. It is read by no template -- it lives
+# here so the editorial plan sits beside the data it will become. Move an entry
+# up into `items` when the video is actually published, with its real id.
+#
+# The entries now under `planned` previously sat under the language key
+# directly, carrying the scaffolding ids YOUR_YOUTUBE_ID_HERE and
+# TU_ID_DE_VIDEO_AQUI. Because the templates loop straight into an <iframe>,
+# that rendered eight dead players in production, four per language.
+
 es:
-  - title: "The Engineering Protocol Stack — presentación del libro"
-    youtube_id: "TU_ID_DE_VIDEO_AQUI"
-    description: "Introducción al framework CPU · LAN · WAN y a la idea central del libro."
-  - title: "CPU: cómo gestionar tu foco como un ingeniero"
-    youtube_id: "TU_ID_DE_VIDEO_AQUI"
-    description: "La primera capa del stack: tareas, prioridades y el coste de cambiar de contexto."
-  - title: "LAN: de grupo a equipo de alto rendimiento"
-    youtube_id: "TU_ID_DE_VIDEO_AQUI"
-    description: "Roles, carrera profesional y las cinco disfunciones de un equipo, explicadas con ejemplos reales."
-  - title: "WAN: gestionar stakeholders sin perder tu equipo por el camino"
-    youtube_id: "TU_ID_DE_VIDEO_AQUI"
-    description: "Cómo mapear expectativas y proteger a tu equipo mientras gestionas hacia arriba y hacia fuera."
+  items: []
+
+  cta:
+    title: "Pronto habrá vídeo"
+    text: >-
+      Estamos preparando material en vídeo sobre las capas CPU, LAN y WAN.
+      Suscríbete al canal para recibir cada uno en cuanto salga.
+    button: "Suscríbete en YouTube →"
+
+  planned:
+    - title: "The Engineering Protocol Stack — presentación del libro"
+      description: "Introducción al framework CPU · LAN · WAN y a la idea central del libro."
+    - title: "CPU: cómo gestionar tu foco como un ingeniero"
+      description: "La primera capa del stack: tareas, prioridades y el coste de cambiar de contexto."
+    - title: "LAN: de grupo a equipo de alto rendimiento"
+      description: "Roles, carrera profesional y las cinco disfunciones de un equipo, explicadas con ejemplos reales."
+    - title: "WAN: gestionar stakeholders sin perder tu equipo por el camino"
+      description: "Cómo mapear expectativas y proteger a tu equipo mientras gestionas hacia arriba y hacia fuera."
+
 en:
-  - title: "The Engineering Protocol Stack — book overview"
-    youtube_id: "YOUR_YOUTUBE_ID_HERE"
-    description: "An introduction to the CPU · LAN · WAN framework and the core idea behind the book."
-  - title: "CPU: how to manage your focus like an engineer"
-    youtube_id: "YOUR_YOUTUBE_ID_HERE"
-    description: "The first layer of the stack: tasks, priorities, and the real cost of switching context."
-  - title: "LAN: from a group to a high-performing team"
-    youtube_id: "YOUR_YOUTUBE_ID_HERE"
-    description: "Team roles, career paths, and the five dysfunctions of a team, explained with real examples."
-  - title: "WAN: managing stakeholders without losing your team along the way"
-    youtube_id: "YOUR_YOUTUBE_ID_HERE"
-    description: "How to map expectations and protect your team while managing upward and outward."
+  items: []
+
+  cta:
+    title: "Video is on the way"
+    text: >-
+      Video material on the CPU, LAN and WAN layers is in production.
+      Subscribe to the channel to get each one as it lands.
+    button: "Subscribe on YouTube →"
+
+  planned:
+    - title: "The Engineering Protocol Stack — book overview"
+      description: "An introduction to the CPU · LAN · WAN framework and the core idea behind the book."
+    - title: "CPU: how to manage your focus like an engineer"
+      description: "The first layer of the stack: tasks, priorities, and the real cost of switching context."
+    - title: "LAN: from a group to a high-performing team"
+      description: "Team roles, career paths, and the five dysfunctions of a team, explained with real examples."
+    - title: "WAN: managing stakeholders without losing your team along the way"
+      description: "How to map expectations and protect your team while managing upward and outward."
