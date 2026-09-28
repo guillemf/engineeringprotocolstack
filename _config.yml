@@ -42,17 +42,17 @@ book:
 # `id` keys match the `downloads` map in _data/tools.yml, which supplies the
 # label and system requirement shown next to each button.
 trustline:
-  version: "0.1.0"
+  version: "0.2.0"
   releases_repo: "guillemf/trustline-releases"
   downloads:
     - id: macos
-      file: "Trustline_0.1.0_universal.dmg"
+      file: "Trustline_0.2.0_universal.dmg"
     - id: windows
-      file: "Trustline_0.1.0_x64-setup.exe"
+      file: "Trustline_0.2.0_x64-setup.exe"
     - id: linux_appimage
-      file: "Trustline_0.1.0_amd64.AppImage"
+      file: "Trustline_0.2.0_amd64.AppImage"
     - id: linux_deb
-      file: "Trustline_0.1.0_amd64.deb"
+      file: "Trustline_0.2.0_amd64.deb"
 
 # Base URL of the platform API that powers the dynamic self-assessment
 # quiz on /assessment/. Must be HTTPS in production — the site itself is
