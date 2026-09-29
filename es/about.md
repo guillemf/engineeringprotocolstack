@@ -5,15 +5,15 @@ description: >-
   Guillem Fernandez es Engineering Director y People Engineer — ex Head of
   Engineering en Bumble y Head of Transformation & Operations en Allianz
   Technology — y autor de The Engineering Protocol Stack.
-image: /assets/images/author.jpg
+image: /assets/images/author-avatar.jpg
 permalink: /es/about/
 lang: es
 alt_lang_url: /about/
 ---
 
 <p>
-  <img src="{{ '/assets/images/author.jpg' | relative_url }}" alt="Guillem Fernandez"
-       width="365" height="500" class="author-photo">
+  <img src="{{ '/assets/images/author-avatar.jpg' | relative_url }}" alt="Guillem Fernandez"
+       width="800" height="800" class="author-photo">
 </p>
 
 Soy **Guillem Fernandez**, y me defino como **People Engineer**: alguien que
