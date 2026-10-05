@@ -31,9 +31,8 @@ layers, from the inside out:
 - **LAN** — how you go from a group of people to an actual team.
 - **WAN** — how your team connects to stakeholders, other teams, and the rest of the organization.
 
-You don't need to read the chapters in strict sequence — each one stands on
-its own — but reading them in this order shows why the layers depend on each
-other, and why fixing a problem at the wrong layer rarely works.
+You don't need to read the chapters in strict sequence — each one stands on its own — but reading them in this order shows why the layers depend on each other. The stack is a practical diagnostic tool: it helps you identify whether
+a problem lives in your own way of working, inside the team, or in the team's relationship with the wider organization before you reach for a solution.
 
 ## Table of contents
 
