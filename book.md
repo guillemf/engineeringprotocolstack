@@ -27,7 +27,7 @@ taught explicitly: managing attention, memory, teams, and organizations.
 **The Engineering Protocol Stack** organizes engineering leadership into three
 layers, from the inside out:
 
-- **CPU** — how you manage your own focus, tasks, priorities, and working memory, and how you learn new things without overload.
+- **CPU** — how you manage your own focus, tasks, priorities, and working memory; how you build reliable personal processes; how you learn new things without overload; and how you store knowledge so it remains useful over time.
 - **LAN** — how you go from a group of people to an actual team.
 - **WAN** — how your team connects to stakeholders, other teams, and the rest of the organization.
 
@@ -46,6 +46,8 @@ other, and why fixing a problem at the wrong layer rarely works.
 - Task Manager (multitasking, task execution, and prioritizing)
 - RAM, Your Memory (how memory works, its enemies, the method of loci)
 - Process Organization (organization systems, journaling, planning and review)
+- Loading New Content (how we absorb new information without overload)
+- Storage (personal knowledge management and external memory systems)
 
 **LAN**
 - Identifying Team Status
