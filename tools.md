@@ -16,6 +16,7 @@ alt_lang_url: /es/tools/
 <div class="tools-grid">
   {% for tool in site.data.tools.en.index.items %}
   <div class="service-card tool-card">
+    {% if tool.icon %}<img class="tool-card__icon" src="{{ tool.icon | relative_url }}" alt="" width="56" height="56" loading="lazy">{% endif %}
     <span class="layer-tag">{{ tool.layer }}</span>
     <h3>{{ tool.name }}</h3>
     <p class="tool-card__tagline">{{ tool.tagline }}</p>

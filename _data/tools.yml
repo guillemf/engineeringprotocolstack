@@ -1,5 +1,5 @@
-# Copy for the Tools section: the /tools/ index and the /tools/trustline/
-# product page, in both languages.
+# Copy for the Tools section: the /tools/ index and the /tools/trustline/ and
+# /tools/threadline/ product pages, in both languages.
 #
 # Prose only. The release coordinates the download buttons need — version,
 # repository, and the exact filename the bundler produces for each platform —
@@ -15,6 +15,16 @@ en:
       of the stack off the page and makes it something you can actually work
       with, rather than a principle you agree with and then forget.
     items:
+      - name: Threadline
+        tagline: Capture, decide, and plan your day as an engineering leader
+        url: /tools/threadline/
+        layer: CPU
+        icon: /assets/images/threadline-icon.png
+        cta: See Threadline
+        points:
+          - Free to download for macOS, Windows, and Linux
+          - One local database, with no account and no telemetry
+          - Built on the CPU layer of the book
       - name: Trustline
         tagline: One-to-ones, trust, and career paths for engineering managers
         url: /tools/trustline/
@@ -36,6 +46,135 @@ en:
           - Ten questions drawn at random from the book
           - Scored in your browser, with no email required
           - A result for every layer, not one number
+  threadline:
+    intro: >-
+      Threadline manages the one resource every leader runs short of: your own
+      capacity. It is the CPU layer of The Engineering Protocol Stack made into
+      an application. It captures everything that lands on you, helps you decide
+      what each item is, plans the day around the time you actually have, and
+      closes the day and the week with a review.
+    hero_alt: >-
+      Threadline: glowing lines of light running across a dark field like traces
+      on a circuit board.
+    features_title: What it does
+    features:
+      - title: Capture from anywhere
+        text: >-
+          A global shortcut opens a one-line capture window over whatever you
+          are doing, so nothing has to be remembered and nothing interrupts the
+          work in front of you.
+      - title: Process the inbox
+        text: >-
+          Decide what each item is: do it, delegate it, schedule it, keep it as
+          reference, or drop it. The whole pass runs from the keyboard.
+      - title: The Matrix
+        text: >-
+          Every active item sits in one of four quadrants of urgent and
+          important, so the work that is important but not urgent stops being
+          invisible.
+      - title: Plan your day
+        text: >-
+          Choose a Big 3, see your calendar, and start the day with a kick-off
+          that compares what you planned with the time you actually have.
+      - title: Focus blocks
+        text: >-
+          Work on one thing at a time, and record how each block ended. The
+          record shows where your attention really went.
+      - title: Waiting for and follow-ups
+        text: >-
+          Everything you handed to someone else, grouped by person, with the
+          date you meant to check back, so a delegated task does not quietly
+          become a dropped one.
+      - title: Daily, weekly and monthly reviews
+        text: >-
+          Close the day, run the weekly review step by step, and let the monthly
+          migration surface what keeps slipping from one list to the next.
+      - title: Projects and statistics
+        text: >-
+          Lightweight projects with next actions, and a dashboard of what you
+          finished and where the work is piling up. Available in English,
+          Spanish, and Catalan, with full keyboard operation.
+    screenshots_title: A look at it
+    # Same rules as the Trustline screenshots: the caption doubles as alt text,
+    # so each one has to describe its image on its own. Every name and task shown
+    # is invented; they were taken against a seeded demo dataset.
+    screenshots:
+      - image: /assets/images/threadline-today.png
+        caption: >-
+          The Today screen, with the Big 3 for the day, the follow-ups that have
+          come due, the meetings already on the calendar, and the quick wins that
+          fit the gaps between them.
+      - image: /assets/images/threadline-kickoff.png
+        caption: >-
+          The daily kick-off, comparing the minutes planned with the minutes
+          actually free, suggesting a Big 3, and listing what could move off
+          today when the plan does not fit.
+      - image: /assets/images/threadline-matrix.png
+        caption: >-
+          The Matrix, with active items sorted into Do first, Schedule,
+          Delegate, and Eliminate, and a count on each quadrant.
+      - image: /assets/images/threadline-inbox.png
+        caption: >-
+          The inbox, listing ten unprocessed captures with the source each one
+          arrived from and the age of each, beside the detail of the selected
+          item.
+      - image: /assets/images/threadline-waiting.png
+        caption: >-
+          Waiting for, with the items handed to other people grouped by person
+          and the ones past their check-back date flagged for a follow-up.
+    privacy_title: Why it has no account
+    privacy: >-
+      What lands on a leader is rarely public: hiring decisions, incidents,
+      candid notes about people. That is the strongest argument for keeping it
+      off someone else's computer. Threadline has no account, no sign-up, and no
+      backend. Everything is one local database in your own user directory. The
+      only servers it contacts are the calendar feeds you add yourself, which it
+      reads and never writes to, and, once a day, GitHub, to ask whether a newer
+      version has been published. That request sends nothing about you or your
+      work, and you can turn it off. There is no telemetry of any kind, and the
+      logs never contain the titles or notes of your items. You can export every
+      table to a single file at any time.
+    download_title: Download
+    download_intro: >-
+      Free, with no account and no email address required. Paid additions may
+      come later; what is here stays free.
+    version_label: Version
+    all_releases: All releases and release notes
+    # See the note on the trustline keys: %count% is replaced with the total
+    # from _data/threadline_downloads.yml.
+    downloads_count: "%count% downloads"
+    downloads_count_one: "1 download"
+    downloads:
+      macos_arm:
+        label: Download for macOS
+        requirement: Apple silicon · M1 or later
+      macos_intel:
+        label: macOS for Intel
+        requirement: .dmg · Intel-based Macs
+      windows:
+        label: Download for Windows
+        requirement: Windows · 64-bit
+      linux_appimage:
+        label: Download for Linux
+        requirement: AppImage · x86_64 · runs on most distributions
+      linux_deb:
+        label: Debian package
+        requirement: .deb · Debian, Ubuntu, and derivatives
+      linux_rpm:
+        label: RPM package
+        requirement: .rpm · Fedora, openSUSE, and derivatives
+    unsigned_title: The first launch needs one extra step
+    unsigned: >-
+      These builds are not yet signed with a paid developer certificate, so
+      macOS and Windows will both warn that the publisher cannot be verified.
+      This is what the warning means in practice: the operating system can see
+      that the file carries no certificate it recognises, not that it found
+      anything wrong with it. On macOS, right-click the app and choose Open,
+      then confirm once. On Windows, choose "More info" and then "Run anyway".
+      On Linux there is no warning, but an AppImage has to be made executable
+      before it will run. Certificates are being obtained and the warnings will
+      disappear in a later release.
+
   trustline:
     intro: >-
       Trustline keeps the record an engineering manager needs and nobody else
@@ -160,6 +299,16 @@ es:
       de verdad, en lugar de un principio con el que estás de acuerdo y que luego
       olvidas.
     items:
+      - name: Threadline
+        tagline: Captura, decide y planifica tu día como líder de ingeniería
+        url: /es/tools/threadline/
+        layer: CPU
+        icon: /assets/images/threadline-icon.png
+        cta: Ver Threadline
+        points:
+          - Descarga gratuita para macOS, Windows y Linux
+          - Una base de datos local, sin cuenta y sin telemetría
+          - Basado en la capa CPU del libro
       - name: Trustline
         tagline: One-to-ones, confianza y planes de carrera para managers de ingeniería
         url: /es/tools/trustline/
@@ -178,6 +327,138 @@ es:
           - Diez preguntas tomadas al azar del propio libro
           - Puntuada en tu navegador, sin necesidad de email
           - Un resultado por cada capa, no un solo número
+  threadline:
+    intro: >-
+      Threadline gestiona el recurso que a todo líder le falta: tu propia
+      capacidad. Es la capa CPU de The Engineering Protocol Stack convertida en
+      aplicación. Captura todo lo que te llega, te ayuda a decidir qué es cada
+      cosa, planifica el día según el tiempo que realmente tienes y cierra el día
+      y la semana con una revisión.
+    hero_alt: >-
+      Threadline: líneas de luz brillantes que cruzan un fondo oscuro como las
+      pistas de una placa de circuito.
+    features_title: Qué hace
+    features:
+      - title: Captura desde cualquier sitio
+        text: >-
+          Un atajo global abre una ventana de captura de una línea sobre lo que
+          estés haciendo, para que nada dependa de la memoria y nada interrumpa
+          el trabajo que tienes delante.
+      - title: Procesa la bandeja de entrada
+        text: >-
+          Decide qué es cada elemento: hacerlo, delegarlo, programarlo,
+          guardarlo como referencia o descartarlo. Todo el repaso se hace con el
+          teclado.
+      - title: La Matriz
+        text: >-
+          Cada elemento activo ocupa uno de los cuatro cuadrantes de urgente e
+          importante, para que lo importante pero no urgente deje de ser
+          invisible.
+      - title: Planifica tu día
+        text: >-
+          Elige tus Big 3, consulta tu calendario y empieza el día con un
+          arranque que compara lo que has planificado con el tiempo que
+          realmente tienes.
+      - title: Bloques de concentración
+        text: >-
+          Trabaja en una sola cosa cada vez y anota cómo terminó cada bloque. El
+          registro muestra adónde fue realmente tu atención.
+      - title: Pendiente de otros y seguimientos
+        text: >-
+          Todo lo que has pasado a otra persona, agrupado por persona y con la
+          fecha en que pensabas volver a mirarlo, para que una tarea delegada no
+          se convierta en silencio en una tarea olvidada.
+      - title: Revisiones diarias, semanales y mensuales
+        text: >-
+          Cierra el día, haz la revisión semanal paso a paso y deja que la
+          migración mensual muestre lo que se sigue arrastrando de una lista a
+          la siguiente.
+      - title: Proyectos y estadísticas
+        text: >-
+          Proyectos ligeros con siguientes acciones y un panel con lo que has
+          terminado y dónde se acumula el trabajo. Disponible en inglés,
+          español y catalán, y se maneja entera con el teclado.
+    screenshots_title: Un vistazo
+    # Las mismas capturas que en el locale `en`, con el pie traducido. El pie
+    # se usa también como texto alternativo de la imagen.
+    screenshots:
+      - image: /assets/images/threadline-today.png
+        caption: >-
+          La pantalla Hoy, con los Big 3 del día, los seguimientos que ya han
+          vencido, las reuniones que ya están en el calendario y las tareas
+          rápidas que caben entre ellas.
+      - image: /assets/images/threadline-kickoff.png
+        caption: >-
+          El arranque del día, que compara los minutos planificados con los
+          minutos realmente libres, sugiere unos Big 3 y lista lo que podría
+          salir de hoy cuando el plan no cabe.
+      - image: /assets/images/threadline-matrix.png
+        caption: >-
+          La Matriz, con los elementos activos repartidos entre Hacer primero,
+          Programar, Delegar y Eliminar, y un contador en cada cuadrante.
+      - image: /assets/images/threadline-inbox.png
+        caption: >-
+          La bandeja de entrada, con diez capturas sin procesar, el origen y la
+          antigüedad de cada una, junto al detalle del elemento seleccionado.
+      - image: /assets/images/threadline-waiting.png
+        caption: >-
+          Pendiente de otros, con lo que has pasado a otras personas agrupado
+          por persona y marcado para seguimiento cuando ha pasado la fecha de
+          revisión.
+    privacy_title: Por qué no tiene cuenta
+    privacy: >-
+      Lo que le llega a un líder casi nunca es público: decisiones de
+      contratación, incidentes, notas sinceras sobre personas. Es el argumento
+      más fuerte para no guardarlo en el ordenador de otro. Threadline no tiene
+      cuenta, ni registro, ni backend. Todo es una base de datos local en tu
+      propio directorio de usuario. Los únicos servidores con los que habla son
+      los calendarios que añades tú, que solo lee y en los que nunca escribe, y,
+      una vez al día, GitHub, para preguntar si se ha publicado una versión más
+      nueva. Esa petición no envía nada sobre ti ni sobre tu trabajo, y puedes
+      desactivarla. No hay telemetría de ningún tipo y los registros nunca
+      contienen los títulos ni las notas de tus elementos. Puedes exportar todas
+      las tablas a un único archivo cuando quieras.
+    download_title: Descargar
+    download_intro: >-
+      Gratis, sin cuenta y sin necesidad de dar una dirección de correo. Puede
+      que más adelante haya funciones de pago; lo que hay aquí seguirá siendo
+      gratuito.
+    version_label: Versión
+    all_releases: Todas las versiones y notas de publicación
+    downloads_count: "%count% descargas"
+    downloads_count_one: "1 descarga"
+    downloads:
+      macos_arm:
+        label: Descargar para macOS
+        requirement: Apple silicon · M1 o posterior
+      macos_intel:
+        label: macOS para Intel
+        requirement: .dmg · Mac con procesador Intel
+      windows:
+        label: Descargar para Windows
+        requirement: Windows · 64 bits
+      linux_appimage:
+        label: Descargar para Linux
+        requirement: AppImage · x86_64 · funciona en la mayoría de distribuciones
+      linux_deb:
+        label: Paquete Debian
+        requirement: .deb · Debian, Ubuntu y derivadas
+      linux_rpm:
+        label: Paquete RPM
+        requirement: .rpm · Fedora, openSUSE y derivadas
+    unsigned_title: El primer arranque necesita un paso extra
+    unsigned: >-
+      Estas versiones todavía no están firmadas con un certificado de
+      desarrollador de pago, así que macOS y Windows avisarán de que no pueden
+      verificar al editor. Esto es lo que significa el aviso en la práctica: el
+      sistema operativo ve que el archivo no lleva un certificado que reconozca,
+      no que haya encontrado nada malo en él. En macOS, haz clic derecho sobre
+      la aplicación y elige Abrir, y confirma una vez. En Windows, elige "Más
+      información" y después "Ejecutar de todas formas". En Linux no hay aviso,
+      pero un AppImage hay que hacerlo ejecutable antes de poder abrirlo. Los
+      certificados están en trámite y los avisos desaparecerán en una versión
+      posterior.
+
   trustline:
     intro: >-
       Trustline guarda el registro que un manager de ingeniería necesita y que

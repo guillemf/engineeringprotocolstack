@@ -82,6 +82,22 @@
   text-align: center;
 }
 
+/* ---------- Threadline: page banner and index-card icon ---------- */
+
+.tool-hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 1.6rem;
+  border-radius: var(--radius);
+}
+.tool-card__icon {
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin-bottom: .6rem;
+}
+
 @media (max-width: 720px) {
   .tools-grid, .downloads { grid-template-columns: 1fr; }
 }

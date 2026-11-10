@@ -1,0 +1,15 @@
+# Threadline release download counts.
+#
+# Seed file. Overwritten by .github/scripts/update_download_counts.py once
+# guillemf/threadline-releases has a published release. It is committed with a
+# zero so the workflow's diff check has a tracked file to compare against: a
+# brand-new untracked file would show no diff and never be committed.
+#
+# Whether the number is rendered is decided by `threadline.downloads_min_display`
+# in _config.yml, so a zero here is never shown.
+updated: "2026-11-10T00:00:00Z"
+total: 0
+releases: 0
+latest:
+  tag: ""
+  total: 0

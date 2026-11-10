@@ -1,4 +1,4 @@
-# Refreshes _data/trustline_downloads.yml from the GitHub Releases API and
+# Refreshes _data/trustline_downloads.yml and _data/threadline_downloads.yml from the GitHub Releases API and
 # commits it when the numbers have moved.
 #
 # Why a committed data file rather than a fetch in the visitor's browser: this
@@ -9,7 +9,7 @@
 # leave the number missing whenever that request is rate-limited. A daily commit
 # costs nothing and puts the number in the HTML.
 
-name: Update Trustline download counts
+name: Update tool download counts
 
 on:
   schedule:
@@ -25,7 +25,7 @@ permissions:
 
 # Two overlapping runs would race on the same file and push.
 concurrency:
-  group: trustline-download-counts
+  group: tool-download-counts
   cancel-in-progress: false
 
 jobs:
@@ -34,7 +34,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5.1.0
 
-      - name: Read the download counts
+      - name: Read the download counts (Trustline and Threadline)
         env:
           # Raises the API allowance from 60 requests/hour for an anonymous
           # caller on a shared runner IP to 5,000/hour.
@@ -47,17 +47,17 @@ jobs:
           # The `updated` timestamp changes on every run, so diffing the whole
           # file would produce a commit a day even when nobody has downloaded
           # anything. Only the lines carrying counts decide.
-          if git diff -- _data/trustline_downloads.yml \
+          if git diff -- '_data/*_downloads.yml' \
              | grep -qE '^[+-](total|releases):|^[+-]  (tag|total):'; then
             git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add _data/trustline_downloads.yml
-            git commit -m "chore(site): refresh Trustline download counts"
+            git add _data/*_downloads.yml
+            git commit -m "chore(site): refresh tool download counts"
             git push
             echo "pushed=true" >> "$GITHUB_OUTPUT"
           else
             echo "Counts unchanged — discarding the timestamp-only diff."
-            git checkout -- _data/trustline_downloads.yml
+            git checkout -- _data/*_downloads.yml
             echo "pushed=false" >> "$GITHUB_OUTPUT"
           fi
 
