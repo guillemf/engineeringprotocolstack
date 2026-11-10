@@ -598,3 +598,16 @@ section { padding: 56px 0; }
   h2 { font-size: 1.5rem; }
   .site-footer__inner { grid-template-columns: 1fr; }
 }
+
+.error-illustration {
+  text-align: center;
+  margin: 0 0 2rem;
+}
+
+.error-illustration img {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  height: auto;
+}
+
