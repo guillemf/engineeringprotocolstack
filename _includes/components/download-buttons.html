@@ -39,18 +39,20 @@
     {% comment %}
       `releases/latest/download/<file>` always resolves to the newest published
       release, so these links survive a new version without being edited — as
-      long as the filename still matches, which is why the version lives in
-      _config.yml and not in this markup.
+      long as the filename still matches. The filenames come from
+      _data/<tool>_downloads.yml, which the daily workflow regenerates from the
+      latest release's assets; `platform.file` in _config.yml is the fallback.
     {% endcomment %}
+    {% assign file = downloads.files[platform.id] | default: platform.file %}
     <a class="btn {% if forloop.first %}btn-primary{% else %}btn-outline{% endif %} download__btn"
-       href="{{ releases_url }}/latest/download/{{ platform.file }}">{{ copy.label }}</a>
+       href="{{ releases_url }}/latest/download/{{ file }}">{{ copy.label }}</a>
     <p class="download__requirement">{{ copy.requirement }}</p>
   </div>
   {% endfor %}
 </div>
 
 <p class="downloads__footnote">
-  {{ t.version_label }} {{ cfg.version }} ·
+  {{ t.version_label }} {{ downloads.version | default: cfg.version }} ·
   {%- if show_downloads %}
   {%- comment %}
     `| append: ""` casts the integer to a string first, because Liquid's

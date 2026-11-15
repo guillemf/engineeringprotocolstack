@@ -48,7 +48,7 @@ jobs:
           # file would produce a commit a day even when nobody has downloaded
           # anything. Only the lines carrying counts decide.
           if git diff -- '_data/*_downloads.yml' \
-             | grep -qE '^[+-](total|releases):|^[+-]  (tag|total):'; then
+             | grep -qE '^[+-](total|releases|version):|^[+-]  [a-z_]+: "'; then
             git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add _data/*_downloads.yml

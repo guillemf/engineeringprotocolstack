@@ -53,6 +53,15 @@ total: {total}
 # How many published releases those downloads are spread across.
 releases: {releases}
 
+# The newest published release's version and installer filenames, which the
+# download buttons use so the links follow each release without a config edit.
+# Filenames are matched to platform ids by suffix (see PLATFORM_SUFFIXES in the
+# script); a platform with no matching asset is omitted and the button falls
+# back to the filename in _config.yml.
+version: "{version}"
+files:
+{files}
+
 # The newest published release on its own. Not currently rendered — it is here
 # because it resets to near zero on every version bump, which makes it the
 # wrong number for social proof and the right one for judging whether a release
@@ -61,6 +70,30 @@ latest:
   tag: "{latest_tag}"
   total: {latest_total}
 '''
+
+
+# Platform id (the keys of `<tool>.downloads` in _config.yml) -> filename suffix
+# the Tauri bundler gives that installer. Checked in order, first match wins.
+PLATFORM_SUFFIXES = (
+    ("macos_arm", "_aarch64.dmg"),
+    ("macos_intel", "_x64.dmg"),
+    ("macos", "_universal.dmg"),
+    ("windows", "_x64-setup.exe"),
+    ("linux_appimage", ".AppImage"),
+    ("linux_deb", ".deb"),
+    ("linux_rpm", ".rpm"),
+)
+
+
+def installer_files(release: dict) -> dict:
+    """Map platform id -> installer filename for the assets of `release`."""
+    names = [asset["name"] for asset in release["assets"]]
+    return {
+        platform: name
+        for platform, suffix in PLATFORM_SUFFIXES
+        for name in names
+        if name.endswith(suffix)
+    }
 
 
 def read_releases_repo(tool: str) -> str:
@@ -136,6 +169,11 @@ def refresh(tool: str) -> None:
             ),
             total=total,
             releases=len(published),
+            version=latest["tag_name"].lstrip("v"),
+            files="\n".join(
+                f'  {platform}: "{name}"'
+                for platform, name in installer_files(latest).items()
+            ),
             latest_tag=latest["tag_name"],
             latest_total=latest_total,
         ),
