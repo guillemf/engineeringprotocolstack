@@ -26,6 +26,12 @@ alt_lang_url: /tools/threadline/
   <p>{{ t.unsigned }}</p>
 </div>
 
+<div class="card" style="margin: 1.8rem 0; border-left: 4px solid var(--cyan);">
+  <h3>📖 Guía de Usuario y Documentación del Protocolo CPU</h3>
+  <p>Threadline es la capa CPU de The Engineering Protocol Stack hecha software. Aprende a dominar la Captura Rápida, el modo Procesar, los Bloques de Enfoque, la Matriz de Eisenhower y los rituales de Revisión con nuestra guía completa.</p>
+  <p><a class="btn btn--primary" href="{{ '/tools/threadline/docs/' | relative_url }}">Explorar la Documentación de Threadline &rarr;</a></p>
+</div>
+
 {% if t.screenshots.size > 0 %}
 ## {{ t.screenshots_title }}
 

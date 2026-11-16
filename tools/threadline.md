@@ -26,6 +26,12 @@ alt_lang_url: /es/tools/threadline/
   <p>{{ t.unsigned }}</p>
 </div>
 
+<div class="card" style="margin: 1.8rem 0; border-left: 4px solid var(--cyan);">
+  <h3>📖 User Guide &amp; CPU Protocol Documentation</h3>
+  <p>Threadline is the CPU layer of The Engineering Protocol Stack made into software. Learn how to master Fast Capture, Process mode, Focus Blocks, the Eisenhower Matrix, and Review rituals with our complete guide.</p>
+  <p><a class="btn btn--primary" href="{{ '/tools/threadline/docs/' | relative_url }}">Explore Threadline Documentation &rarr;</a></p>
+</div>
+
 {% if t.screenshots.size > 0 %}
 ## {{ t.screenshots_title }}
 
