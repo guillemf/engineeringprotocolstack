@@ -12,7 +12,7 @@ alt_lang_url: /es/tools/threadline/docs/
 <div class="docs-wrap">
   <header class="docs-header">
     <div class="docs-meta">
-      <span class="badge">App v1.0.0-rc1</span>
+      <span class="badge">App v1.0.0</span>
       <span class="badge">CPU Layer Architecture</span>
       <span>Published for <a href="https://engineeringprotocolstack.com">The Engineering Protocol Stack</a></span>
     </div>
