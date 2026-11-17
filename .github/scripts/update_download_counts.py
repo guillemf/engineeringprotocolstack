@@ -157,7 +157,10 @@ def refresh(tool: str) -> None:
         return
 
     total = sum(asset["download_count"] for r in published for asset in r["assets"])
-    latest = published[0]  # the API returns releases newest first
+    # The API orders by creation, not publication: a release drafted before an
+    # older one was published (v1.0.0 vs v1.0.0-rc.1) would otherwise lose.
+    # ISO-8601 UTC strings sort chronologically.
+    latest = max(published, key=lambda r: r["published_at"])
     latest_total = sum(asset["download_count"] for asset in latest["assets"])
 
     output_file.write_text(
