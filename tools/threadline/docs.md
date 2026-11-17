@@ -2,7 +2,7 @@
 layout: default
 title: "Threadline User Guide & CPU Protocol Documentation"
 subtitle: "The CPU Layer of The Engineering Protocol Stack"
-description: "Comprehensive guide and reference for Threadline v1.0.0 — capture, decide, prioritize, plan your day, and manage your capacity as an engineering leader."
+description: "Comprehensive guide and reference for Threadline v1.0.1 — capture, decide, prioritize, plan your day, and manage your capacity as an engineering leader."
 needs_tools: true
 permalink: /tools/threadline/docs/
 lang: en
@@ -12,7 +12,7 @@ alt_lang_url: /es/tools/threadline/docs/
 <div class="docs-wrap">
   <header class="docs-header">
     <div class="docs-meta">
-      <span class="badge">App v1.0.0</span>
+      <span class="badge">App v1.0.1</span>
       <span class="badge">CPU Layer Architecture</span>
       <span>Published for <a href="https://engineeringprotocolstack.com">The Engineering Protocol Stack</a></span>
     </div>
