@@ -13,12 +13,12 @@
 # `threadline.downloads_min_display` in _config.yml, not by this file.
 
 # When the counts below were read, UTC.
-updated: "2026-11-23T11:15:45Z"
+updated: "2026-11-23T17:58:29Z"
 
 # Every asset of every published, non-draft, non-prerelease release added
 # together. This is the number the page shows: it answers "how many times has
 # Threadline been downloaded", which is the only question a visitor is asking.
-total: 121
+total: 142
 
 # How many published releases those downloads are spread across.
 releases: 6
@@ -43,4 +43,4 @@ files:
 # is being picked up.
 latest:
   tag: "v1.2.0"
-  total: 4
+  total: 25
