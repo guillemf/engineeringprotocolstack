@@ -13,34 +13,34 @@
 # `threadline.downloads_min_display` in _config.yml, not by this file.
 
 # When the counts below were read, UTC.
-updated: "2026-11-19T15:40:16Z"
+updated: "2026-11-23T11:15:45Z"
 
 # Every asset of every published, non-draft, non-prerelease release added
 # together. This is the number the page shows: it answers "how many times has
 # Threadline been downloaded", which is the only question a visitor is asking.
-total: 69
+total: 121
 
 # How many published releases those downloads are spread across.
-releases: 5
+releases: 6
 
 # The newest published release's version and installer filenames, which the
 # download buttons use so the links follow each release without a config edit.
 # Filenames are matched to platform ids by suffix (see PLATFORM_SUFFIXES in the
 # script); a platform with no matching asset is omitted and the button falls
 # back to the filename in _config.yml.
-version: "1.1.0"
+version: "1.2.0"
 files:
-  macos_arm: "Threadline_1.1.0_aarch64.dmg"
-  macos_intel: "Threadline_1.1.0_x64.dmg"
-  windows: "Threadline_1.1.0_x64-setup.exe"
-  linux_appimage: "Threadline_1.1.0_amd64.AppImage"
-  linux_deb: "Threadline_1.1.0_amd64.deb"
-  linux_rpm: "Threadline-1.1.0-1.x86_64.rpm"
+  macos_arm: "Threadline_1.2.0_aarch64.dmg"
+  macos_intel: "Threadline_1.2.0_x64.dmg"
+  windows: "Threadline_1.2.0_x64-setup.exe"
+  linux_appimage: "Threadline_1.2.0_amd64.AppImage"
+  linux_deb: "Threadline_1.2.0_amd64.deb"
+  linux_rpm: "Threadline-1.2.0-1.x86_64.rpm"
 
 # The newest published release on its own. Not currently rendered — it is here
 # because it resets to near zero on every version bump, which makes it the
 # wrong number for social proof and the right one for judging whether a release
 # is being picked up.
 latest:
-  tag: "v1.1.0"
-  total: 16
+  tag: "v1.2.0"
+  total: 4
