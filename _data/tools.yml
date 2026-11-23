@@ -173,9 +173,7 @@ en:
       anything wrong with it. On Windows, choose "More info" and then "Run anyway".
       On Linux there is no warning, but an AppImage has to be made executable
       before it will run.
-      A Windows certificate is being obtained and the warning will disappear in a
-      later release.
-      disappear in a later release.
+      Windows code signing is planned for a later release.
 
   trustline:
     intro: >-
@@ -289,8 +287,7 @@ en:
       verified. This is what the warning means in practice: the operating system
       can see that the file carries no certificate it recognises, not that it found
       anything wrong with it. On Windows, choose "More info" and then "Run anyway".
-      A Windows certificate is being obtained and the warning will disappear in a
-      later release.
+      Windows code signing is planned for a later release.
 
 es:
   index:
@@ -459,8 +456,7 @@ es:
       información" y después "Ejecutar de todas formas".
       En Linux no hay aviso, pero un AppImage hay que hacerlo ejecutable antes de
       poder abrirlo.
-      Hay un certificado para Windows en trámite y el aviso desaparecerá en una
-      versión posterior.
+      La firma de código para Windows está prevista para una versión posterior.
 
   trustline:
     intro: >-
@@ -570,5 +566,4 @@ es:
       práctica: el sistema operativo ve que el archivo no lleva un certificado que
       reconozca, no que haya encontrado nada malo en él. En Windows, elige "Más
       información" y después "Ejecutar de todas formas".
-      Hay un certificado para Windows en trámite y el aviso desaparecerá en una
-      versión posterior.
+      La firma de código para Windows está prevista para una versión posterior.
