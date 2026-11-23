@@ -19,7 +19,7 @@ en:
         tagline: Capture, decide, and plan your day as an engineering leader
         url: /tools/threadline/
         layer: CPU
-        icon: /assets/images/threadline-icon.png
+        icon: /assets/images/threadline-app-icon.png
         cta: See Threadline
         points:
           - Free to download for macOS, Windows, and Linux
@@ -29,6 +29,7 @@ en:
         tagline: One-to-ones, trust, and career paths for engineering managers
         url: /tools/trustline/
         layer: LAN
+        icon: /assets/images/trustline-app-icon.png
         cta: See Trustline
         points:
           - Free to download for macOS, Windows, and Linux
@@ -129,9 +130,10 @@ en:
       off someone else's computer. Threadline has no account, no sign-up, and no
       backend. Everything is one local database in your own user directory. The
       only servers it contacts are the calendar feeds you add yourself, which it
-      reads and never writes to, and, once a day, GitHub, to ask whether a newer
-      version has been published. That request sends nothing about you or your
-      work, and you can turn it off. There is no telemetry of any kind, and the
+      reads and never writes to, and GitHub: once a day to ask whether a newer
+      version has been published, and, only when you press Install now, to
+      download it. Neither request sends anything about you or your work, and
+      you can turn the daily check off. There is no telemetry of any kind, and the
       logs never contain the titles or notes of your items. You can export every
       table to a single file at any time.
     download_title: Download
@@ -303,7 +305,7 @@ es:
         tagline: Captura, decide y planifica tu día como líder de ingeniería
         url: /es/tools/threadline/
         layer: CPU
-        icon: /assets/images/threadline-icon.png
+        icon: /assets/images/threadline-app-icon.png
         cta: Ver Threadline
         points:
           - Descarga gratuita para macOS, Windows y Linux
@@ -313,6 +315,7 @@ es:
         tagline: One-to-ones, confianza y planes de carrera para managers de ingeniería
         url: /es/tools/trustline/
         layer: LAN
+        icon: /assets/images/trustline-app-icon.png
         cta: Ver Trustline
         points:
           - Descarga gratuita para macOS, Windows y Linux
@@ -412,10 +415,11 @@ es:
       más fuerte para no guardarlo en el ordenador de otro. Threadline no tiene
       cuenta, ni registro, ni backend. Todo es una base de datos local en tu
       propio directorio de usuario. Los únicos servidores con los que habla son
-      los calendarios que añades tú, que solo lee y en los que nunca escribe, y,
-      una vez al día, GitHub, para preguntar si se ha publicado una versión más
-      nueva. Esa petición no envía nada sobre ti ni sobre tu trabajo, y puedes
-      desactivarla. No hay telemetría de ningún tipo y los registros nunca
+      los calendarios que añades tú, que solo lee y en los que nunca escribe, y
+      GitHub: una vez al día, para preguntar si se ha publicado una versión más
+      nueva, y solo cuando pulsas Instalar ahora, para descargarla. Ninguna de
+      las dos peticiones envía nada sobre ti ni sobre tu trabajo, y puedes
+      desactivar la comprobación diaria. No hay telemetría de ningún tipo y los registros nunca
       contienen los títulos ni las notas de tus elementos. Puedes exportar todas
       las tablas a un único archivo cuando quieras.
     download_title: Descargar
