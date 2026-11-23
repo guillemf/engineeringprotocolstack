@@ -163,16 +163,18 @@ en:
       linux_rpm:
         label: RPM package
         requirement: .rpm · Fedora, openSUSE, and derivatives
-    unsigned_title: The first launch needs one extra step
+    unsigned_title: On Windows, the first launch needs one extra step
     unsigned: >-
-      These builds are not yet signed with a paid developer certificate, so
-      macOS and Windows will both warn that the publisher cannot be verified.
-      This is what the warning means in practice: the operating system can see
-      that the file carries no certificate it recognises, not that it found
-      anything wrong with it. On macOS, right-click the app and choose Open,
-      then confirm once. On Windows, choose "More info" and then "Run anyway".
+      The macOS builds are signed and notarised by Apple, so they open
+      normally with no warning. The Windows build is not yet signed with a paid
+      developer certificate, so Windows will warn that the publisher cannot be
+      verified. This is what the warning means in practice: the operating system
+      can see that the file carries no certificate it recognises, not that it found
+      anything wrong with it. On Windows, choose "More info" and then "Run anyway".
       On Linux there is no warning, but an AppImage has to be made executable
-      before it will run. Certificates are being obtained and the warnings will
+      before it will run.
+      A Windows certificate is being obtained and the warning will disappear in a
+      later release.
       disappear in a later release.
 
   trustline:
@@ -279,16 +281,16 @@ en:
       linux_deb:
         label: Debian package
         requirement: .deb · Debian 12+, Ubuntu 22.04+, and derivatives
-    unsigned_title: The first launch needs one extra step
+    unsigned_title: On Windows, the first launch needs one extra step
     unsigned: >-
-      These builds are not yet signed with a paid developer certificate, so
-      macOS and Windows will both warn that the publisher cannot be verified.
-      This is what the warning means in practice: the operating system can see
-      that the file carries no certificate it recognises, not that it found
-      anything wrong with it. On macOS, right-click the app and choose Open,
-      then confirm once. On Windows, choose "More info" and then "Run anyway".
-      Certificates are being obtained and the warnings will disappear in a later
-      release.
+      The macOS builds are signed and notarised by Apple, so they open
+      normally with no warning. The Windows build is not yet signed with a paid
+      developer certificate, so Windows will warn that the publisher cannot be
+      verified. This is what the warning means in practice: the operating system
+      can see that the file carries no certificate it recognises, not that it found
+      anything wrong with it. On Windows, choose "More info" and then "Run anyway".
+      A Windows certificate is being obtained and the warning will disappear in a
+      later release.
 
 es:
   index:
@@ -446,18 +448,19 @@ es:
       linux_rpm:
         label: Paquete RPM
         requirement: .rpm · Fedora, openSUSE y derivadas
-    unsigned_title: El primer arranque necesita un paso extra
+    unsigned_title: En Windows, el primer arranque necesita un paso extra
     unsigned: >-
-      Estas versiones todavía no están firmadas con un certificado de
-      desarrollador de pago, así que macOS y Windows avisarán de que no pueden
-      verificar al editor. Esto es lo que significa el aviso en la práctica: el
-      sistema operativo ve que el archivo no lleva un certificado que reconozca,
-      no que haya encontrado nada malo en él. En macOS, haz clic derecho sobre
-      la aplicación y elige Abrir, y confirma una vez. En Windows, elige "Más
-      información" y después "Ejecutar de todas formas". En Linux no hay aviso,
-      pero un AppImage hay que hacerlo ejecutable antes de poder abrirlo. Los
-      certificados están en trámite y los avisos desaparecerán en una versión
-      posterior.
+      Las versiones de macOS están firmadas y notarizadas por Apple, así que se
+      abren con normalidad y sin ningún aviso. La versión de Windows todavía no está
+      firmada con un certificado de desarrollador de pago, así que Windows avisará de
+      que no puede verificar al editor. Esto es lo que significa el aviso en la
+      práctica: el sistema operativo ve que el archivo no lleva un certificado que
+      reconozca, no que haya encontrado nada malo en él. En Windows, elige "Más
+      información" y después "Ejecutar de todas formas".
+      En Linux no hay aviso, pero un AppImage hay que hacerlo ejecutable antes de
+      poder abrirlo.
+      Hay un certificado para Windows en trámite y el aviso desaparecerá en una
+      versión posterior.
 
   trustline:
     intro: >-
@@ -558,13 +561,14 @@ es:
       linux_deb:
         label: Paquete Debian
         requirement: .deb · Debian 12+, Ubuntu 22.04+ y derivadas
-    unsigned_title: El primer arranque necesita un paso extra
+    unsigned_title: En Windows, el primer arranque necesita un paso extra
     unsigned: >-
-      Estas versiones todavía no están firmadas con un certificado de
-      desarrollador de pago, así que macOS y Windows avisarán de que no pueden
-      verificar al editor. Esto es lo que significa el aviso en la práctica: el
-      sistema operativo ve que el archivo no lleva un certificado que reconozca,
-      no que haya encontrado nada malo en él. En macOS, haz clic derecho sobre
-      la aplicación y elige Abrir, y confirma una vez. En Windows, elige "Más
-      información" y después "Ejecutar de todas formas". Los certificados están
-      en trámite y los avisos desaparecerán en una versión posterior.
+      Las versiones de macOS están firmadas y notarizadas por Apple, así que se
+      abren con normalidad y sin ningún aviso. La versión de Windows todavía no está
+      firmada con un certificado de desarrollador de pago, así que Windows avisará de
+      que no puede verificar al editor. Esto es lo que significa el aviso en la
+      práctica: el sistema operativo ve que el archivo no lleva un certificado que
+      reconozca, no que haya encontrado nada malo en él. En Windows, elige "Más
+      información" y después "Ejecutar de todas formas".
+      Hay un certificado para Windows en trámite y el aviso desaparecerá en una
+      versión posterior.

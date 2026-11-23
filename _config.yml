@@ -43,7 +43,7 @@ book:
 # `id` keys match the `downloads` map in _data/tools.yml, which supplies the
 # label and system requirement shown next to each button.
 trustline:
-  version: "0.2.0"
+  version: "0.3.0"
   releases_repo: "guillemf/trustline-releases"
   # The download counter on /tools/trustline/ is rendered only once the total in
   # _data/trustline_downloads.yml reaches this number. A visible count is social
@@ -54,13 +54,13 @@ trustline:
   downloads_min_display: 250
   downloads:
     - id: macos
-      file: "Trustline_0.2.0_universal.dmg"
+      file: "Trustline_0.3.0_universal.dmg"
     - id: windows
-      file: "Trustline_0.2.0_x64-setup.exe"
+      file: "Trustline_0.3.0_x64-setup.exe"
     - id: linux_appimage
-      file: "Trustline_0.2.0_amd64.AppImage"
+      file: "Trustline_0.3.0_amd64.AppImage"
     - id: linux_deb
-      file: "Trustline_0.2.0_amd64.deb"
+      file: "Trustline_0.3.0_amd64.deb"
 
 # Threadline, distributed the same way as Trustline above: a public,
 # releases-only repository, with the version and exact filenames kept here so a
@@ -69,22 +69,22 @@ trustline:
 # build a universal macOS binary. The `id` keys match the `downloads` map under
 # `threadline:` in _data/tools.yml.
 threadline:
-  version: "1.1.0"
+  version: "1.2.0"
   releases_repo: "guillemf/threadline-releases"
   downloads_min_display: 250
   downloads:
     - id: macos_arm
-      file: "Threadline_1.1.0_aarch64.dmg"
+      file: "Threadline_1.2.0_aarch64.dmg"
     - id: macos_intel
-      file: "Threadline_1.1.0_x64.dmg"
+      file: "Threadline_1.2.0_x64.dmg"
     - id: windows
-      file: "Threadline_1.1.0_x64-setup.exe"
+      file: "Threadline_1.2.0_x64-setup.exe"
     - id: linux_appimage
-      file: "Threadline_1.1.0_amd64.AppImage"
+      file: "Threadline_1.2.0_amd64.AppImage"
     - id: linux_deb
-      file: "Threadline_1.1.0_amd64.deb"
+      file: "Threadline_1.2.0_amd64.deb"
     - id: linux_rpm
-      file: "Threadline-1.1.0-1.x86_64.rpm"
+      file: "Threadline-1.2.0-1.x86_64.rpm"
 
 # Base URL of the platform API that powers the dynamic self-assessment
 # quiz on /assessment/. Must be HTTPS in production — the site itself is
