@@ -13,12 +13,12 @@
 # `trustline.downloads_min_display` in _config.yml, not by this file.
 
 # When the counts below were read, UTC.
-updated: "2026-11-23T18:46:12Z"
+updated: "2026-11-24T17:36:42Z"
 
 # Every asset of every published, non-draft, non-prerelease release added
 # together. This is the number the page shows: it answers "how many times has
 # Trustline been downloaded", which is the only question a visitor is asking.
-total: 9
+total: 27
 
 # How many published releases those downloads are spread across.
 releases: 2
@@ -41,4 +41,4 @@ files:
 # is being picked up.
 latest:
   tag: "v0.4.0"
-  total: 2
+  total: 20
