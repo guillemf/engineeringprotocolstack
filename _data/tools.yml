@@ -222,25 +222,36 @@ en:
     # example.com: the app's subject matter is private notes about identifiable
     # people, so these were taken against a seeded demo dataset.
     screenshots:
-      - image: /assets/images/trustline-session.png
+      - image: /assets/images/trustline-0.5-session.png
         caption: >-
           A one-to-one in Trustline, with the agenda written before the meeting,
           the report's own emailed reply kept apart from the manager's notes, and
           every action item carrying an owner.
-      - image: /assets/images/trustline-career-path.png
+      - image: /assets/images/trustline-0.5-career-path.png
         caption: >-
           The career path canvas, showing an individual contributor track and a
           leadership track with the promotion routes between positions drawn as
           arrows.
-      - image: /assets/images/trustline-team-roster.png
+      - image: /assets/images/trustline-0.5-team-roster.png
         caption: >-
           A team roster, listing which suggested roles are filled, which are
-          still unfilled, and which of them rest on a single person.
-      - image: /assets/images/trustline-health-trend.png
+          still unfilled, and which of them rest on a single person, under a
+          reminder that the team's next health check is due.
+      - image: /assets/images/trustline-0.5-health-trend.png
         caption: >-
           A team health trend, scoring ten themes from one to five at every check
           so that a slow decline in flow of work or learning shows up while it is
           still fixable.
+      - image: /assets/images/trustline-0.5-update-notice-light.png
+        caption: >-
+          Trustline in light mode with a one-to-one open, and a notice in the
+          corner saying a newer version is available, with an Install now button
+          that downloads it only when pressed.
+      - image: /assets/images/trustline-0.5-update-notice-dark.png
+        caption: >-
+          The same update notice in dark mode: Trustline names the new version
+          and the one installed, and installs the update in place once you press
+          Install now.
     privacy_title: Why it has no account
     privacy: >-
       The subject matter is private notes about identifiable people, which is
@@ -508,25 +519,36 @@ es:
     # se usa también como texto alternativo de la imagen, así que cada uno
     # describe su captura por sí solo.
     screenshots:
-      - image: /assets/images/trustline-session.png
+      - image: /assets/images/trustline-0.5-session.png
         caption: >-
           Un one-to-one en Trustline, con la agenda escrita antes de la reunión,
           la respuesta por correo de la persona separada de las notas del
           manager, y cada tarea con un responsable.
-      - image: /assets/images/trustline-career-path.png
+      - image: /assets/images/trustline-0.5-career-path.png
         caption: >-
           El canvas de plan de carrera, con un itinerario de contribución
           individual y otro de liderazgo, y las rutas de promoción entre
           posiciones dibujadas como flechas.
-      - image: /assets/images/trustline-team-roster.png
+      - image: /assets/images/trustline-0.5-team-roster.png
         caption: >-
           La plantilla de un equipo, con los roles sugeridos que están cubiertos,
-          los que siguen sin cubrir y los que dependen de una sola persona.
-      - image: /assets/images/trustline-health-trend.png
+          los que siguen sin cubrir y los que dependen de una sola persona, bajo
+          un aviso de que toca la próxima revisión de salud del equipo.
+      - image: /assets/images/trustline-0.5-health-trend.png
         caption: >-
           La tendencia de salud de un equipo, que puntúa diez temas de uno a
           cinco en cada revisión para que un deterioro lento del flujo de trabajo
           o del aprendizaje se vea mientras todavía tiene arreglo.
+      - image: /assets/images/trustline-0.5-update-notice-light.png
+        caption: >-
+          Trustline en modo claro con un one-to-one abierto y un aviso en la
+          esquina de que hay una versión nueva, con un botón Install now que
+          solo la descarga cuando lo pulsas.
+      - image: /assets/images/trustline-0.5-update-notice-dark.png
+        caption: >-
+          El mismo aviso de actualización en modo oscuro: Trustline indica la
+          versión nueva y la instalada, y actualiza la aplicación en su sitio
+          cuando pulsas Install now.
     privacy_title: Por qué no tiene cuenta
     privacy: >-
       El contenido son notas privadas sobre personas identificables, que es el
