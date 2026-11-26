@@ -181,8 +181,8 @@ en:
     intro: >-
       Trustline keeps the record an engineering manager needs and nobody else
       should read. It follows the team-management chapter of The Engineering
-      Protocol Stack: the sessions you hold, the trust you have actually earned,
-      and the career path each person on your team is on.
+      Protocol Stack: the sessions you hold, the trust each position on the
+      ladder carries, and the career path each person on your team is on.
     features_title: What it does
     features:
       - title: One-to-one sessions
@@ -190,11 +190,12 @@ en:
           A structured record of every one-to-one — what was discussed, what was
           agreed, and what is still open — so the next session starts where the
           last one ended instead of from memory.
-      - title: Trust, tracked honestly
+      - title: Trust, read from the path
         text: >-
-          Trust is the currency a manager actually spends. Trustline asks you to
-          state where it stands with each report and keeps the history, which
-          makes a slow decline visible while it is still fixable.
+          Trust is the currency a manager actually spends. Trustline gives every
+          position on the career path a trust tier — trust with a clear task,
+          with a problem, to guide others — so the autonomy you extend to each
+          report is explicit instead of assumed.
       - title: Career path canvas
         text: >-
           Place every report on a visual career path, group them by team or
@@ -204,11 +205,11 @@ en:
         text: >-
           Export the career path as a PDF to take into a calibration meeting, a
           promotion committee, or a conversation with your own manager.
-      - title: Teams and documents
+      - title: Teams and agreements
         text: >-
-          Group reports into teams and keep the documents that belong to each —
-          charters, on-call rotations, working agreements — beside the people
-          they apply to.
+          Group reports into teams and keep what belongs to each — working
+          agreements, decisions, health checks, experiments and a scoreboard —
+          beside the people they apply to.
       - title: Email from your own accounts
         text: >-
           Reach your team through the mail accounts you configure yourself.
@@ -479,8 +480,8 @@ es:
       Trustline guarda el registro que un manager de ingeniería necesita y que
       nadie más debería leer. Sigue el capítulo de gestión de equipos de The
       Engineering Protocol Stack: las sesiones que mantienes, la confianza que
-      realmente te has ganado y el plan de carrera en el que está cada persona
-      de tu equipo.
+      conlleva cada posición de la escalera y el plan de carrera en el que está
+      cada persona de tu equipo.
     features_title: Qué hace
     features:
       - title: Sesiones one-to-one
@@ -488,11 +489,13 @@ es:
           Un registro estructurado de cada one-to-one — qué se habló, qué se
           acordó y qué sigue abierto — para que la siguiente sesión empiece
           donde acabó la anterior y no desde la memoria.
-      - title: Confianza, medida con honestidad
+      - title: Confianza, leída desde el plan
         text: >-
-          La confianza es la moneda que un manager gasta de verdad. Trustline te
-          pide que indiques cómo está con cada persona y guarda el histórico, lo
-          que hace visible un deterioro lento mientras todavía tiene arreglo.
+          La confianza es la moneda que un manager gasta de verdad. Trustline
+          asigna a cada posición del plan de carrera un nivel de confianza —
+          confianza con una tarea clara, con un problema, para guiar a otros —
+          para que la autonomía que das a cada persona sea explícita y no
+          supuesta.
       - title: Canvas de plan de carrera
         text: >-
           Sitúa a cada persona en un plan de carrera visual, agrúpalas por
@@ -504,11 +507,11 @@ es:
           Exporta el plan de carrera en PDF para llevarlo a una reunión de
           calibración, a un comité de promociones o a una conversación con tu
           propio manager.
-      - title: Equipos y documentos
+      - title: Equipos y acuerdos
         text: >-
-          Agrupa a las personas en equipos y guarda los documentos que
-          pertenecen a cada uno — cartas de equipo, rotaciones de guardia,
-          acuerdos de trabajo — junto a las personas a las que se aplican.
+          Agrupa a las personas en equipos y guarda lo que pertenece a cada uno
+          — acuerdos de trabajo, decisiones, chequeos de salud, experimentos y
+          un marcador — junto a las personas a las que se aplican.
       - title: Email desde tus propias cuentas
         text: >-
           Contacta con tu equipo a través de las cuentas de correo que
