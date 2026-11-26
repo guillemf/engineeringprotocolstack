@@ -43,7 +43,7 @@ book:
 # `id` keys match the `downloads` map in _data/tools.yml, which supplies the
 # label and system requirement shown next to each button.
 trustline:
-  version: "0.6.0"
+  version: "1.0.0"
   releases_repo: "guillemf/trustline-releases"
   # The download counter on /tools/trustline/ is rendered only once the total in
   # _data/trustline_downloads.yml reaches this number. A visible count is social
@@ -54,13 +54,13 @@ trustline:
   downloads_min_display: 250
   downloads:
     - id: macos
-      file: "Trustline_0.6.0_universal.dmg"
+      file: "Trustline_1.0.0_universal.dmg"
     - id: windows
-      file: "Trustline_0.6.0_x64-setup.exe"
+      file: "Trustline_1.0.0_x64-setup.exe"
     - id: linux_appimage
-      file: "Trustline_0.6.0_amd64.AppImage"
+      file: "Trustline_1.0.0_amd64.AppImage"
     - id: linux_deb
-      file: "Trustline_0.6.0_amd64.deb"
+      file: "Trustline_1.0.0_amd64.deb"
 
 # Threadline, distributed the same way as Trustline above: a public,
 # releases-only repository, with the version and exact filenames kept here so a
