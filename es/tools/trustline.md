@@ -27,6 +27,12 @@ alt_lang_url: /tools/trustline/
   <p>{{ t.unsigned }}</p>
 </div>
 
+<div class="card" style="margin: 1.8rem 0; border-left: 4px solid var(--cyan);">
+  <h3>📖 Guía de Usuario y Documentación del Protocolo LAN</h3>
+  <p>Trustline es la capa LAN de The Engineering Protocol Stack hecha software. Aprende a llevar las reuniones uno a uno, construir un plan de carrera y seguir la salud del equipo con nuestra guía completa.</p>
+  <p><a class="btn btn--primary" href="{{ '/tools/trustline/docs/' | relative_url }}">Explorar la Documentación de Trustline &rarr;</a></p>
+</div>
+
 {% if t.screenshots.size > 0 %}
 ## {{ t.screenshots_title }}
 

@@ -26,6 +26,12 @@ alt_lang_url: /es/tools/trustline/
   <p>{{ t.unsigned }}</p>
 </div>
 
+<div class="card" style="margin: 1.8rem 0; border-left: 4px solid var(--cyan);">
+  <h3>📖 User Guide &amp; LAN Protocol Documentation</h3>
+  <p>Trustline is the LAN layer of The Engineering Protocol Stack made into software. Learn how to run one-to-ones, build a career path, and keep a read on team health with our complete guide.</p>
+  <p><a class="btn btn--primary" href="{{ '/tools/trustline/docs/' | relative_url }}">Explore Trustline Documentation &rarr;</a></p>
+</div>
+
 {% if t.screenshots.size > 0 %}
 ## {{ t.screenshots_title }}
 
