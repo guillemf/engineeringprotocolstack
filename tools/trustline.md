@@ -3,8 +3,8 @@ title: Trustline
 subtitle: One-to-ones, trust, and career paths for engineering managers
 description: >-
   Trustline is a free desktop app for engineering managers — one-to-one
-  sessions, trust levels, and a career path canvas, kept as files on your own
-  machine. Download for macOS, Windows, and Linux.
+  sessions and a career path canvas where each position carries its trust
+  tier, kept as files on your own machine. Download for macOS, Windows, and Linux.
 needs_tools: true
 permalink: /tools/trustline/
 lang: en

@@ -3,8 +3,8 @@ title: Trustline
 subtitle: One-to-ones, confianza y planes de carrera para managers de ingeniería
 description: >-
   Trustline es una aplicación de escritorio gratuita para managers de
-  ingeniería — sesiones one-to-one, niveles de confianza y un canvas de plan de
-  carrera, guardados como archivos en tu propio ordenador. Descarga para macOS,
+  ingeniería — sesiones one-to-one y un canvas de plan de carrera donde cada posición
+  lleva su nivel de confianza, guardados como archivos en tu propio ordenador. Descarga para macOS,
   Windows y Linux.
 needs_tools: true
 permalink: /es/tools/trustline/
@@ -30,7 +30,7 @@ alt_lang_url: /tools/trustline/
 <div class="card" style="margin: 1.8rem 0; border-left: 4px solid var(--cyan);">
   <h3>📖 Guía de Usuario y Documentación del Protocolo LAN</h3>
   <p>Trustline es la capa LAN de The Engineering Protocol Stack hecha software. Aprende a llevar las reuniones uno a uno, construir un plan de carrera y seguir la salud del equipo con nuestra guía completa.</p>
-  <p><a class="btn btn--primary" href="{{ '/tools/trustline/docs/' | relative_url }}">Explorar la Documentación de Trustline &rarr;</a></p>
+  <p><a class="btn btn--primary" href="{{ '/es/tools/trustline/docs/' | relative_url }}">Explorar la Documentación de Trustline &rarr;</a></p>
 </div>
 
 {% if t.screenshots.size > 0 %}
