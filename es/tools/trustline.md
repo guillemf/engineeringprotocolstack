@@ -4,7 +4,7 @@ subtitle: One-to-ones, confianza y planes de carrera para managers de ingenierí
 description: >-
   Trustline es una aplicación de escritorio gratuita para managers de
   ingeniería — sesiones one-to-one y un canvas de plan de carrera donde cada posición
-  lleva su nivel de confianza, guardados como archivos en tu propio ordenador. Descarga para macOS,
+  lleva su grado de confianza, guardados como archivos en tu propio ordenador. Descarga para macOS,
   Windows y Linux.
 needs_tools: true
 permalink: /es/tools/trustline/

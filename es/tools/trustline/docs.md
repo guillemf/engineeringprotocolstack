@@ -193,7 +193,7 @@ alt_lang_url: /tools/trustline/docs/
             </tr>
             <tr>
               <td><strong>Crecimiento visible</strong></td>
-              <td>El <a href="#career-path">canvas del plan de carrera</a>: posiciones, niveles, niveles de confianza, criterios de promoción y las rutas entre posiciones, exportable para una reunión de calibración.</td>
+              <td>El <a href="#career-path">canvas del plan de carrera</a>: posiciones, niveles, grados de confianza, criterios de promoción y las rutas entre posiciones, exportable para una reunión de calibración.</td>
               <td>La evaluación de niveles (autoevaluación, manager, pares) del Chapter 8. La aplicación guarda la escalera y el lugar de cada persona en ella, no las evidencias.</td>
             </tr>
             <tr>
@@ -280,14 +280,14 @@ alt_lang_url: /tools/trustline/docs/
 
         <figure class="docs-figure">
           <img src="{{ '/assets/images/trustline/docs/Trustline-Reports-roster-and-header.png' | relative_url }}" alt="Direct reports sidebar listing five people, with Mara Lindqvist selected and her header showing role, trust tier, cadence and email">
-          <figcaption>La plantilla y la cabecera de una persona seleccionada. El nivel de confianza se lee de la posición del plan de carrera, nunca se escribe sobre la persona.</figcaption>
+          <figcaption>La plantilla y la cabecera de una persona seleccionada. El grado de confianza se lee de la posición del plan de carrera, nunca se escribe sobre la persona.</figcaption>
         </figure>
 
         <h3>Añadir a una persona</h3>
         <p>Abre <strong>Add report</strong> al pie de la barra lateral. El formulario pide:</p>
         <ul>
           <li><strong>Name:</strong> obligatorio.</li>
-          <li><strong>Position on your career path:</strong> obligatorio. Un desplegable con las posiciones que has definido, cada una con su nivel de confianza, como <em>Senior Software Engineer — Mid</em>. Aquí es donde la persona queda situada en la escalera.</li>
+          <li><strong>Position on your career path:</strong> obligatorio. Un desplegable con las posiciones que has definido, cada una con su grado de confianza, como <em>Senior Software Engineer — Mid</em>. Aquí es donde la persona queda situada en la escalera.</li>
           <li><strong>Role:</strong> obligatorio, texto libre. Al elegir una posición se rellena con el título de la posición, y puedes sobrescribirlo. El Chapter 6 traza la distinción para la que existe este campo: <em>"Titles drift."</em> La posición es el peldaño formal; el rol es lo que la persona hace realmente, como <em>Payments Engineer</em> o <em>Platform Engineer</em>.</li>
           <li><strong>Email (optional):</strong> sirve para enviar a la persona la agenda antes de un one-to-one y para reconocer su respuesta. Sin él, la ficha funciona con normalidad, pero <em>Send agenda</em> se sustituye por un aviso para añadir una dirección.</li>
           <li><strong>Level (optional):</strong> disponible solo cuando la posición elegida tiene niveles. Las opciones se leen <em>Level N</em>, seguido de la descripción del nivel, más <em>no specific level</em>.</li>
@@ -304,7 +304,7 @@ alt_lang_url: /tools/trustline/docs/
         <p>Al seleccionar a una persona se abre su página. La cabecera muestra el nombre, después una línea como <em>Payments Engineer (Level N) · Mid trust · biweekly cadence</em> (el nivel aparece cuando está definido) y la dirección de correo, si consta. A su lado hay tres botones: <strong>Edit</strong>, <strong>Export this report's data</strong> y <strong>Delete report</strong>. Debajo de la cabecera están el selector de sesión y la sesión actual, que se tratan en la sección siguiente.</p>
 
         <h3>Editar a una persona</h3>
-        <p><strong>Edit</strong> sustituye la página por un formulario titulado <em>Edit &lt;name&gt;</em> con los mismos seis campos. Aquí se registra una promoción: cambia la <strong>Position</strong> (y el <strong>Level</strong>) y el nivel de confianza que muestra la página cambia con ellos, porque siempre se lee a través de la posición. El formulario termina con <strong>Save</strong>, <strong>Cancel</strong> y <strong>Delete report</strong>.</p>
+        <p><strong>Edit</strong> sustituye la página por un formulario titulado <em>Edit &lt;name&gt;</em> con los mismos seis campos. Aquí se registra una promoción: cambia la <strong>Position</strong> (y el <strong>Level</strong>) y el grado de confianza que muestra la página cambia con ellos, porque siempre se lee a través de la posición. El formulario termina con <strong>Save</strong>, <strong>Cancel</strong> y <strong>Delete report</strong>.</p>
 
         <figure class="docs-figure">
           <img src="{{ '/assets/images/trustline/docs/Trustline-Reports-edit-report-form.png' | relative_url }}" alt="Edit Mara Lindqvist form showing name, position, role, email, level and cadence fields with Save, Cancel and Delete report buttons">
@@ -494,7 +494,7 @@ Your message here.
         <p>Los PDF se componen con la tipografía Inter incrustada, de modo que los nombres con caracteres latinos extendidos, griegos y cirílicos se conservan. Un carácter que la fuente no puede dibujar, como un emoji, aparece como un rombo (◇) en lugar de desaparecer, y Trustline te avisa cuando ocurre. Las tareas abiertas llevan una casilla vacía y las terminadas una casilla marcada. El aspecto del PDF sigue a <a href="#preferences-appearance">Preferences → Appearance → PDF export theme</a>. Una exportación enviada por correo puede llevar la marca de Trustline y una línea de crédito, o ir como texto plano, según el ajuste <em>Signature</em> de Email relay.</p>
 
         <h3 id="exports-report">Exportar los datos de una persona</h3>
-        <p><strong>Export this report's data</strong>, en la cabecera de la persona, te entrega todo lo que Trustline guarda sobre ella, por ejemplo para atender una solicitud de acceso a datos. Elige una carpeta; Trustline crea una subcarpeta con el nombre de la dirección de correo de la persona (o su identificador si no la tiene) que contiene <code>report.md</code>, con su nombre, rol, posición, nivel, nivel de confianza, correo, cadencia y los equipos en los que está, con su rol en cada uno, además de un archivo Markdown por sesión. Un aviso confirma <em>"Exported &lt;name&gt;'s record and N sessions to &lt;folder&gt;."</em> Exportar de nuevo sobrescribe los mismos nombres de archivo. Los registros de equipo no están vinculados a una persona y quedan fuera de esta exportación.</p>
+        <p><strong>Export this report's data</strong>, en la cabecera de la persona, te entrega todo lo que Trustline guarda sobre ella, por ejemplo para atender una solicitud de acceso a datos. Elige una carpeta; Trustline crea una subcarpeta con el nombre de la dirección de correo de la persona (o su identificador si no la tiene) que contiene <code>report.md</code>, con su nombre, rol, posición, nivel, grado de confianza, correo, cadencia y los equipos en los que está, con su rol en cada uno, además de un archivo Markdown por sesión. Un aviso confirma <em>"Exported &lt;name&gt;'s record and N sessions to &lt;folder&gt;."</em> Exportar de nuevo sobrescribe los mismos nombres de archivo. Los registros de equipo no están vinculados a una persona y quedan fuera de esta exportación.</p>
 
         <h3>Exportar el plan de carrera y la página de un equipo</h3>
         <p>El plan de carrera se exporta como Markdown o PDF desde su propio menú <strong>Export</strong> (consulta <a href="#career-export">Plan de carrera</a>), y la parte compartible de un equipo se exporta como un único archivo Markdown (consulta <a href="#team-page">Exportar la página del equipo</a>).</p>
@@ -508,16 +508,16 @@ Your message here.
           <p><em>"A career path is the roadmap that helps anyone in a company understand how they can grow over time in skills, responsibilities, and salary."</em> Uno bueno hace explícitos el rol actual, los siguientes roles posibles, las habilidades necesarias para cada paso y los hitos de crecimiento, y abarca tanto el crecimiento vertical como los movimientos laterales. Sin él, <em>"people assume they must leave the company to progress."</em></p>
         </div>
 
-        <p>La sección <strong>Career path</strong> es donde defines la escalera sobre la que crece tu equipo. Dos ideas del Chapter 8 le dan forma. Primera: un plan de carrera es un <strong>grafo, no una línea</strong>: un ingeniero sénior puede convertirse en staff engineer <em>o</em> pasar a la gestión de ingeniería, ambos caminos legítimos, desde la misma posición. Segunda: <strong>la confianza pertenece a la posición, no a la persona</strong>: cada posición declara un nivel de confianza, y el nivel de una persona se lee siempre a través de la posición que ocupa. Así, las dos cosas nunca pueden discrepar en silencio sobre cuánta confianza se ha ganado alguien.</p>
+        <p>La sección <strong>Career path</strong> es donde defines la escalera sobre la que crece tu equipo. Dos ideas del Chapter 8 le dan forma. Primera: un plan de carrera es un <strong>grafo, no una línea</strong>: un ingeniero sénior puede convertirse en staff engineer <em>o</em> pasar a la gestión de ingeniería, ambos caminos legítimos, desde la misma posición. Segunda: <strong>la confianza pertenece a la posición, no a la persona</strong>: cada posición declara un grado de confianza, y el grado de una persona se lee siempre a través de la posición que ocupa. Así, las dos cosas nunca pueden discrepar en silencio sobre cuánta confianza se ha ganado alguien.</p>
 
-        <p>Sin ninguna posición seleccionada, el panel principal muestra toda la escalera como un diagrama: un encabezado <em>Career path</em>, la indicación <em>"Click a position to edit it, or drag one to arrange the ladder."</em>, un botón <strong>Reset layout</strong> y el canvas. Cada posición es una caja con su título y su nivel de confianza, coloreada según el nivel. Las flechas van de una posición a cada posición a la que puede promocionar, y un contorno detrás de un grupo de cajas es un itinerario (track) con nombre.</p>
+        <p>Sin ninguna posición seleccionada, el panel principal muestra toda la escalera como un diagrama: un encabezado <em>Career path</em>, la indicación <em>"Click a position to edit it, or drag one to arrange the ladder."</em>, un botón <strong>Reset layout</strong> y el canvas. Cada posición es una caja con su título y su grado de confianza, coloreada según el grado. Las flechas van de una posición a cada posición a la que puede promocionar, y un contorno detrás de un grupo de cajas es un itinerario (track) con nombre.</p>
 
         <figure class="docs-figure">
           <img src="{{ '/assets/images/trustline/docs/Trustline-Career-canvas-overview.png' | relative_url }}" alt="Career path canvas showing an Individual contributor track with Software Engineer, Senior Software Engineer and Staff Engineer, and a Leadership track with Engineering Manager, joined by promotion arrows">
           <figcaption>El canvas: la escalera ramificada del propio libro, con un itinerario de contribuidor individual, un itinerario de liderazgo y las rutas entre posiciones dibujadas como flechas.</figcaption>
         </figure>
 
-        <p>La barra lateral lista las mismas posiciones como filas (título y nivel de confianza), con los desplegables <strong>Add position</strong> y <strong>Tracks</strong> debajo, y un menú <strong>Export</strong> en su cabecera en cuanto existe al menos una posición.</p>
+        <p>La barra lateral lista las mismas posiciones como filas (título y grado de confianza), con los desplegables <strong>Add position</strong> y <strong>Tracks</strong> debajo, y un menú <strong>Export</strong> en su cabecera en cuanto existe al menos una posición.</p>
 
         <h3 id="career-positions">Posiciones y niveles</h3>
         <p>Abre <strong>Add position</strong> para definir un peldaño:</p>
@@ -530,7 +530,7 @@ Your message here.
 
         <figure class="docs-figure">
           <img src="{{ '/assets/images/trustline/docs/Trustline-Career-add-position-form.png' | relative_url }}" alt="Add position form open in the Career path sidebar with title, trust tier, core theme and promotion criteria fields">
-          <figcaption>Definir una posición. El nivel de confianza es la prueba de confianza del libro; los criterios son tuyos.</figcaption>
+          <figcaption>Definir una posición. El grado de confianza es la prueba de confianza del libro; los criterios son tuyos.</figcaption>
         </figure>
 
         <p>Al seleccionar una posición, desde la barra lateral o haciendo clic en su caja, se abre su editor con un enlace <strong>← View full schema</strong> de vuelta al canvas. La cabecera dice, por ejemplo, <em>Mid trust · rung 2 of 4</em>. El formulario contiene:</p>
@@ -571,7 +571,7 @@ Your message here.
         </figure>
 
         <h3 id="career-canvas-controls">Organizar el canvas</h3>
-        <p>El canvas dispone la escalera automáticamente, y puedes reorganizarla. La disposición se guarda, y todo el diagrama se reajusta cuando cambia el tamaño de la ventana. En un panel estrecho las cajas se reducen y pierden el subtítulo del nivel de confianza; el nivel se sigue transmitiendo por el color y por la etiqueta que lee un lector de pantalla.</p>
+        <p>El canvas dispone la escalera automáticamente, y puedes reorganizarla. La disposición se guarda, y todo el diagrama se reajusta cuando cambia el tamaño de la ventana. En un panel estrecho las cajas se reducen y pierden el subtítulo del grado de confianza; el grado se sigue transmitiendo por el color y por la etiqueta que lee un lector de pantalla.</p>
         <ul>
           <li><strong>Arrastra una posición</strong> para moverla. Se ajusta a una cuadrícula de 8 unidades. Mantén pulsado <kbd>Alt</kbd> mientras arrastras para colocarla libremente entre los puntos de la cuadrícula. Un arrastre solo comienza cuando el puntero se mueve unos píxeles, de modo que un clic algo tembloroso sigue abriendo la posición.</li>
           <li><strong>Arrastra la etiqueta de un itinerario</strong> para mover el itinerario entero y todas sus posiciones a la vez.</li>
