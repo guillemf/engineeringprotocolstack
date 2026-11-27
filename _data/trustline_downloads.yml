@@ -13,7 +13,7 @@
 # `trustline.downloads_min_display` in _config.yml, not by this file.
 
 # When the counts below were read, UTC.
-updated: "2026-11-26T16:49:03Z"
+updated: "2026-11-27T09:44:22Z"
 
 # Every asset of every published, non-draft, non-prerelease release added
 # together. This is the number the page shows: it answers "how many times has
@@ -21,24 +21,24 @@ updated: "2026-11-26T16:49:03Z"
 total: 86
 
 # How many published releases those downloads are spread across.
-releases: 6
+releases: 7
 
 # The newest published release's version and installer filenames, which the
 # download buttons use so the links follow each release without a config edit.
 # Filenames are matched to platform ids by suffix (see PLATFORM_SUFFIXES in the
 # script); a platform with no matching asset is omitted and the button falls
 # back to the filename in _config.yml.
-version: "1.1.0"
+version: "1.2.0"
 files:
-  macos: "Trustline_1.1.0_universal.dmg"
-  windows: "Trustline_1.1.0_x64-setup.exe"
-  linux_appimage: "Trustline_1.1.0_amd64.AppImage"
-  linux_deb: "Trustline_1.1.0_amd64.deb"
+  macos: "Trustline_1.2.0_universal.dmg"
+  windows: "Trustline_1.2.0_x64-setup.exe"
+  linux_appimage: "Trustline_1.2.0_amd64.AppImage"
+  linux_deb: "Trustline_1.2.0_amd64.deb"
 
 # The newest published release on its own. Not currently rendered — it is here
 # because it resets to near zero on every version bump, which makes it the
 # wrong number for social proof and the right one for judging whether a release
 # is being picked up.
 latest:
-  tag: "v1.1.0"
-  total: 13
+  tag: "v1.2.0"
+  total: 0
