@@ -280,7 +280,7 @@ alt_lang_url: /es/tools/threadline/docs/
 
         <figure class="docs-figure">
           <img src="{{ '/assets/images/threadline/docs/Threadline-Inbox-process-delegate-Max.png' | relative_url }}" alt="Disposition Delegate: Assigning assignee and follow-up date">
-          <figcaption>2. Delegate (<kbd>W</kbd>): Hand off to someone else. Prompts for assignee name and check-back date, routing to Waiting For.</figcaption>
+          <figcaption>2. Delegate (<kbd>G</kbd>): Hand off to someone else. Prompts for assignee name and check-back date, routing to Waiting For.</figcaption>
         </figure>
 
         <figure class="docs-figure">
@@ -635,7 +635,9 @@ alt_lang_url: /es/tools/threadline/docs/
           <div class="service-card">
             <h4>9. Data</h4>
             <p>Full JSON/SQLite export, local backup, and reset options.</p>
+            {% comment %} restore after the screenshot retake (personal path)
             <img src="{{ '/assets/images/threadline/docs/Threadline-Settings-tab-data-Max.png' | relative_url }}" alt="Settings: Data tab">
+            {% endcomment %}
           </div>
           <div class="service-card">
             <h4>10. About</h4>
@@ -675,9 +677,24 @@ alt_lang_url: /es/tools/threadline/docs/
               <td>App-wide</td>
             </tr>
             <tr>
-              <td><kbd>1</kbd> – <kbd>9</kbd></td>
-              <td>Navigate views (Today, Inbox, Matrix, Next, etc.)</td>
+              <td><kbd>Cmd/Ctrl</kbd> + <kbd>1</kbd> – <kbd>5</kbd></td>
+              <td>Navigate views: Today, Inbox, Matrix, Next, Waiting</td>
               <td>Main Window</td>
+            </tr>
+            <tr>
+              <td><kbd>Cmd/Ctrl</kbd> + <kbd>R</kbd></td>
+              <td>Open Review</td>
+              <td>Main Window</td>
+            </tr>
+            <tr>
+              <td><kbd>Cmd/Ctrl</kbd> + <kbd>,</kbd></td>
+              <td>Open Settings</td>
+              <td>Main Window</td>
+            </tr>
+            <tr>
+              <td><kbd>1</kbd> – <kbd>4</kbd></td>
+              <td>Move the selected card to quadrant Q1–Q4</td>
+              <td>Matrix</td>
             </tr>
             <tr>
               <td><kbd>N</kbd></td>
@@ -695,8 +712,13 @@ alt_lang_url: /es/tools/threadline/docs/
               <td>Process Mode</td>
             </tr>
             <tr>
-              <td><kbd>W</kbd></td>
+              <td><kbd>G</kbd></td>
               <td>Disposition: Delegate (Waiting For)</td>
+              <td>Process Mode</td>
+            </tr>
+            <tr>
+              <td><kbd>C</kbd></td>
+              <td>Disposition: Send to calendar</td>
               <td>Process Mode</td>
             </tr>
             <tr>
@@ -715,9 +737,14 @@ alt_lang_url: /es/tools/threadline/docs/
               <td>Process Mode</td>
             </tr>
             <tr>
-              <td><kbd>Space</kbd></td>
-              <td>Start / Pause Focus Block on selected item</td>
-              <td>Today / Next Actions</td>
+              <td><kbd>I</kbd></td>
+              <td>Log an interruption</td>
+              <td>While a Focus Block is running</td>
+            </tr>
+            <tr>
+              <td><kbd>A</kbd></td>
+              <td>Abandon the Focus Block</td>
+              <td>While a Focus Block is running</td>
             </tr>
             <tr>
               <td><kbd>J</kbd> / <kbd>K</kbd> or <kbd>↓</kbd> / <kbd>↑</kbd></td>
