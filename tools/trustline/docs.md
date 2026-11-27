@@ -2,7 +2,7 @@
 layout: default
 title: "Trustline User Guide & LAN Protocol Documentation"
 subtitle: "The LAN Layer of The Engineering Protocol Stack"
-description: "Comprehensive guide and reference for Trustline v1.1.0 — run structured one-to-ones, keep a career path your team can see, and make team health visible as an engineering leader."
+description: "Comprehensive guide and reference for Trustline v1.2.0 — run structured one-to-ones, keep a career path your team can see, and make team health visible as an engineering leader."
 needs_tools: true
 permalink: /tools/trustline/docs/
 lang: en
@@ -11,7 +11,7 @@ lang: en
 <div class="docs-wrap">
   <header class="docs-header">
     <div class="docs-meta">
-      <span class="badge">App v1.1.0</span>
+      <span class="badge">App v1.2.0</span>
       <span class="badge">LAN Layer Architecture</span>
       <span>Published for <a href="https://engineeringprotocolstack.com">The Engineering Protocol Stack</a></span>
     </div>
@@ -246,7 +246,7 @@ lang: en
         </ol>
 
         <h3>The window at a glance</h3>
-        <p>The narrow <strong>activity bar</strong> on the far left picks which section's data you are working on. Its three sections are <strong>Direct reports</strong>, <strong>Career path</strong>, and <strong>Teams</strong>; <strong>Preferences</strong> sits in its own spot at the bottom. The <strong>sidebar</strong> lists that section's records and holds its "Add" forms. The <strong>main pane</strong> shows whichever record you have selected.</p>
+        <p>The narrow <strong>activity bar</strong> on the far left picks which section's data you are working on. Its three sections are <strong>Direct reports</strong>, <strong>Career path</strong>, and <strong>Teams</strong>; two buttons sit lower down. <strong>Help</strong> (a question-mark icon) sits above the footer divider and opens this user guide in your browser, and <strong>Preferences</strong> (the gear) sits in the footer, level with the sidebar's own footer. The <strong>sidebar</strong> lists that section's records and holds its "Add" forms. The <strong>main pane</strong> shows whichever record you have selected.</p>
 
         <h3>Where your data lives</h3>
         <p>Everything is stored in your operating system's standard application-data folder, in a folder named <code>trustline</code>:</p>
@@ -577,13 +577,12 @@ Your message here.
           <li><strong>Reset layout</strong> returns every position to the automatic layout, after confirming <em>"Reset all positions to the automatic layout? Your manual arrangement will be lost."</em> This cannot be undone.</li>
         </ul>
         <p>The canvas is fully operable from the keyboard: every box and every track label is a tab stop. <kbd>Enter</kbd> or <kbd>Space</kbd> opens it, <kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> move it by one grid step, and <kbd>Shift</kbd> with an arrow moves it four steps. A burst of key presses is saved once, a fraction of a second after the last one.</p>
+        <p>The focused box is outlined by its own ring, drawn in the accent colour just outside its border, so you can always see which position <kbd>Enter</kbd> will open.</p>
 
-        {% comment %}Pending figure: restore after canvas focus-ring fix (SHOTLIST #24).
         <figure class="docs-figure">
-          <img src="{{ '/assets/images/trustline/docs/Trustline-Career-canvas-focused-position.png' | relative_url }}" alt="Career path canvas with the Senior Software Engineer box showing a visible keyboard focus ring">
-          <figcaption>A focused position on the canvas, ready to be opened or nudged with the arrow keys.</figcaption>
+          <img src="{{ '/assets/images/trustline/docs/Trustline-Career-canvas-focused-position.png' | relative_url }}" alt="Career path canvas with the Senior Software Engineer box wrapped in a separate keyboard focus ring outside its border">
+          <figcaption>A focused position on the canvas: a separate accent ring sits outside the box's own border, ready for Enter or the arrow keys.</figcaption>
         </figure>
-        {% endcomment %}
 
         <figure class="docs-figure">
           <img src="{{ '/assets/images/trustline/docs/Trustline-Career-reset-layout-dialog.png' | relative_url }}" alt="Confirmation dialog asking whether to reset all positions to the automatic layout with a Reset layout button">
@@ -953,7 +952,7 @@ Your message here.
         </figure>
 
         <h3 id="preferences-about">About</h3>
-        <p>The About page shows the Trustline logotype, the installed version (<em>Version 1.1.0</em>), a line stating whether a newer version exists (<em>"Up to date."</em> or <em>"Version X is available."</em>), the note <em>"Built on The Engineering Protocol Stack,"</em> and the update-check selector described next.</p>
+        <p>The About page shows the Trustline logotype, the installed version (for example <em>Version 1.2.0</em>), a line stating whether a newer version exists (<em>"Up to date."</em> or <em>"Version X is available."</em>), the note <em>"Built on The Engineering Protocol Stack,"</em> and the update-check selector described next.</p>
         <figure class="docs-figure">
           <img src="{{ '/assets/images/trustline/docs/Trustline-Preferences-about.png' | relative_url }}" alt="About page of Preferences showing the Trustline logo, the version number, an up to date line and the Check for new versions selector">
           <figcaption>About: the version, whether it is current, and the one network setting the app has.</figcaption>
@@ -976,19 +975,15 @@ Your message here.
         </ul>
         <p>Dismiss the notice with its close button or Escape. That version is then not announced again, though the About page keeps saying that it is available. If an install fails, the notice gives a plain sentence and a <strong>Download</strong> button. If you are on 0.3.0 or earlier, update once from the website; later versions install in place.</p>
 
-        {% comment %}Pending figure: restore after v1.2.0 (SHOTLIST #51).
         <figure class="docs-figure">
           <img src="{{ '/assets/images/trustline/docs/Trustline-Updates-notice-install-now.png' | relative_url }}" alt="Trustline with a one-to-one open and an update notice in the corner naming the new version and the installed one with an Install now button">
           <figcaption>The update notice: it names both versions and does nothing until you press Install now.</figcaption>
         </figure>
-        {% endcomment %}
 
-        {% comment %}Pending figure: restore after v1.2.0 (SHOTLIST #52).
         <figure class="docs-figure">
           <img src="{{ '/assets/images/trustline/docs/Trustline-Updates-about-update-available.png' | relative_url }}" alt="About page of Preferences with a line saying a newer version is available above the update check selector">
           <figcaption>The About line keeps the fact after the notice is dismissed: dismissing stops the interruption, not the information.</figcaption>
         </figure>
-        {% endcomment %}
       </section>
 
       <!-- SECTION: PRIVACY -->
@@ -1124,6 +1119,11 @@ Your message here.
               <td><kbd>Esc</kbd></td>
               <td>Dismiss the notice</td>
               <td>When focus is inside a toast, such as the update notice</td>
+            </tr>
+            <tr>
+              <td><kbd>?</kbd></td>
+              <td>Open this user guide in your browser, the same as the Help button</td>
+              <td>Anywhere, except while typing in a field; ignored with <kbd>Ctrl</kbd>, <kbd>Cmd</kbd> or <kbd>Alt</kbd> held</td>
             </tr>
             <tr>
               <td><kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd></td>
