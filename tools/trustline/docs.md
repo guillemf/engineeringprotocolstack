@@ -6,6 +6,7 @@ description: "Comprehensive guide and reference for Trustline v1.2.0 — run str
 needs_tools: true
 permalink: /tools/trustline/docs/
 lang: en
+alt_lang_url: /es/tools/trustline/docs/
 ---
 
 <div class="docs-wrap">
